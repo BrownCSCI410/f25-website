@@ -9,23 +9,25 @@ import { Resources } from './Components/Resources/Resources';
 import { Staff } from './Components/Staff/Staff';
 import { TournamentResults } from './Components/TournamentResults/TournamentResults';
 import './App.scss'
+import { Route, Routes } from 'react-router-dom';
 
-
-function App() {
+export default function App() {
   return (
     <div className="App">
       <Navbar />
-      <Welcome />
-      <Lectures />
-      <Labs />
-      <Assignments />
-      <Resources />
-      <Hours />  
-      <Staff />
-      <TournamentResults />
+      <main className="main-container">
+        <Routes>
+          <Route path="/" element={<Welcome />} />
+          <Route path="/" element={<Welcome />} />
+          <Route path="labs" element={<Labs />} />
+          <Route path="lectures" element={<Lectures />} />
+          <Route path="assignments" element={<Assignments />} />
+          <Route path="resources" element={<Resources />} />
+          <Route path="hours" element={<Hours />} />
+          <Route path="staff" element={<Staff />} />
+        </Routes>
+      </main>
     </div>
   );
 }
-
-export default App;
 

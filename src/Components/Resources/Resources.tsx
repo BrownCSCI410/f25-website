@@ -7,9 +7,7 @@ export class Resources extends React.Component<ResourcesProps> {
         return (
             <section id= 'resources' className = 'anchor'>
             <div className = "content-container">
-                <div className="header-container">
-                    <h2>Resources</h2>
-                </div>
+                <h2>Resources</h2>
 
                 <div className="book-container container">
                     <div className="book-page">
