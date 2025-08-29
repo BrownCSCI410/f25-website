@@ -1107,6 +1107,33 @@ iframe {
   padding-top: 20px;
 }
 
+/*
+GLOSSARY
+*/
+
+.scrollable-table {
+  overflow-y: auto;
+  width: 100%;
+  height: 50vh;
+}
+
+.glossary-table {
+  width: 70%;
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+
+.glossary-table th:nth-child(1),
+.glossary-table td:nth-child(1) {
+  width: 35%;
+}
+
+.glossary-table th:nth-child(2),
+.glossary-table td:nth-child(2) {
+  width: 65%;
+}
 
 :root {
   --glow-rgb: 255, 193, 112;

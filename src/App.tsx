@@ -10,6 +10,7 @@ import { Staff } from './Components/Staff/Staff';
 import { TournamentResults } from './Components/TournamentResults/TournamentResults';
 import './App.scss'
 import { Route, Routes } from 'react-router-dom';
+import { Glossary } from './Components/Glossary/glossary';
 
 export default function App() {
   return (
@@ -25,6 +26,8 @@ export default function App() {
           <Route path="resources" element={<Resources />} />
           <Route path="hours" element={<Hours />} />
           <Route path="staff" element={<Staff />} />
+          <Route path="glossary" element={<Glossary />} />
+          
         </Routes>
       </main>
     </div>
