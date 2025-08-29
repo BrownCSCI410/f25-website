@@ -7,8 +7,8 @@
 }
 
 @font-face {
-  font-family: "SquidGameFont";
-  src: url("./Fonts/Game Of Squids.ttf") format('truetype');
+  font-family: "Series Orbit";
+  src: url("./Fonts/Series Orbit.TTF") format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -40,7 +40,7 @@ section {
 }
 
 h1 {
-  font-family: 'SquidGameFont';
+  font-family: 'Series Orbit';
   display: inline-block;
   font-size: 4rem;
   margin: 1.5rem;
@@ -48,7 +48,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'SquidGameFont';
+  font-family: 'Series Orbit';
   text-align: center;
   font-size: 3.5rem;
   color: #ffffff;
@@ -56,7 +56,7 @@ h2 {
 }
 
 h3 {
-  font-family: "SquidGameFont";
+  font-family: "Series Orbit";
   text-align: center;
   font-size: 1.5rem;
   color: #ffffff;
@@ -70,7 +70,7 @@ ul {
 }
 
 h4 {
-  font-family: "SquidGameFont";
+  font-family: "Series Orbit";
   display: inline-block;
   font-size: 1.1rem;
   color: #ffffff;
@@ -85,7 +85,7 @@ p {
 }
 
 .main-container {
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .link-spanner {
@@ -165,7 +165,7 @@ button:hover {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #ed1b76;
+  background-color: #298ed6;
   overflow: hidden;
   min-height: 5rem;
   height: 75px;
@@ -193,13 +193,13 @@ button:hover {
 
 .nav-bar a {
   text-align: center;
-  font-family: 'SquidGameFont';
+  font-family: 'Series Orbit';
   font-size: 1.5rem;
   cursor: pointer;
 }
 
 .nav-link {
-  font-family: 'SquidGameFont';
+  font-family: 'Series Orbit';
   color: #ffffff;
   text-decoration: none;
 }
@@ -215,7 +215,7 @@ button:hover {
 
 @media screen and (min-width: 768px) {
   .home-container {
-    padding-top: 25vh;
+    padding-top: 80px;
   }
   .iframe-container {
     height: 600px;
@@ -339,12 +339,9 @@ button:hover {
 /* HOME */
 
 #home {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-     rgba(0, 0, 0, 0.5)), 
-     url("./Photos/squidgame_background.jpeg");
+    background-image: url("./Photos/pvz2_background.jpg");
     background-size: cover; /* Adjust the size */
     background-position: center; /* Center the image */
-    
 }
 
 #deliverables,
@@ -355,7 +352,10 @@ button:hover {
 #hours,
 #staff,
 #resources {
-  background: rgb(0,0,0);
+  background-color: #5f7c39;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: fixed; /* Center the image */
 }
 
 .content-container {
@@ -377,7 +377,6 @@ button:hover {
   margin-bottom: auto;
   padding-bottom: 10vh;
   font-size: 20px;
-  background: rgba(0,0,0,0.7);
 }
 
 .home-description-container {
@@ -417,7 +416,7 @@ img.home-logo {
 }
 
 .book-page h1 {
-  font-family: 'SquidGameFont';
+  font-family: 'Series Orbit';
   color: rgb(3,122,118);
   text-align: center;
 }
@@ -428,6 +427,7 @@ img.home-logo {
 }
 
 .book-page ul {
+  text-align: center;
   list-style-type: none;
   padding: 0;
 }
@@ -579,7 +579,7 @@ video {
 }
 
 p.deliverable-title {
-  font-family: "SquidGameFont", sans-serif;
+  font-family: "Series Orbit", sans-serif;
   font-size: 1.4rem;
   display: inline-block;
   color: #3c3c44;
@@ -856,7 +856,7 @@ td {
 }
 
 th {
-  font-family: "SquidGameFont", sans-serif;
+  font-family: "Series Orbit", sans-serif;
   font-size: 16px;
   color: #ffffff;
 }
@@ -871,7 +871,7 @@ td.no-wrap {
 
 td {
   background-color: rgba(0, 0, 0, 0.1);
-  border-top: 2px solid #f44786;
+  border-top: 2px solid #298ed6;
   transition: background-color linear 0.1s;
   color: #ffffff;
   white-space: pre-wrap; /* CSS to handle line breaks */
@@ -880,7 +880,7 @@ td {
 
 tr:nth-child(even) > td {
   background-color: rgba(75, 69, 50, 0.1);
-  border-top: 2px solid #f44786;
+  border-top: 2px solid #298ed6;
   transition: background-color linear 0.1s;
 }
 
@@ -1104,7 +1104,7 @@ iframe {
   text-align: center;
   align-items: center;
   justify-content: center;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 
