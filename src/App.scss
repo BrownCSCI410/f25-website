@@ -339,7 +339,7 @@ button:hover {
 /* HOME */
 
 #home {
-    background-image: url("./Photos/pvz2_background.jpg");
+    background-image: url("./Photos/pvz_background.jpg");
     background-size: cover; /* Adjust the size */
     background-position: center; /* Center the image */
 }
@@ -351,11 +351,9 @@ button:hover {
 #codealong,
 #hours,
 #staff,
-#resources {
-  background-color: #5f7c39;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: fixed; /* Center the image */
+#resources,
+#glossary {
+  background-color: #007500;
 }
 
 .content-container {
