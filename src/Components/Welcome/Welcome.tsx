@@ -19,6 +19,7 @@ export class Welcome extends React.Component{
                     You will have the opportunity to apply these ideas to develop basic 
                     natural language processing, computer vision, robotic, and multiagent systems, 
                     all with an eye towards building socially responsible AI. </p>
+                    <br></br>
                     <p>Course: CSCI 0410/1411
                     <br></br>
                     Professor: Eric Ewing
