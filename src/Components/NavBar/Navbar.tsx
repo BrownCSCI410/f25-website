@@ -34,14 +34,13 @@ export class Navbar extends React.Component<NavbarProps> {
                     <button className="icon" onClick={this.toggleNavbar}>
                         &#9776;
                     </button>
-                    <a className="nav-link" href="#home" onClick={(e) => this.handleScroll(e, "home")} target="_self">CS 410</a>
-                    <a className="nav-link" href="#lectures" onClick={(e) => this.handleScroll(e, "lectures")} target="_self">Lectures</a>
-                    <a className="nav-link" href="#sections" onClick={(e) => this.handleScroll(e, "sections")} target="_self">Discussion</a>
-                    <a className="nav-link" href="#assignments" onClick={(e) => this.handleScroll(e, "assignments")} target="_self">Assignments</a>
-                    <a className="nav-link" href="#resources" onClick={(e) => this.handleScroll(e, "resources")} target="_self">Resources</a>
-                    <a className="nav-link" href="#hours" onClick={(e) => this.handleScroll(e, "hours")} target="_self">Hours</a>
-                    <a className="nav-link" href="#staff" onClick={(e) => this.handleScroll(e, "staff")} target="_self">Staff</a>
-                    <a className="nav-link" href="#final" onClick={(e) => this.handleScroll(e, "Final Project Results")} target="_self">Tournament</a>
+                    <a className="nav-link" href="/">CS 410</a>
+                    <a className="nav-link" href="/lectures" >Lectures</a>
+                    <a className="nav-link" href="/labs">Discussion</a>
+                    <a className="nav-link" href="/assignments">Assignments</a>
+                    <a className="nav-link" href="/resources">Resources</a>
+                    <a className="nav-link" href="/hours">Hours</a>
+                    <a className="nav-link" href="/staff">Staff</a>
                 </nav>
             </div>
         );
