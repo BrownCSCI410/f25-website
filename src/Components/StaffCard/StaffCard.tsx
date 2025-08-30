@@ -1,5 +1,5 @@
 import React from 'react';
-import FlippableImage from './FlippableImage/FlippableImage';
+import ReactFlipCard from 'reactjs-flip-card'
 // import { createRoot } from 'react-dom/client';
 
 
@@ -16,9 +16,37 @@ interface StaffCardProps {
 
 export class StaffCard extends React.Component<StaffCardProps> {
   render() {
+    const styles = {
+      card: {
+        width: '300px',
+        height: '300px',
+        margin: '12.5px',
+        borderRadius: '10px'
+      },
+      frontImage: {
+          width: '300px',
+          height: '300px',
+          borderRadius: '10px'
+
+      },
+      backImage: {
+        width: '300px',
+        height: '300px',
+        backgroundColor: 'rgb(31, 44, 74)',
+        borderRadius: '10px'
+
+      },
+    };
+
     return (
       <div className="card-staff">
-        {<FlippableImage frontImage={this.props.image} backImage={this.props.pvzImage}></FlippableImage>}
+        <ReactFlipCard
+          containerStyle={styles.card}
+          frontComponent={<img style={styles.frontImage} src={this.props.image}></img>}
+          backComponent={<img style={styles.backImage} src={this.props.pvzImage}></img>}
+          // backStyle={{ width: '300', height: '300' }}
+
+        />
         <p className="staff-name">
           {this.props.name} {this.props.cslogin ? `(${this.props.cslogin})` : ''}
         </p>
