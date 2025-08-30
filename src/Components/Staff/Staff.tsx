@@ -15,6 +15,7 @@ import Leanne from "../../Photos/leanne_chia.png"
 import Salman from "../../Photos/salman_aji.png"
 import Kevin from "../../Photos/kevin_yang.png"
 import Gun from "../../Photos/kanpat_vesessook.png"
+import Millie from "../../Photos/millie2.jpg"
 
 import Wallnut from "../../Photos/wallnut.png"
 import Spikeweed from "../../Photos/spikeweed.png"
@@ -39,12 +40,19 @@ export class Staff extends React.Component<StaffProps> {
                 <div id="content-container">
                     
                     <h2>Staff</h2>
-                    <h3>Professor and Head Teaching Assistants</h3>
+                    <h3>Professors</h3>
                     <div className="card-container-staff2">
                         <StaffCard name="Eric Ewing (Professor)" cslogin="" pronouns="he/him"
                         blurb="I have a dog" 
-                        image={Eric} favCharacter = "Chess" hometown = "Syracuse, New York" pvzImage={Darren}></StaffCard>
-
+                        image={Eric} favCharacter = "Millie" hometown = "Syracuse, New York" pvzImage={Millie}></StaffCard>
+                        <div className="card-container-staff2">
+                        <StaffCard name="Millie" cslogin="" pronouns="she/her"
+                        blurb="I have an Eric"
+                        image={Millie} favCharacter = "Eric" hometown = "Eric's House" pvzImage={Eric}></StaffCard>
+                    </div>
+                    </div>
+                    <h3>Head Teaching Assistants</h3>
+                    <div className="card-container-staff2">
                         <StaffCard name="Darren" cslogin="dwang157" pronouns="he/him"
                         blurb="Hi! I'm a Junior concentrating in CS and Psychology. In my free time I enjoy trying new food and exploring new cafes." 
                         image={Darren} favCharacter = "Wall-nut" hometown="Flushing, New York" pvzImage={Wallnut}></StaffCard>
