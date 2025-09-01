@@ -2,7 +2,7 @@
   "name": "s25-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://browncsci410.github.io/s25-website",
+  "homepage": "https://browncsci410.github.io/",
   "dependencies": {
     "cra-template": "1.2.0",
     "react": "^19.0.0",
