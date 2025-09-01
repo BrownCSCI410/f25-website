@@ -78,7 +78,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 After these steps, the webpage should be update both on github and
 in the actual deployed version. Sometimes, it may be necessary
 to clear browser cache to see the new changes. You can confirm if the deployment worked successfully by:
-1. navigating to the s25-website repo
+1. navigating to the f25-website repo
 2. clicking on 'Settings'
 3. click on Pages
 

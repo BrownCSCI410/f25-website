@@ -7,7 +7,7 @@ import { Labs } from './Components/Labs and Sections/Labs';
 import { Hours } from './Components/Hours/Hours';
 import { Resources } from './Components/Resources/Resources';
 import { Staff } from './Components/Staff/Staff';
-import { TournamentResults } from './Components/TournamentResults/TournamentResults';
+// import { TournamentResults } from './Components/TournamentResults/TournamentResults';
 import './App.scss'
 import { Route, Routes } from 'react-router-dom';
 import { Glossary } from './Components/Glossary/glossary';
