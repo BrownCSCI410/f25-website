@@ -28,7 +28,7 @@ export class Welcome extends React.Component{
                     <br></br>
                     Time: MWF 1:00-1:50PM
                     <br></br>
-                    <a href="https://hackmd.io/@cs410/r1EeMLddeg">Syllabus: https://hackmd.io/@cs410/r1EeMLddeg</a>
+                    <a href="https://hackmd.io/@cs410/r1EeMLddeg">Syllabus</a>
                     </p>
                 </div>
             </div>
