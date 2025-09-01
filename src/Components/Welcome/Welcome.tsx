@@ -24,7 +24,7 @@ export class Welcome extends React.Component{
                     <br></br>
                     Professor: Eric Ewing
                     <br></br>
-                    Location: MacMillan 117
+                    Location: Barus and Holley 166
                     <br></br>
                     Time: MWF 1:00-1:50PM
                     </p>
