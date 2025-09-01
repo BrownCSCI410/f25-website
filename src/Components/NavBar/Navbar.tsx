@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 interface NavbarProps {}
 const offset = -100; // Adjust this offset to match the height of your navbar or the amount you want to scroll up
@@ -34,14 +35,14 @@ export class Navbar extends React.Component<NavbarProps> {
                     <button className="icon" onClick={this.toggleNavbar}>
                         &#9776;
                     </button>
-                    <a className="nav-link" href="/">CS 410</a>
-                    <a className="nav-link" href="/lectures" >Lectures</a>
-                    <a className="nav-link" href="/labs">Discussion</a>
-                    <a className="nav-link" href="/assignments">Assignments</a>
-                    <a className="nav-link" href="/resources">Resources</a>
-                    <a className="nav-link" href="/hours">Hours</a>
-                    <a className="nav-link" href="/staff">Staff</a>
-                    <a className="nav-link" href="/glossary">Glossary</a>
+                    <Link className="nav-link" to="/">CS 410</Link>
+                    <Link className="nav-link" to="/lectures">Lectures</Link>
+                    <Link className="nav-link" to="/labs">Discussion</Link>
+                    <Link className="nav-link" to="/assignments">Assignments</Link>
+                    <Link className="nav-link" to="/resources">Resources</Link>
+                    <Link className="nav-link" to="/hours">Hours</Link>
+                    <Link className="nav-link" to="/staff">Staff</Link>
+                    <Link className="nav-link" to="/glossary">Glossary</Link>
                 </nav>
             </div>
         );
