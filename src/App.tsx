@@ -19,14 +19,13 @@ export default function App() {
       <main className="main-container">
         <Routes>
           <Route path="/" element={<Welcome />} />
-          <Route path="/" element={<Welcome />} />
-          <Route path="labs" element={<Labs />} />
-          <Route path="lectures" element={<Lectures />} />
-          <Route path="assignments" element={<Assignments />} />
-          <Route path="resources" element={<Resources />} />
-          <Route path="hours" element={<Hours />} />
-          <Route path="staff" element={<Staff />} />
-          <Route path="glossary" element={<Glossary />} />
+          <Route path="/labs" element={<Labs />} />
+          <Route path="/lectures" element={<Lectures />} />
+          <Route path="/assignments" element={<Assignments />} />
+          <Route path="/resources" element={<Resources />} />
+          <Route path="/hours" element={<Hours />} />
+          <Route path="/staff" element={<Staff />} />
+          <Route path="/glossary" element={<Glossary />} />
           
         </Routes>
       </main>
