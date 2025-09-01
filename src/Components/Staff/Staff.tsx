@@ -8,14 +8,13 @@ import Alexander from "../../Photos/alexander_vassilev.png"
 import Darren from "../../Photos/darren_wang.jpg"
 import Praveen from "../../Photos/praveen_prabaharan.png"
 import John from "../../Photos/john_lockwood.png"
-import Eric from "../../Photos/Eric.png"
+import Eric from "../../Photos/eric_ewing.jpg"
 import Mehdi from "../../Photos/mehdi_atmani.png"
 import Sarah from "../../Photos/sarah_liao.png"
 import Leanne from "../../Photos/leanne_chia.png"
 import Salman from "../../Photos/salman_aji.png"
 import Kevin from "../../Photos/kevin_yang.png"
 import Gun from "../../Photos/kanpat_vesessook.png"
-import Millie from "../../Photos/millie2.jpg"
 
 import Wallnut from "../../Photos/wallnut.png"
 import Spikeweed from "../../Photos/spikeweed.png"
@@ -43,13 +42,8 @@ export class Staff extends React.Component<StaffProps> {
                     <h3>Professors</h3>
                     <div className="card-container-staff2">
                         <StaffCard name="Eric Ewing (Professor)" cslogin="" pronouns="he/him"
-                        blurb="I have a dog" 
-                        image={Eric} favCharacter = "Millie" hometown = "Syracuse, New York" pvzImage={Millie}></StaffCard>
-                        <div className="card-container-staff2">
-                        <StaffCard name="Millie" cslogin="" pronouns="she/her"
-                        blurb="I have an Eric"
-                        image={Millie} favCharacter = "Eric" hometown = "Eric's House" pvzImage={Eric}></StaffCard>
-                    </div>
+                        blurb="This is my third semester teaching 410/1411. I also teach Deep Learning and a robot art course, 1952z Robots as a Medium. My research is on multi-robot coordination and multi-agent systems and how large numbers of agents can work together in the same environment." 
+                        image={Eric} favCharacter = "Kernal-Pult" hometown = "Syracuse, New York" pvzImage={Kernelpult}></StaffCard>
                     </div>
                     <h3>Head Teaching Assistants</h3>
                     <div className="card-container-staff2">
