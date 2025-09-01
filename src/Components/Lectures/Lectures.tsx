@@ -36,317 +36,480 @@ export class Lectures extends React.Component<LectureProps> {
 
 	myRows: RowOptions[] = [
 		{
-			cellNames: ["1/22", "Introduction to AI", "R&N Chapter 1", "Slides", " "],
+			cellNames: ["9/3", "Introduction to AI", "R&N Chapter 1", "Slides", " "],
 			cellNametoLinks: new Map<string, string>([
 				[
 					"Slides",
-					"https://docs.google.com/presentation/d/1xpg5aYXuw2Psp1nxxzDkSOsmMQijVjdgAa2Z1oMk3Fg/edit?usp=sharing",
+					"",
 				],
 			]),
-			autoReleaseDate: "Jan 22, 2025 02:00:00 EDT",
+			autoReleaseDate: "Sep 3, 2025 02:00:00 EDT",
 		},
 		{
 			cellNames: [
-				"1/24",
-				"Blind Search",
+				"9/5",
+				"Uninformed Search",
 				"R&N 3.0-3.4",
 				"Notes",
 				"Blind Search Algorithms",
 			],
 			cellNametoLinks: new Map<string, string>([
-				["Notes", require("./lecture_notes/blind_search.pdf")],
+				// ["Notes", require("./lecture_notes/blind_search.pdf")],
 				[
 					"Blind Search Algorithms",
 					"https://cs.stanford.edu/people/eroberts/courses/soco/projects/2003-04/intelligent-search/blind.html",
 				],
 			]),
-			autoReleaseDate: "Jan 24, 2025 02:00:00 EDT",
+			autoReleaseDate: "Sep 5, 2025 02:00:00 EDT",
 		},
 		{
 			cellNames: [
-				"1/27",
-				"Informed Search",
+				"9/8",
+				"Heuristic Search (Best-g, Best-h)",
 				"R&N 3.4-3.5.1",
 				"Notes",
 				"Slides",
 			],
 			cellNametoLinks: new Map<string, string>([
-				["Notes", require("./lecture_notes/informed_search.pdf")],
+				// ["Notes", require("./lecture_notes/informed_search.pdf")],
 				["Slides", require("./slides/A-star Search.pdf")],
 			]),
-			autoReleaseDate: "Jan 29, 2025 02:00:00 EDT",
+			autoReleaseDate: "Sep 8, 2025 02:00:00 EDT",
 		},
 		{
 			cellNames: [
-				"1/31",
-				"A* Search",
+				"9/10",
+				"The A* Algorithm",
 				"R&N 3.5.2-3.7",
 				"Notes",
 				"Pathfinding Visualizations",
 			],
 			cellNametoLinks: new Map<string, string>([
-				["Notes", require("./lecture_notes/informed_search.pdf")],
+				// ["Notes", require("./lecture_notes/informed_search.pdf")],
 				[
 					"Pathfinding Visualizations",
 					"https://qiao.github.io/PathFinding.js/visual/",
 				],
 			]),
-			autoReleaseDate: "Jan 29, 2025 02:00:00 EDT",
+			autoReleaseDate: "Sep 10, 2025 02:00:00 EDT",
 		},
 		{
-			cellNames: ["2/3", "Adversarial Search", "R&N 5.0-5.3", "Notes", " "],
+			cellNames: ["9/12", "Adversarial search (minimax + alpha-beta pruning)", "R&N 5.0-5.3", "Notes", " "],
 			cellNametoLinks: new Map<string, string>([
-				["Notes", require("./lecture_notes/adversarial_search.pdf")],
+				// ["Notes", require("./lecture_notes/adversarial_search.pdf")],
 			]),
-			autoReleaseDate: "Jan 29, 2025 02:00:00 EDT",
+			autoReleaseDate: "Sep 12, 2025 02:00:00 EDT",
 		},
 		{
-			cellNames: ["2/5", "Local Search", "R&N 4.0-4.1", "Notes", " "],
+			cellNames: ["9/15", "Discrete Optimization", "R&N 4.0-4.1", "Notes", " "],
 			cellNametoLinks: new Map<string, string>([
-				["Notes", require("./lecture_notes/local_search.pdf")],
+				// ["Notes", require("./lecture_notes/local_search.pdf")],
 			]),
-			autoReleaseDate: "Feb 5, 2025 02:00:00 EDT",
+			autoReleaseDate: "Sep 15, 2025 02:00:00 EDT",
 		},
-
 		{
 			cellNames: [
-				"2/7",
-				"Conjunctive Normal Form",
+				"9/17",
+				"Propositional Logic, SAT and NP-Completeness, CNFs",
 				"R&N 6.1, 6.4",
 				"Notes",
 				" ",
 			],
 			cellNametoLinks: new Map<string, string>([
-				["Notes", require("./lecture_notes/cnfs.pdf")],
+				// ["Notes", require("./lecture_notes/cnfs.pdf")],
 			]),
-			autoReleaseDate: "Feb 7, 2025 04:00:00 EDT",
+			autoReleaseDate: "Sep 17, 2025 04:00:00 EDT",
 		},
-
 		{
-			cellNames: ["2/10", "Constraint Satisfaction", "R&N 13", "Notes", " "],
+			cellNames: ["9/19", "Constraint Satisfaction Problems", "R&N 13", "Notes", " "],
 			cellNametoLinks: new Map<string, string>([
-				["Notes", require("./lecture_notes/constraint_satisfaction.pdf")],
+				// ["Notes", require("./lecture_notes/constraint_satisfaction.pdf")],
 			]),
-			autoReleaseDate: "Feb 10, 2025 04:00:00 EDT",
+			autoReleaseDate: "Sep 19, 2025 04:00:00 EDT",
 		},
-
 		{
 			cellNames: [
-				"2/12",
-				"Convex Optimization",
+				"9/22",
+				"Knowledge Representation and Reasoning",
+				"",
+				"Notes",
+				"",
+			],
+			cellNametoLinks: new Map<string, string>([
+				// ["Notes", require("./lecture_notes/theorem_proving.pdf")],
+			]),
+			autoReleaseDate: "Sep 22, 2025 04:00:00 EDT",
+		},
+		{
+			cellNames: ["9/24", "Classical Planning: PDDL", "", "Notes", " "],
+			cellNametoLinks: new Map<string, string>([
+				// ["Notes", require("./lecture_notes/pddl.pdf")],
+			]),
+			autoReleaseDate: "Sep 24, 2025 04:00:00 EDT",
+		},
+		{
+			cellNames: ["9/26", "Reasoning Under Uncertainty", "R&N 12", "Notes", ""],
+			cellNametoLinks: new Map<string, string>([
+				// ["Notes", require("./lecture_notes/probability.pdf")],
+			]),
+			autoReleaseDate: "Sep 26, 2025 04:00:00 EDT",
+		},
+		{
+			cellNames: [
+				"9/29",
+				"Bayesian Networks",
+				"",
+				"Notes",
+				" ",
+			],
+			cellNametoLinks: new Map<string, string>([
+				// ["Notes", require("./lecture_notes/bayesian_networks.pdf")],
+			]),
+			autoReleaseDate: "Sep 29, 2025 04:00:00 EDT",
+		},
+		{
+			cellNames: ["10/1", "Linear Algebra for Continuous Optimization", "", "Notes", ""],
+			cellNametoLinks: new Map<string, string>([
+				// ["Notes", require("./lecture_notes/linear_algebra.pdf")],
+			]),
+			autoReleaseDate: "Oct 1, 2025 04:00:00 EDT",
+		},
+		{
+			cellNames: [
+				"10/3",
+				"Gradient Descent",
 				"R&N 14-14.5",
 				"Notes",
-				"Particle Filters",
+				"",
 			],
 			cellNametoLinks: new Map<string, string>([
-				["Notes", require("./lecture_notes/convex_optimization.pdf")],
-				[
-					"Particle Filters",
-					"https://amrl.cs.utexas.edu/interactive-particle-filters/",
-				],
+				// ["Notes", require("./lecture_notes/convex_optimization.pdf")],
 			]),
-			autoReleaseDate: "Feb 12, 2025 04:00:00 EDT",
+			autoReleaseDate: "Oct 3, 2025 04:00:00 EDT",
 		},
-		{
-			cellNames: ["2/14", "Linear Programming", "", "Notes", " "],
-			cellNametoLinks: new Map<string, string>([
-				["Notes", require("./lecture_notes/mathematical_programming.pdf")],
-			]),
-			autoReleaseDate: "Feb 14, 2025 04:00:00 EDT",
-		},
-		{
-			cellNames: ["2/19", "Mathematical Programming", "", "Notes", " "],
-			cellNametoLinks: new Map<string, string>([
-				["Notes", require("./lecture_notes/mathematical_programming.pdf")],
-			]),
-			autoReleaseDate: "Feb 19, 2025 04:00:00 EDT",
-		},
-
-		{
-			cellNames: ["2/21", "Probability", "R&N 12", "Notes", ""],
-			cellNametoLinks: new Map<string, string>([
-				["Notes", require("./lecture_notes/probability.pdf")],
-			]),
-			autoReleaseDate: "Feb 21, 2025 04:00:00 EDT",
-		},
-
 		{
 			cellNames: [
-				"2/24",
-				"k Nearest Neighbors",
-				"R&N Chapter 3.5.2-3.7",
+				"10/6",
+				"Convex Optimization",
+				"",
 				"Notes",
 				" ",
 			],
 			cellNametoLinks: new Map<string, string>([
-				["Notes", require("./lecture_notes/knn.pdf")],
+				// ["Notes", require("./lecture_notes/convexity_linear_algebra.pdf")],
 			]),
-			autoReleaseDate: "Feb 24, 2025 04:00:00 EDT",
-		},
-
-		{
-			cellNames: ["2/26", "Decision Trees", "", "Notes", ""],
-			cellNametoLinks: new Map<string, string>([
-				["Notes", require("./lecture_notes/decision_trees.pdf")],
-			]),
-			autoReleaseDate: "Feb 26, 2025 04:00:00 EDT",
+			autoReleaseDate: "Oct 6, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
-				"3/3 - 3/5",
-				"Linear & Polynomial Regression",
-				"R&N Chapter 3.5.2-3.7",
-				"Notes",
+				"10/8",
+				"Constrained Optimization",
 				"",
-			],
-			cellNametoLinks: new Map<string, string>([
-				["Notes", require("./lecture_notes/regression.pdf")],
-			]),
-			autoReleaseDate: "Mar 3, 2025 04:00:00 EDT",
-		},
-		{
-			cellNames: [
-				"3/10 - 3/14",
-				"Neural Nets",
-				"R&N Chapter 3.5.2-3.7",
 				"Notes",
 				" ",
 			],
 			cellNametoLinks: new Map<string, string>([
-				["Notes", require("./lecture_notes/neural_nets.pdf")],
+				// ["Notes", require("./lecture_notes/constrained_optimization.pdf")],
 			]),
-			autoReleaseDate: "Mar 10, 2025 04:00:00 EDT",
+			autoReleaseDate: "Oct 8, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
-				"3/17 - 3/31",
-				"Markov Chains and MDPS",
-				"R&N Chapter 3.5.2-3.7",
-				"Notes",
-				" ",
-			],
-			cellNametoLinks: new Map<string, string>([
-				["Notes", require("./lecture_notes/mdp.pdf")],
-			]),
-			autoReleaseDate: "Mar 17, 2025 04:00:00 EDT",
-		},
-		{
-			cellNames: [
-				"4/2 - 4/7",
-				"Reinforcement Learning",
-				"R&N Chapter 3.5.2-3.7",
-				"Notes",
-				"More Notes",
-			],
-			cellNametoLinks: new Map<string, string>([
-				["Notes", require("./lecture_notes/rl.pdf")],
-				["More Notes", require("./lecture_notes/rl_notes.pdf")],
-			]),
-			autoReleaseDate: "Apr 2, 2025 04:00:00 EDT",
-		},
-		{
-			cellNames: [
-				"4/9",
-				"Policy Gradient Algorithms",
+				"10/10",
+				"Mathematical Programmming",
 				"",
 				"Notes",
 				"",
 			],
 			cellNametoLinks: new Map<string, string>([
-				["Notes", require("./slides/Policy_Gradient_Algos_Notes.pdf")],
+				// ["Notes", require("./lecture_notes/lagrangians.pdf")],
 			]),
-			autoReleaseDate: "Apr 9, 2025 04:00:00 EDT",
+			autoReleaseDate: "Oct 10, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
-				"4/11",
-				"MCTS",
+				"10/13",
+				"No Class",
+				"",
+				"",
+				"",
+			],
+			cellNametoLinks: new Map<string, string>(),
+			autoReleaseDate: "Oct 13, 2025 04:00:00 EDT",
+		},
+		{
+			cellNames: [
+				"10/15",
+				"Intro to Supervised Learning",
 				"",
 				"Notes",
 				"",
 			],
 			cellNametoLinks: new Map<string, string>([
-				["Notes", require("./slides/MCTS.pdf")],
+				// ["Notes", require("./lecture_notes/knn.pdf")],
 			]),
-			autoReleaseDate: "Apr 9, 2025 04:00:00 EDT",
+			autoReleaseDate: "Oct 15, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
-				"4/14",
-				"Policy Gradient Algorithms",
+				"10/17",
+				"Linear Regression",
 				"",
 				"Notes",
 				"",
 			],
 			cellNametoLinks: new Map<string, string>([
-				["Notes", require("./slides/MCTS_continued.pdf")],
+				// ["Notes", require("./lecture_notes/linear_regression.pdf")],
 			]),
-			autoReleaseDate: "Apr 9, 2025 04:00:00 EDT",
+			autoReleaseDate: "Oct 17, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
-				"4/16",
-				"PCA",
+				"10/20",
+				"The Bias-Variance Tradeoff",
 				"",
 				"Notes",
 				"",
 			],
 			cellNametoLinks: new Map<string, string>([
-				["Notes", require("./slides/PCA + K-means.pptx")],
+				// ["Notes", require("./lecture_notes/bias_variance.pdf")],
 			]),
-			autoReleaseDate: "Apr 9, 2025 04:00:00 EDT",
+			autoReleaseDate: "Oct 20, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
-				"4/18",
-				"K-Means",
+				"10/22",
+				"Logistic Regression and Entropy",
 				"",
 				"Notes",
 				"",
 			],
 			cellNametoLinks: new Map<string, string>([
-				["Notes", require("./slides/PCA + K-means.pptx")],
+				// ["Notes", require("./lecture_notes/logistic_regression.pdf")],
 			]),
-			autoReleaseDate: "Apr 9, 2025 04:00:00 EDT",
+			autoReleaseDate: "Oct 22, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
-				"4/21",
-				"GMMs and The EM Algorithm",
+				"10/24",
+				"Perceptrons",
 				"",
 				"Notes",
 				"",
 			],
 			cellNametoLinks: new Map<string, string>([
-				["Notes", require("./slides/GaussianMixtureModels.pptx")],
+				// ["Notes", require("./lecture_notes/perceptrons.pdf")],
 			]),
-			autoReleaseDate: "Apr 9, 2025 04:00:00 EDT",
+			autoReleaseDate: "Oct 24, 2025 04:00:00 EDT",
 		},
-
-		/**
-        { cellNames: ["2/24", "Naive Bayes", "R&N Chapter 3.5.2-3.7", "Notes", " "], cellNametoLinks: new Map<string,string>([["Notes", "lecture_notes/informed_search.pdf"],["Pathfinding Visualizations", "https://qiao.github.io/PathFinding.js/visual/"]]) ,autoReleaseDate: "Mar 16, 2025 04:00:00 EDT" },
-        { cellNames: ["2/26", "Continuous Optimization", "R&N Chapter 3.5.2-3.7", "Notes", " "], cellNametoLinks: new Map<string,string>([["Notes", "lecture_notes/informed_search.pdf"],["Pathfinding Visualizations", "https://qiao.github.io/PathFinding.js/visual/"]]) ,autoReleaseDate: "Mar 16, 2025 04:00:00 EDT" },
-        { cellNames: ["2/28", "Constrained Optimization", "R&N Chapter 3.5.2-3.7", "Notes", " "], cellNametoLinks: new Map<string,string>([["Notes", "lecture_notes/informed_search.pdf"],["Pathfinding Visualizations", "https://qiao.github.io/PathFinding.js/visual/"]]) ,autoReleaseDate: "Mar 16, 2025 04:00:00 EDT" },
-        { cellNames: ["3/3", "Linear Algebra Review", "R&N Chapter 3.5.2-3.7", "Notes", " "], cellNametoLinks: new Map<string,string>([["Notes", "lecture_notes/informed_search.pdf"],["Pathfinding Visualizations", "https://qiao.github.io/PathFinding.js/visual/"]]) ,autoReleaseDate: "Mar 16, 2025 04:00:00 EDT" },
-        { cellNames: ["3/7", "Bias-Variance Decomposition, Linear Regression", "R&N Chapter 3.5.2-3.7", "Notes", " "], cellNametoLinks: new Map<string,string>([["Notes", "lecture_notes/informed_search.pdf"],["Pathfinding Visualizations", "https://qiao.github.io/PathFinding.js/visual/"]]) ,autoReleaseDate: "Mar 16, 2025 04:00:00 EDT" },
-        { cellNames: ["3/10", "Neural Nets - Perceptrons", "R&N Chapter 3.5.2-3.7", "Notes", " "], cellNametoLinks: new Map<string,string>([["Notes", "lecture_notes/informed_search.pdf"],["Pathfinding Visualizations", "https://qiao.github.io/PathFinding.js/visual/"]]) ,autoReleaseDate: "Mar 16, 2025 04:00:00 EDT" },
-        { cellNames: ["3/12", "Neural Nets - Back-propagation", "R&N Chapter 3.5.2-3.7", "Notes", " "], cellNametoLinks: new Map<string,string>([["Notes", "lecture_notes/informed_search.pdf"],["Pathfinding Visualizations", "https://qiao.github.io/PathFinding.js/visual/"]]),autoReleaseDate: "Mar 16, 2025 04:00:00 EDT"  },
-        { cellNames: ["3/14", "Neural Nets - Logistic Regression", "R&N Chapter 3.5.2-3.7", "Notes", " "], cellNametoLinks: new Map<string,string>([["Notes", "lecture_notes/informed_search.pdf"],["Pathfinding Visualizations", "https://qiao.github.io/PathFinding.js/visual/"]]) ,autoReleaseDate: "Mar 16, 2025 04:00:00 EDT" },
-        { cellNames: ["3/19", "MDPs: Control (Value Iteration)", "R&N Chapter 3.5.2-3.7", "Notes", " "], cellNametoLinks: new Map<string,string>([["Notes", "lecture_notes/informed_search.pdf"],["Pathfinding Visualizations", "https://qiao.github.io/PathFinding.js/visual/"]]) ,autoReleaseDate: "Mar 16, 2025 04:00:00 EDT" },
-        { cellNames: ["3/31", "MDPs with Function Approximation", "R&N Chapter 3.5.2-3.7", "Notes", " "], cellNametoLinks: new Map<string,string>([["Notes", "lecture_notes/informed_search.pdf"],["Pathfinding Visualizations", "https://qiao.github.io/PathFinding.js/visual/"]]),autoReleaseDate: "Mar 16, 2025 04:00:00 EDT"  },
-        { cellNames: ["4/2", "Deep RL", "R&N Chapter 3.5.2-3.7", "Notes", " "], cellNametoLinks: new Map<string,string>([["Notes", "lecture_notes/informed_search.pdf"],["Pathfinding Visualizations", "https://qiao.github.io/PathFinding.js/visual/"]]) ,autoReleaseDate: "Mar 16, 2025 04:00:00 EDT" },
-        { cellNames: ["4/4", "MCTS", "R&N Chapter 3.5.2-3.7", "Notes", " "], cellNametoLinks: new Map<string,string>([["Notes", "lecture_notes/informed_search.pdf"],["Pathfinding Visualizations", "https://qiao.github.io/PathFinding.js/visual/"]]) ,autoReleaseDate: "Mar 16, 2025 04:00:00 EDT" },
-        { cellNames: ["4/7", "MCTS + AlphaZero", "R&N Chapter 3.5.2-3.7", "Notes", " "], cellNametoLinks: new Map<string,string>([["Notes", "lecture_notes/informed_search.pdf"],["Pathfinding Visualizations", "https://qiao.github.io/PathFinding.js/visual/"]]),autoReleaseDate: "Mar 16, 2025 04:00:00 EDT"  },
-        { cellNames: ["4/9", "More LA Recap", "R&N Chapter 3.5.2-3.7", "Notes", " "], cellNametoLinks: new Map<string,string>([["Notes", "lecture_notes/informed_search.pdf"],["Pathfinding Visualizations", "https://qiao.github.io/PathFinding.js/visual/"]]) ,autoReleaseDate: "Mar 16, 2025 04:00:00 EDT" },
-        { cellNames: ["4/11", "PCA", "R&N Chapter 3.5.2-3.7", "Notes", " "], cellNametoLinks: new Map<string,string>([["Notes", "lecture_notes/informed_search.pdf"],["Pathfinding Visualizations", "https://qiao.github.io/PathFinding.js/visual/"]]) ,autoReleaseDate: "Mar 16, 2025 04:00:00 EDT" },
-        { cellNames: ["4/14", "Unsupervised Learning: K-means Clustering", "R&N Chapter 3.5.2-3.7", "Notes", " "], cellNametoLinks: new Map<string,string>([["Notes", "lecture_notes/informed_search.pdf"],["Pathfinding Visualizations", "https://qiao.github.io/PathFinding.js/visual/"]]) ,autoReleaseDate: "Mar 16, 2025 04:00:00 EDT" },
-        { cellNames: ["4/16", "Probabilistic K-means and EM", "R&N Chapter 3.5.2-3.7", "Notes", " "], cellNametoLinks: new Map<string,string>([["Notes", "lecture_notes/informed_search.pdf"],["Pathfinding Visualizations", "https://qiao.github.io/PathFinding.js/visual/"]]) ,autoReleaseDate: "Mar 16, 2025 04:00:00 EDT" },
-        { cellNames: ["4/18", "no topic yet lol", "R&N Chapter 3.5.2-3.7", "Notes", " "], cellNametoLinks: new Map<string,string>([["Notes", "lecture_notes/informed_search.pdf"],["Pathfinding Visualizations", "https://qiao.github.io/PathFinding.js/visual/"]]),autoReleaseDate: "Mar 16, 2025 04:00:00 EDT"  },
-        { cellNames: ["4/21", "Special Topics", "R&N Chapter 3.5.2-3.7", "Notes", " "], cellNametoLinks: new Map<string,string>([["Notes", "lecture_notes/informed_search.pdf"],["Pathfinding Visualizations", "https://qiao.github.io/PathFinding.js/visual/"]]),autoReleaseDate: "Mar 16, 2025 04:00:00 EDT"  },
-        { cellNames: ["4/23", "Special Topics", "R&N Chapter 3.5.2-3.7", "Notes", " "], cellNametoLinks: new Map<string,string>([["Notes", "lecture_notes/informed_search.pdf"],["Pathfinding Visualizations", "https://qiao.github.io/PathFinding.js/visual/"]]) ,autoReleaseDate: "Mar 16, 2025 04:00:00 EDT" },
-        { cellNames: ["4/25", "Special Topics", "R&N Chapter 3.5.2-3.7", "Notes", " "], cellNametoLinks: new Map<string,string>([["Notes", "lecture_notes/informed_search.pdf"],["Pathfinding Visualizations", "https://qiao.github.io/PathFinding.js/visual/"]]) ,autoReleaseDate: "Mar 16, 2025 04:00:00 EDT" },
-
-        */
+		{
+			cellNames: [
+				"10/27",
+				"Neural Networks",
+				"",
+				"Notes",
+				"",
+			],
+			cellNametoLinks: new Map<string, string>([
+				// ["Notes", require("./lecture_notes/neural_nets.pdf")],
+			]),
+			autoReleaseDate: "Oct 27, 2025 04:00:00 EDT",
+		},
+		{
+			cellNames: [
+				"10/29",
+				"Deep Learning",
+				"",
+				"Notes",
+				"",
+			],
+			cellNametoLinks: new Map<string, string>([
+				// ["Notes", require("./lecture_notes/deep_learning.pdf")],
+			]),
+			autoReleaseDate: "Oct 29, 2025 04:00:00 EDT",
+		},
+		{
+			cellNames: [
+				"10/31",
+				"Markov Reward Processes",
+				"",
+				"Notes",
+				"",
+			],
+			cellNametoLinks: new Map<string, string>([
+				// ["Notes", require("./lecture_notes/markov_reward_processes.pdf")],
+			]),
+			autoReleaseDate: "Oct 31, 2025 04:00:00 EDT",
+		},
+		{
+			cellNames: [
+				"11/3",
+				"Markov Decision Processes",
+				"",
+				"Notes",
+				"",
+			],
+			cellNametoLinks: new Map<string, string>([
+				// ["Notes", require("./lecture_notes/mdp.pdf")],
+			]),
+			autoReleaseDate: "Nov 3, 2025 04:00:00 EDT",
+		},
+		{
+			cellNames: [
+				"11/5",
+				"Value Iteration",
+				"",
+				"Notes",
+				"",
+			],
+			cellNametoLinks: new Map<string, string>([
+				// ["Notes", require("./lecture_notes/value_iteration.pdf")],
+			]),
+			autoReleaseDate: "Nov 5, 2025 04:00:00 EDT",
+		},
+		{
+			cellNames: [
+				"11/7",
+				"Q-Learning (Reinforcement Learning)",
+				"",
+				"Notes",
+				"",
+			],
+			cellNametoLinks: new Map<string, string>([
+				// ["Notes", require("./lecture_notes/rl.pdf")],
+			]),
+			autoReleaseDate: "Nov 7, 2025 04:00:00 EDT",
+		},
+		{
+			cellNames: [
+				"11/10",
+				"Generative Models",
+				"",
+				"Notes",
+				"",
+			],
+			cellNametoLinks: new Map<string, string>([
+				// ["Notes", require("./lecture_notes/naive_bayes.pdf")],
+			]),
+			autoReleaseDate: "Nov 10, 2025 04:00:00 EDT",
+		},
+		{
+			cellNames: [
+				"11/12",
+				"Principal Component Analysis",
+				"",
+				"Notes",
+				"",
+			],
+			cellNametoLinks: new Map<string, string>([
+				// ["Notes", require("./slides/PCA + K-means.pptx")],
+			]),
+			autoReleaseDate: "Nov 12, 2025 04:00:00 EDT",
+		},
+		{
+			cellNames: [
+				"11/14",
+				"K-Means + Facility Location",
+				"",
+				"Notes",
+				"",
+			],
+			cellNametoLinks: new Map<string, string>([
+				// ["Notes", require("./slides/PCA + K-means.pptx")],
+			]),
+			autoReleaseDate: "Nov 14, 2025 04:00:00 EDT",
+		},
+		{
+			cellNames: [
+				"11/17",
+				"Gaussian Mixture Models",
+				"",
+				"Notes",
+				"",
+			],
+			cellNametoLinks: new Map<string, string>([
+				// ["Notes", require("./slides/GaussianMixtureModels.pptx")],
+			]),
+			autoReleaseDate: "Nov 17, 2025 04:00:00 EDT",
+		},
+		{
+			cellNames: [
+				"11/19",
+				"Introduction to the Final Project (Go and MCTS)",
+				"",
+				"Notes",
+				"",
+			],
+			cellNametoLinks: new Map<string, string>([
+				// ["Notes", require("./slides/MCTS.pdf")],
+			]),
+			autoReleaseDate: "Nov 19, 2025 04:00:00 EDT",
+		},
+		{
+			cellNames: [
+				"11/21",
+				"AlphaGo: MCTS + Learning",
+				"",
+				"Notes",
+				"",
+			],
+			cellNametoLinks: new Map<string, string>([
+				// ["Notes", require("./slides/AlphaGo.pdf")],
+			]),
+			autoReleaseDate: "Nov 21, 2025 04:00:00 EDT",
+		},
+		{
+			cellNames: [
+				"11/24",
+				"Anytime Algorithms and Adversarial Search",
+				"",
+				"Notes",
+				"",
+			],
+			cellNametoLinks: new Map<string, string>([
+				// ["Notes", require("./lecture_notes/iterative_deepening_review.pdf")],
+			]),
+			autoReleaseDate: "Nov 24, 2025 04:00:00 EDT",
+		},
+		{
+			cellNames: [
+				"12/1",
+				"Guest Lecture",
+				"",
+				"Notes",
+				"",
+			],
+			cellNametoLinks: new Map<string, string>([
+				// ["Notes", require("./lecture_notes/special_topics_1.pdf")],
+			]),
+			autoReleaseDate: "Dec 1, 2025 04:00:00 EDT",
+		},
+		{
+			cellNames: [
+				"12/3",
+				"Guest Lecture",
+				"",
+				"Notes",
+				"",
+			],
+			cellNametoLinks: new Map<string, string>([
+				// ["Notes", require("./lecture_notes/special_topics_2.pdf")],
+			]),
+			autoReleaseDate: "Dec 3, 2025 04:00:00 EDT",
+		},
+		{
+			cellNames: [
+				"12/5",
+				"Guest Lecture",
+				"",
+				"Notes",
+				"",
+			],
+			cellNametoLinks: new Map<string, string>([
+				// ["Notes", require("./lecture_notes/special_topics_3.pdf")],
+			]),
+			autoReleaseDate: "Dec 5, 2025 04:00:00 EDT",
+		},
 	];
 
 	render() {
