@@ -42,8 +42,8 @@ export class StaffCard extends React.Component<StaffCardProps> {
       <div className="card-staff">
         <ReactFlipCard
           containerStyle={styles.card}
-          frontComponent={<img style={styles.frontImage} src={this.props.image}></img>}
-          backComponent={<img style={styles.backImage} src={this.props.pvzImage}></img>}
+          frontComponent={<img style={styles.frontImage} src={this.props.image} alt="Staff Photo"></img>}
+          backComponent={<img style={styles.backImage} src={this.props.pvzImage} alt="PvZ Character"></img>}
           // backStyle={{ width: '300', height: '300' }}
 
         />
