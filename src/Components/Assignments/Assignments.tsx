@@ -34,7 +34,7 @@ export class Assignments extends React.Component<AssignmentProps> {
 			cellNametoLinks: new Map<string, string>([
 				[
 					"Homework 1: Uninformed Search",
-					"",
+					"https://hackmd.io/@cs410/Hy-lF1a_ee",
 				],
 			]),
 			autoReleaseDate: "Jan 22, 2025 02:00:00 EDT",
