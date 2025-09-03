@@ -32,31 +32,31 @@ export class Labs extends React.Component<LabProps> {
     myRows: RowOptions[] = [
         { cellNames: ["1", "SRC", "AI Policy"], 
             cellNametoLinks: new Map<string,string>([
-                ["AI Policy", "https://docs.google.com/presentation/d/1ug7BtFXLwotO7LWwl2rriy-P_kqlKnRCphvTYyeglMc/edit?slide=id.g2a52a5ed207_5_494#slide=id.g2a52a5ed207_5_494"],
+                ["AI Policy", ""],
             ]),
             autoReleaseDate: "Mar 10, 2025 10:30:00 EDT",
         },
         { cellNames: ["2", "Conceptual", "HW 0 & 1"], 
             cellNametoLinks: new Map<string,string>([
-                ["HW 0 & 1", "https://docs.google.com/presentation/d/1TRS4-CC0Z3uulEVKo0zqrslVNisIGql4Eq0UMcHG-2s/edit?usp=sharing"],
+                ["HW 0 & 1", ""],
             ]),
             autoReleaseDate: "Mar 10, 2025 10:30:00 EDT",
         },
         { cellNames: ["3", "SRC", "AI Energy Consumption"], 
             cellNametoLinks: new Map<string,string>([
-                ["AI Energy Consumption", "https://docs.google.com/presentation/d/1jypNtNg6cKjmRdtL4GBOV33ayNpNYR5j32B2Moju-Rs/edit?usp=sharing"],
+                ["AI Energy Consumption", ""],
             ]),
             autoReleaseDate: "Mar 10, 2025 10:30:00 EDT",
         },
         { cellNames: ["4", "Conceptual", "HW 2 & 3"], 
             cellNametoLinks: new Map<string,string>([
-                ["HW 2 & 3", "https://docs.google.com/presentation/d/10RPXjC6gg7MydtDbBVTuzcE1QoIjPN5l9fZZ3Pxp-ls/edit?usp=sharing"],
+                ["HW 2 & 3", ""],
             ]),
             autoReleaseDate: "Mar 10, 2025 10:30:00 EDT",
         },
         { cellNames: ["5", "SRC", "Algorithmic & Data Bias"], 
             cellNametoLinks: new Map<string,string>([
-                ["Algorithmic & Data Bias", "https://docs.google.com/presentation/d/1DKE5KG43NKp0AIBZHgupa5gGK083_mfWIWoimLwGH4o/edit?usp=sharing"],
+                ["Algorithmic & Data Bias", ""],
             ]),
             autoReleaseDate: "Mar 10, 2025 10:30:00 EDT",
         },
@@ -68,13 +68,13 @@ export class Labs extends React.Component<LabProps> {
         },
         { cellNames: ["7", "SRC", "Automation & Job Displacement"], 
             cellNametoLinks: new Map<string,string>([
-                ["Automation & Job Displacement", "https://docs.google.com/presentation/d/1-8Q0WYdcrS_xfUIjT2GXAxvpDv98mU8bD3sPRdb6fls/edit?usp=sharing"],
+                ["Automation & Job Displacement", ""],
             ]),
             autoReleaseDate: "Mar 10, 2025 10:30:00 EDT",
         },
         { cellNames: ["8", "Conceptual", "HW 6 & 7"], 
             cellNametoLinks: new Map<string,string>([
-                ["HW 6 & 7", "https://docs.google.com/presentation/d/1vvxkkFs26D7PakHIidGK91WnmBlTG1i-oHkxxRPD_Mo/edit?usp=sharing"],
+                ["HW 6 & 7", ""],
             ]),
             autoReleaseDate: "April 4, 2025 16:00:00 EDT",
         },
