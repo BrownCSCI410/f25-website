@@ -40,7 +40,7 @@ export class Lectures extends React.Component<LectureProps> {
 			cellNametoLinks: new Map<string, string>([
 				[
 					"Slides",
-					"",
+					require("./slides/lecture1.pdf"),
 				],
 			]),
 			autoReleaseDate: "Sep 3, 2025 02:00:00 EDT",
