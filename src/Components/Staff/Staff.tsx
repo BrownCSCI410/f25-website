@@ -83,7 +83,7 @@ export class Staff extends React.Component<StaffProps> {
 
                         <StaffCard name="John" cslogin="jjlockwo" pronouns="he/him"
                         blurb="Hi! I'm a junior studying applied math and computer science. I like to swim, play piano, and play on Switch and Xbox. Recently I've been playing Donkey Kong, Pokemon, and GTA V." 
-                        image={John} favCharacter = "Spikeweed" hometown = "Milford, Pennsylvaania" pvzImage={Spikeweed}></StaffCard>
+                        image={John} favCharacter = "Spikeweed" hometown = "Milford, Pennsylvania" pvzImage={Spikeweed}></StaffCard>
                         
                         <StaffCard name="Kevin" cslogin="kyang128" pronouns="he/him"
                         blurb="Hi I'm Kevin and I'm currently a sophomore concentrating in applied math and computer science. Fun fact: I used to play Go competitively. In my free time, I like to play basketball and listen to music, so hit me up if you ever want to hoop!" 
