@@ -18,7 +18,7 @@ export class Resources extends React.Component<ResourcesProps> {
                         
                         <h2>General Resources</h2>
                         <ul>
-                            <li><a href="https://edstem.org/us/courses/74300/discussion">Ed Discussion</a></li>
+                            <li><a href="https://edstem.org/us/courses/85591/discussion">Ed Discussion</a></li>
                             <li><a href="https://hackmd.io/@cs410/ry3PhMEtC">Github Overview</a></li>
                             <li><a href="https://hackmd.io/@cs410/SyDy2CVnA">Testing/Debugging Guide</a></li>
                         </ul>
@@ -33,9 +33,7 @@ export class Resources extends React.Component<ResourcesProps> {
 
                         <h2>Forms</h2>
                         <ul>
-                            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdQH9CowvCa6Uopg_XngfvV1z0vq70g8oRI79Ej1QBsMUVpYQ/viewform">Collaboration Policy Acknowledgment</a></li>
-                            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSes6vK7EalQ_wJl4qGfwqkLvr40P0LUhxAqDEudP1NNWNdmDA/viewform">Course Onboarding Form</a></li>
-                            
+                            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScqQXnacmybevFm8xqYYkVLGea2vwwYupPEcKEiFhMK44Ui8A/viewform">Course Onboarding Form</a></li>
                             
                         </ul>
                     </div>
