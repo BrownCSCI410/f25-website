@@ -54,11 +54,12 @@ export class Lectures extends React.Component<LectureProps> {
 				"Blind Search Algorithms",
 			],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/blind_search.pdf")],
+				["Notes", require("./lecture_notes/uninformed_search.pdf")],
 				[
 					"Blind Search Algorithms",
 					"https://cs.stanford.edu/people/eroberts/courses/soco/projects/2003-04/intelligent-search/blind.html",
 				],
+				["Slides", require("./slides/lecture2.pdf")],
 			]),
 			autoReleaseDate: "Sep 5, 2025 02:00:00 EDT",
 		},
