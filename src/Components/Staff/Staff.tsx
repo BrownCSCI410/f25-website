@@ -1,7 +1,7 @@
 import React from "react";
 import { StaffCard } from "../StaffCard/StaffCard";
 
-
+import Cathy from "../../Photos/cathy_zhao.jpeg"
 import Vivek from "../../Photos/vivek_nagarajan.jpg"
 import Avery from "../../Photos/avery_espiritu.png"
 import Alexander from "../../Photos/alexander_vassilev.png"
@@ -16,6 +16,7 @@ import Salman from "../../Photos/salman_aji.png"
 import Kevin from "../../Photos/kevin_yang.png"
 import Gun from "../../Photos/kanpat_vesessook.png"
 
+import CoffeeBean from "../../Photos/Coffee-Bean.webp"
 import Wallnut from "../../Photos/wallnut.png"
 import Spikeweed from "../../Photos/spikeweed.png"
 import Snowpea from "../../Photos/snowpea.png"
@@ -101,6 +102,9 @@ export class Staff extends React.Component<StaffProps> {
                         blurb="Hi! I am a junior concentrating in Computer Science. I love developing and playing indie games, watching movies, and listening to songs I haven't heard before." 
                         image={Vivek} favCharacter = "Snow Pea" hometown = "Starkville, Mississippi" pvzImage={Snowpea}></StaffCard>
 
+                        <StaffCard name="Cathy" cslogin="cjzhao" pronouns="she/her"
+                        blurb="My name is Cathy Zhao and I am from, Newton, Massachusetts! I love playing poker and eating food." 
+                        image={Cathy} favCharacter = "Coffee Bean" hometown = "Newton" pvzImage={CoffeeBean}></StaffCard>
                     </div>
                 </div>
             </section>
