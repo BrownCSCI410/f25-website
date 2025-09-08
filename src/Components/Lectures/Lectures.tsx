@@ -69,7 +69,7 @@ export class Lectures extends React.Component<LectureProps> {
 				"Imformed Search (Best-G Search)",
 				"R&N 3.4-3.5.1",
 				"Notes",
-				"Slides",
+				// "Slides",
 			],
 			cellNametoLinks: new Map<string, string>([
 				["Notes", require("./lecture_notes/informed_search.pdf")],
