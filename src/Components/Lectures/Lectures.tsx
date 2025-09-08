@@ -66,21 +66,21 @@ export class Lectures extends React.Component<LectureProps> {
 		{
 			cellNames: [
 				"9/8",
-				"Heuristic Search (Best-g, Best-h)",
+				"Imformed Search (Best-G Search)",
 				"R&N 3.4-3.5.1",
 				"Notes",
 				"Slides",
 			],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/informed_search.pdf")],
-				["Slides", require("./slides/A-star Search.pdf")],
+				["Notes", require("./lecture_notes/informed_search.pdf")],
+				// ["Slides", require("./slides/A-star Search.pdf")],
 			]),
-			autoReleaseDate: "Sep 8, 2025 02:00:00 EDT",
+			// autoReleaseDate: "Sep 8, 2025 02:00:00 EDT",
 		},
 		{
 			cellNames: [
 				"9/10",
-				"The A* Algorithm",
+				"Heuristics and The A* Algorithm",
 				"R&N 3.5.2-3.7",
 				"Notes",
 				"Pathfinding Visualizations",
