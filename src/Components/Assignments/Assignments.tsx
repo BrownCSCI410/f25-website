@@ -37,15 +37,15 @@ export class Assignments extends React.Component<AssignmentProps> {
 					"https://hackmd.io/@cs410/Hy-lF1a_ee",
 				],
 			]),
-			autoReleaseDate: "Jan 22, 2025 02:00:00 EDT",
+			// autoReleaseDate: "Jan 22, 2025 02:00:00 EDT",
 		},
 
 		{
 			cellNames: ["Homework 2: A*", "9/10", "9/16"],
 			cellNametoLinks: new Map<string, string>([
-				["Homework 2: A*", ""],
+				["Homework 2: A*", "https://hackmd.io/@cs410/Hy13SHJ5el"],
 			]),
-			autoReleaseDate: "Jan 29, 2025 02:00:00 EDT",
+			// autoReleaseDate: "Jan 29, 2025 02:00:00 EDT",
 		},
 		{
 			cellNames: ["Homework 3: Adversarial Search", "9/17", "9/23"],
