@@ -86,7 +86,7 @@ export class Lectures extends React.Component<LectureProps> {
 				"Pathfinding Visualizations",
 			],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/informed_search.pdf")],
+				["Slides", require("./slides/lecture3.pdf")],
 				[
 					"Pathfinding Visualizations",
 					"https://qiao.github.io/PathFinding.js/visual/",
