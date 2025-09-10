@@ -82,7 +82,7 @@ export class Lectures extends React.Component<LectureProps> {
 				"9/10",
 				"Heuristics and The A* Algorithm",
 				"R&N 3.5.2-3.7",
-				"Notes",
+				"Slides",
 				"Pathfinding Visualizations",
 			],
 			cellNametoLinks: new Map<string, string>([
