@@ -102,9 +102,9 @@ export class Lectures extends React.Component<LectureProps> {
 			autoReleaseDate: "Sep 12, 2025 02:00:00 EDT",
 		},
 		{
-			cellNames: ["9/15", "Discrete Optimization", "R&N 4.0-4.1", "Notes", " "],
+			cellNames: ["9/15", "Adversarial search (minimax + alpha-beta pruning)", "", "Slides", " "],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/local_search.pdf")],
+				["Slides", require("./slides/adversarial_search.pdf")],
 			]),
 			autoReleaseDate: "Sep 15, 2025 02:00:00 EDT",
 		},
