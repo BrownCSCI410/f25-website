@@ -13,7 +13,7 @@ export class Resources extends React.Component<ResourcesProps> {
                     <div className="book-page">
                         <h2>Course Policies</h2>
                         <ul>
-                            <li><a href="https://hackmd.io/@cs410/HJR6uRbR0">Course Missive</a></li>
+                            <li><a href="https://hackmd.io/@cs410/r1EeMLddeg">Course Missive</a></li>
                         </ul>
                         
                         <h2>General Resources</h2>
