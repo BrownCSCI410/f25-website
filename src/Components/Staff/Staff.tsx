@@ -15,9 +15,14 @@ import Leanne from "../../Photos/leanne_chia.png"
 import Salman from "../../Photos/salman_aji.png"
 import Kevin from "../../Photos/kevin_yang.png"
 import Gun from "../../Photos/kanpat_vesessook.png"
+import Millie from "../../Photos/millie2.jpg"
+import Matias from "../../Photos/matias_bronner.png"
+import Andrew from "../../Photos/andrew_park.jpg"
 
+import WallNut from "../../Photos/wallnut.png"
+import PotatoMine from "../../Photos/potatomine.webp"
 import CoffeeBean from "../../Photos/Coffee-Bean.webp"
-import Wallnut from "../../Photos/wallnut.png"
+import CoconutCannon from "../../Photos/cococannon.webp"
 import Spikeweed from "../../Photos/spikeweed.png"
 import Snowpea from "../../Photos/snowpea.png"
 import Plantern from    "../../Photos/plantern.png"
@@ -46,11 +51,16 @@ export class Staff extends React.Component<StaffProps> {
                         blurb="This is my third semester teaching 410/1411. I also teach Deep Learning and a robot art course, 1952z Robots as a Medium. My research is on multi-robot coordination and multi-agent systems and how large numbers of agents can work together in the same environment." 
                         image={Eric} favCharacter = "Kernal-Pult" hometown = "Syracuse, New York" pvzImage={Kernelpult}></StaffCard>
                     </div>
+                    <div className="card-container-staff2">
+                        <StaffCard name="Millie (Dog)" cslogin="" pronouns="she/her"
+                        blurb="Woof! I'm Millie, Eric's dog. I like going on walks." 
+                        image={Millie} favCharacter = "Eric" hometown = "Eric's House" pvzImage={Eric}></StaffCard>
+                    </div>
                     <h3>Head Teaching Assistants</h3>
                     <div className="card-container-staff2">
                         <StaffCard name="Darren" cslogin="dwang157" pronouns="he/him"
                         blurb="Hi! I'm a Junior concentrating in CS and Psychology. In my free time I enjoy trying new food and exploring new cafes." 
-                        image={Darren} favCharacter = "Wall-nut" hometown="Flushing, New York" pvzImage={Wallnut}></StaffCard>
+                        image={Darren} favCharacter = "Coconut Cannon" hometown="Flushing, New York" pvzImage={CoconutCannon}></StaffCard>
 
                         <StaffCard name="Leanne" cslogin="lchia1" pronouns="she/her"
                         blurb="Hi! I'm Leanne, and I'm a junior studying CS and APMA-Econ. I really enjoy exploring new cafes, collecting vinyls, listening to music, and doing ballroom dance! :)" 
@@ -105,6 +115,14 @@ export class Staff extends React.Component<StaffProps> {
                         <StaffCard name="Cathy" cslogin="cjzhao" pronouns="she/her"
                         blurb="My name is Cathy Zhao and I am from, Newton, Massachusetts! I love playing poker and eating food." 
                         image={Cathy} favCharacter = "Coffee Bean" hometown = "Newton" pvzImage={CoffeeBean}></StaffCard>
+
+                        <StaffCard name="Matias" cslogin="mcbronne" pronouns="he/him"
+                        blurb="Hi, I am Matias! I am a Junior studying CS-Econ, and I am so excited to be your TA this semester. In my free time, I like play the drums and am particularly involved in the jazz scene on campus. Also I can juggle! 🤩" 
+                        image={Matias} favCharacter = "Potato Mine" hometown = "Boise, Idaho" pvzImage={PotatoMine}></StaffCard>
+
+                        <StaffCard name="Andrew" cslogin="apark114" pronouns="he/him"
+                        blurb="I’m a junior studying Computer Science. Some of my hobbies include squash, playing the guitar, and I’ve recently gotten into climbing as well! " 
+                        image={Andrew} favCharacter = "Wall-nut" hometown = "Seoul, Korea" pvzImage={WallNut}></StaffCard>
                     </div>
                 </div>
             </section>
