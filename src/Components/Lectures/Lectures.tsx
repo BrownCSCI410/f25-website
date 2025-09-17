@@ -82,11 +82,11 @@ export class Lectures extends React.Component<LectureProps> {
 				"9/10",
 				"Heuristics and The A* Algorithm",
 				"R&N 3.5.2-3.7",
-				"Notes",
+				"Slides",
 				"Pathfinding Visualizations",
 			],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/informed_search.pdf")],
+				["Slides", require("./slides/lecture3.pdf")],
 				[
 					"Pathfinding Visualizations",
 					"https://qiao.github.io/PathFinding.js/visual/",
@@ -97,42 +97,40 @@ export class Lectures extends React.Component<LectureProps> {
 		{
 			cellNames: ["9/12", "Adversarial search (minimax + alpha-beta pruning)", "R&N 5.0-5.3", "Notes", " "],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/adversarial_search.pdf")],
+				["Notes", require("./lecture_notes/adversarial_search.pdf")],
 			]),
 			autoReleaseDate: "Sep 12, 2025 02:00:00 EDT",
 		},
 		{
-			cellNames: ["9/15", "Discrete Optimization", "R&N 4.0-4.1", "Notes", " "],
+			cellNames: ["9/15", "Adversarial search (minimax + alpha-beta pruning)", "", "Slides", " "],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/local_search.pdf")],
+				["Slides", require("./slides/adversarial_search.pdf")],
 			]),
 			autoReleaseDate: "Sep 15, 2025 02:00:00 EDT",
 		},
 		{
 			cellNames: [
 				"9/17",
-				"Propositional Logic, SAT and NP-Completeness, CNFs",
-				"R&N 6.1, 6.4",
+				"Discrete Optimization and Local Search",
+				"R&N 4.1",
 				"Notes",
 				" ",
 			],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/cnfs.pdf")],
+				["Notes", require("./lecture_notes/local_search.pdf")],
 			]),
-			autoReleaseDate: "Sep 17, 2025 04:00:00 EDT",
 		},
 		{
-			cellNames: ["9/19", "Constraint Satisfaction Problems", "R&N 13", "Notes", " "],
+			cellNames: ["9/19", "Boolean Satisfiability, CNFs, and Local Search", "7.6.2-7.6.3", "Notes", " "],
 			cellNametoLinks: new Map<string, string>([
 				// ["Notes", require("./lecture_notes/constraint_satisfaction.pdf")],
 			]),
-			autoReleaseDate: "Sep 19, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
 				"9/22",
-				"Knowledge Representation and Reasoning",
-				"",
+				"Knowledge Representation and Reasoning, First Order Logic",
+				"R&N 8",
 				"Notes",
 				"",
 			],
@@ -142,14 +140,14 @@ export class Lectures extends React.Component<LectureProps> {
 			autoReleaseDate: "Sep 22, 2025 04:00:00 EDT",
 		},
 		{
-			cellNames: ["9/24", "Classical Planning: PDDL", "", "Notes", " "],
+			cellNames: ["9/24", "Classical Planning: PDDL", "R&N 10", "Notes", " "],
 			cellNametoLinks: new Map<string, string>([
 				// ["Notes", require("./lecture_notes/pddl.pdf")],
 			]),
 			autoReleaseDate: "Sep 24, 2025 04:00:00 EDT",
 		},
 		{
-			cellNames: ["9/26", "Reasoning Under Uncertainty", "R&N 12", "Notes", ""],
+			cellNames: ["9/26", "Representing Uncertainty: Bayesian Probability", "R&N 12", "Notes", ""],
 			cellNametoLinks: new Map<string, string>([
 				// ["Notes", require("./lecture_notes/probability.pdf")],
 			]),
@@ -159,14 +157,13 @@ export class Lectures extends React.Component<LectureProps> {
 			cellNames: [
 				"9/29",
 				"Bayesian Networks",
-				"",
+				"R&N 14",
 				"Notes",
 				" ",
 			],
 			cellNametoLinks: new Map<string, string>([
 				// ["Notes", require("./lecture_notes/bayesian_networks.pdf")],
 			]),
-			autoReleaseDate: "Sep 29, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: ["10/1", "Linear Algebra for Continuous Optimization", "", "Notes", ""],
@@ -179,7 +176,7 @@ export class Lectures extends React.Component<LectureProps> {
 			cellNames: [
 				"10/3",
 				"Gradient Descent",
-				"R&N 14-14.5",
+				"",
 				"Notes",
 				"",
 			],
@@ -191,7 +188,7 @@ export class Lectures extends React.Component<LectureProps> {
 		{
 			cellNames: [
 				"10/6",
-				"Convex Optimization",
+				"Convex Optimization + More Linear Algebra",
 				"",
 				"Notes",
 				" ",
@@ -204,7 +201,7 @@ export class Lectures extends React.Component<LectureProps> {
 		{
 			cellNames: [
 				"10/8",
-				"Constrained Optimization",
+				"Modeling Mathematical Programs",
 				"",
 				"Notes",
 				" ",
@@ -217,7 +214,7 @@ export class Lectures extends React.Component<LectureProps> {
 		{
 			cellNames: [
 				"10/10",
-				"Mathematical Programmming",
+				"Solving Mathematical Programs",
 				"",
 				"Notes",
 				"",
@@ -241,7 +238,7 @@ export class Lectures extends React.Component<LectureProps> {
 		{
 			cellNames: [
 				"10/15",
-				"Intro to Supervised Learning",
+				"Introduction to Supervised Learning",
 				"",
 				"Notes",
 				"",
@@ -319,7 +316,7 @@ export class Lectures extends React.Component<LectureProps> {
 		{
 			cellNames: [
 				"10/29",
-				"Deep Learning",
+				"Deep Learning and LLMs",
 				"",
 				"Notes",
 				"",
