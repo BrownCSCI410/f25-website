@@ -18,7 +18,9 @@ import Gun from "../../Photos/kanpat_vesessook.png"
 import Millie from "../../Photos/millie2.jpg"
 import Matias from "../../Photos/matias_bronner.png"
 import Andrew from "../../Photos/andrew_park.jpg"
+import Kyle from "../../Photos/kyle_wisialowski.jpeg"
 
+import Sunflower from "../../Photos/Sunflower.webp"
 import WallNut from "../../Photos/wallnut.png"
 import PotatoMine from "../../Photos/potatomine.webp"
 import CoffeeBean from "../../Photos/Coffee-Bean.webp"
@@ -82,7 +84,7 @@ export class Staff extends React.Component<StaffProps> {
                         image={Sarah} favCharacter = "Plantern" hometown = "Solon, Ohio" pvzImage={Plantern}></StaffCard>
 
                     </div>
-                    <h3>Undergraduate Teaching Assistants</h3>
+                    <h3>Teaching Assistants</h3>
                     <div className="card-container-staff2">
                         <StaffCard name="Alexander" cslogin="asvassil" pronouns="he/him"
                         blurb="Hello! I am a Sophomore studying CS at Brown. In my free time I produce electronic music, rock climb, go to the gym, play chess, and speedcube. I am also featured in the 2020 edition of the Guinness book of World Records!" 
@@ -121,8 +123,12 @@ export class Staff extends React.Component<StaffProps> {
                         image={Matias} favCharacter = "Potato Mine" hometown = "Boise, Idaho" pvzImage={PotatoMine}></StaffCard>
 
                         <StaffCard name="Andrew" cslogin="apark114" pronouns="he/him"
-                        blurb="I’m a junior studying Computer Science. Some of my hobbies include squash, playing the guitar, and I’ve recently gotten into climbing as well! " 
+                        blurb="I’m a junior studying Computer Science. Some of my hobbies include squash, playing the guitar, and I’ve recently gotten into climbing as well!" 
                         image={Andrew} favCharacter = "Wall-nut" hometown = "Seoul, Korea" pvzImage={WallNut}></StaffCard>
+
+                        <StaffCard name="Kyle" cslogin="kwisialo" pronouns="he/him"
+                        blurb="Hi! My name is Kyle and I am a 5th-year master's student in CS. I studied APMA-Bio for my undergrad at Brown. In my free time you can find me at the pool with Brown's club swim team :)" 
+                        image={Kyle} favCharacter = "Sunflower" hometown = "Old Saybrook, CT" pvzImage={Sunflower}></StaffCard>
                     </div>
                 </div>
             </section>
