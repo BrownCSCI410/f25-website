@@ -111,27 +111,25 @@ export class Lectures extends React.Component<LectureProps> {
 		{
 			cellNames: [
 				"9/17",
-				"Propositional Logic, SAT and NP-Completeness, CNFs",
-				"R&N 6.1, 6.4",
+				"Discrete Optimization and Local Search",
+				"R&N 4.1",
 				"Notes",
 				" ",
 			],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/cnfs.pdf")],
+				["Notes", require("./lecture_notes/local_search.pdf")],
 			]),
-			autoReleaseDate: "Sep 17, 2025 04:00:00 EDT",
 		},
 		{
-			cellNames: ["9/19", "Constraint Satisfaction Problems", "R&N 13", "Notes", " "],
+			cellNames: ["9/19", "Boolean Satisfiability, CNFs, and Local Search", "7.6.2-7.6.3", "Notes", " "],
 			cellNametoLinks: new Map<string, string>([
 				// ["Notes", require("./lecture_notes/constraint_satisfaction.pdf")],
 			]),
-			autoReleaseDate: "Sep 19, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
 				"9/22",
-				"Knowledge Representation and Reasoning",
+				"Knowledge Representation and Reasoning, First Order Logic",
 				"",
 				"Notes",
 				"",
@@ -149,7 +147,7 @@ export class Lectures extends React.Component<LectureProps> {
 			autoReleaseDate: "Sep 24, 2025 04:00:00 EDT",
 		},
 		{
-			cellNames: ["9/26", "Reasoning Under Uncertainty", "R&N 12", "Notes", ""],
+			cellNames: ["9/26", "Representing Uncertainty: Bayesian Probability", "R&N 12", "Notes", ""],
 			cellNametoLinks: new Map<string, string>([
 				// ["Notes", require("./lecture_notes/probability.pdf")],
 			]),
@@ -166,7 +164,6 @@ export class Lectures extends React.Component<LectureProps> {
 			cellNametoLinks: new Map<string, string>([
 				// ["Notes", require("./lecture_notes/bayesian_networks.pdf")],
 			]),
-			autoReleaseDate: "Sep 29, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: ["10/1", "Linear Algebra for Continuous Optimization", "", "Notes", ""],
@@ -319,7 +316,7 @@ export class Lectures extends React.Component<LectureProps> {
 		{
 			cellNames: [
 				"10/29",
-				"Deep Learning",
+				"Deep Learning and LLMs",
 				"",
 				"Notes",
 				"",
