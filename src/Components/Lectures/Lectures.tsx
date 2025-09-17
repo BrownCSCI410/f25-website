@@ -130,7 +130,7 @@ export class Lectures extends React.Component<LectureProps> {
 			cellNames: [
 				"9/22",
 				"Knowledge Representation and Reasoning, First Order Logic",
-				"",
+				"R&N 8",
 				"Notes",
 				"",
 			],
@@ -140,7 +140,7 @@ export class Lectures extends React.Component<LectureProps> {
 			autoReleaseDate: "Sep 22, 2025 04:00:00 EDT",
 		},
 		{
-			cellNames: ["9/24", "Classical Planning: PDDL", "", "Notes", " "],
+			cellNames: ["9/24", "Classical Planning: PDDL", "R&N 10", "Notes", " "],
 			cellNametoLinks: new Map<string, string>([
 				// ["Notes", require("./lecture_notes/pddl.pdf")],
 			]),
@@ -157,7 +157,7 @@ export class Lectures extends React.Component<LectureProps> {
 			cellNames: [
 				"9/29",
 				"Bayesian Networks",
-				"",
+				"R&N 14",
 				"Notes",
 				" ",
 			],
@@ -176,7 +176,7 @@ export class Lectures extends React.Component<LectureProps> {
 			cellNames: [
 				"10/3",
 				"Gradient Descent",
-				"R&N 14-14.5",
+				"",
 				"Notes",
 				"",
 			],
@@ -188,7 +188,7 @@ export class Lectures extends React.Component<LectureProps> {
 		{
 			cellNames: [
 				"10/6",
-				"Convex Optimization",
+				"Convex Optimization + More Linear Algebra",
 				"",
 				"Notes",
 				" ",
@@ -201,7 +201,7 @@ export class Lectures extends React.Component<LectureProps> {
 		{
 			cellNames: [
 				"10/8",
-				"Constrained Optimization",
+				"Modeling Mathematical Programs",
 				"",
 				"Notes",
 				" ",
@@ -214,7 +214,7 @@ export class Lectures extends React.Component<LectureProps> {
 		{
 			cellNames: [
 				"10/10",
-				"Mathematical Programmming",
+				"Solving Mathematical Programs",
 				"",
 				"Notes",
 				"",
@@ -238,7 +238,7 @@ export class Lectures extends React.Component<LectureProps> {
 		{
 			cellNames: [
 				"10/15",
-				"Intro to Supervised Learning",
+				"Introduction to Supervised Learning",
 				"",
 				"Notes",
 				"",
