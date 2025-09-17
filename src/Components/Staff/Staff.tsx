@@ -20,6 +20,7 @@ import Matias from "../../Photos/matias_bronner.png"
 import Andrew from "../../Photos/andrew_park.jpg"
 import Kyle from "../../Photos/kyle_wisialowski.jpeg"
 
+import Dogtail from "../../Photos/Dogtail.webp"
 import Sunflower from "../../Photos/Sunflower.webp"
 import WallNut from "../../Photos/wallnut.png"
 import PotatoMine from "../../Photos/potatomine.webp"
@@ -56,7 +57,7 @@ export class Staff extends React.Component<StaffProps> {
                     <div className="card-container-staff2">
                         <StaffCard name="Millie (Dog)" cslogin="" pronouns="she/her"
                         blurb="Woof! I'm Millie, Eric's dog. I like going on walks." 
-                        image={Millie} favCharacter = "Eric" hometown = "Eric's House" pvzImage={Eric}></StaffCard>
+                        image={Millie} favCharacter = "Dogtail" hometown = "Eric's House" pvzImage={Dogtail}></StaffCard>
                     </div>
                     <h3>Head Teaching Assistants</h3>
                     <div className="card-container-staff2">
