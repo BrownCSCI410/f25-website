@@ -123,7 +123,7 @@ export class Lectures extends React.Component<LectureProps> {
 		{
 			cellNames: ["9/19", "Boolean Satisfiability, CNFs, and Local Search", "7.6.2-7.6.3", "Notes", " "],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/constraint_satisfaction.pdf")],
+				["Notes", require("./lecture_notes/satisfiability.pdf")],
 			]),
 		},
 		{
