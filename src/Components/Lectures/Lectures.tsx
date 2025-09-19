@@ -121,9 +121,10 @@ export class Lectures extends React.Component<LectureProps> {
 			]),
 		},
 		{
-			cellNames: ["9/19", "Boolean Satisfiability, CNFs, and Local Search", "7.6.2-7.6.3", "Notes", " "],
+			cellNames: ["9/19", "Boolean Satisfiability, CNFs, and Local Search", "7.6.2-7.6.3", "Notes", "Slides"],
 			cellNametoLinks: new Map<string, string>([
 				["Notes", require("./lecture_notes/satisfiability.pdf")],
+				["Slides", require("./slides/MAPF.pdf")],
 			]),
 		},
 		{
