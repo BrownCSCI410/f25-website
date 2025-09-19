@@ -19,7 +19,9 @@ import Millie from "../../Photos/millie2.jpg"
 import Matias from "../../Photos/matias_bronner.png"
 import Andrew from "../../Photos/andrew_park.jpg"
 import Kyle from "../../Photos/kyle_wisialowski.jpeg"
+import Gordan from "../../Photos/gordan_milovac.jpeg"
 
+import MelonPult from "../../Photos/melonpult.webp"
 import Dogtail from "../../Photos/Dogtail.webp"
 import Sunflower from "../../Photos/Sunflower.webp"
 import WallNut from "../../Photos/wallnut.png"
@@ -130,6 +132,10 @@ export class Staff extends React.Component<StaffProps> {
                         <StaffCard name="Kyle" cslogin="kwisialo" pronouns="he/him"
                         blurb="Hi! My name is Kyle and I am a 5th-year master's student in CS. I studied APMA-Bio for my undergrad at Brown. In my free time you can find me at the pool with Brown's club swim team :)" 
                         image={Kyle} favCharacter = "Sunflower" hometown = "Old Saybrook, CT" pvzImage={Sunflower}></StaffCard>
+
+                        <StaffCard name="Gordan" cslogin="gmilovac" pronouns="he/him"
+                        blurb="Hi everyone! My name is Gordan and I'm a 5th Year Master student and your TA. I got my CS-Econ undergrad at Brown and did Varsity Crew for 4 years. I'm addicted to lifting and Clash Royale. Excited for the semester!!" 
+                        image={Gordan} favCharacter = "Melon-pult" hometown = "Split, Croatia" pvzImage={MelonPult}></StaffCard>
                     </div>
                 </div>
             </section>
