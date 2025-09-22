@@ -133,12 +133,12 @@ export class Lectures extends React.Component<LectureProps> {
 				"Knowledge Representation and Reasoning, First Order Logic",
 				"R&N 8",
 				"Notes",
-				"",
+				"slides",
 			],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/theorem_proving.pdf")],
+				["Notes", require("./lecture_notes/KRR_notes.pdf")],
+				["slides", require("./slides/KRR.pdf")],
 			]),
-			autoReleaseDate: "Sep 22, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: ["9/24", "Classical Planning: PDDL", "R&N 10", "Notes", " "],
