@@ -141,11 +141,11 @@ export class Lectures extends React.Component<LectureProps> {
 			]),
 		},
 		{
-			cellNames: ["9/24", "Classical Planning: PDDL", "R&N 10", "Notes", " "],
+			cellNames: ["9/24", "Classical Planning: PDDL", "R&N 10", "Notes", "Code"],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/pddl.pdf")],
+				["Notes", require("./lecture_notes/pddl.pdf")],
+				["Code", "https://editor.planning.domains/#read_session=z2v5aMJ3mS"],
 			]),
-			autoReleaseDate: "Sep 24, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: ["9/26", "Representing Uncertainty: Bayesian Probability", "R&N 12", "Notes", ""],
