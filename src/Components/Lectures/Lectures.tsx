@@ -150,7 +150,7 @@ export class Lectures extends React.Component<LectureProps> {
 		{
 			cellNames: ["9/26", "Representing Uncertainty: Bayesian Probability", "R&N 12", "Notes", ""],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/probability.pdf")],
+				["Notes", require("./lecture_notes/probability.pdf")],
 			]),
 			autoReleaseDate: "Sep 26, 2025 04:00:00 EDT",
 		},
