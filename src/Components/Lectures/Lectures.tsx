@@ -152,7 +152,6 @@ export class Lectures extends React.Component<LectureProps> {
 			cellNametoLinks: new Map<string, string>([
 				["Notes", require("./lecture_notes/probability.pdf")],
 			]),
-			autoReleaseDate: "Sep 26, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
@@ -167,11 +166,10 @@ export class Lectures extends React.Component<LectureProps> {
 			]),
 		},
 		{
-			cellNames: ["10/1", "Linear Algebra for Continuous Optimization", "", "Notes", ""],
+			cellNames: ["10/1", "Linear Algebra and Continuous Optimization", "", "Notes", ""],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/linear_algebra.pdf")],
+				["Notes", require("./lecture_notes/continuous_optimization.pdf")],
 			]),
-			autoReleaseDate: "Oct 1, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
@@ -184,7 +182,6 @@ export class Lectures extends React.Component<LectureProps> {
 			cellNametoLinks: new Map<string, string>([
 				// ["Notes", require("./lecture_notes/convex_optimization.pdf")],
 			]),
-			autoReleaseDate: "Oct 3, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
@@ -197,7 +194,6 @@ export class Lectures extends React.Component<LectureProps> {
 			cellNametoLinks: new Map<string, string>([
 				// ["Notes", require("./lecture_notes/convexity_linear_algebra.pdf")],
 			]),
-			autoReleaseDate: "Oct 6, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
@@ -210,7 +206,6 @@ export class Lectures extends React.Component<LectureProps> {
 			cellNametoLinks: new Map<string, string>([
 				// ["Notes", require("./lecture_notes/constrained_optimization.pdf")],
 			]),
-			autoReleaseDate: "Oct 8, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
@@ -223,7 +218,6 @@ export class Lectures extends React.Component<LectureProps> {
 			cellNametoLinks: new Map<string, string>([
 				// ["Notes", require("./lecture_notes/lagrangians.pdf")],
 			]),
-			autoReleaseDate: "Oct 10, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
@@ -234,7 +228,6 @@ export class Lectures extends React.Component<LectureProps> {
 				"",
 			],
 			cellNametoLinks: new Map<string, string>(),
-			autoReleaseDate: "Oct 13, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
