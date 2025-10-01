@@ -163,7 +163,7 @@ export class Lectures extends React.Component<LectureProps> {
 				" ",
 			],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/bayesian_networks.pdf")],
+				["Notes", require("./lecture_notes/bayesian_networks.pdf")],
 			]),
 		},
 		{
