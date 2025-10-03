@@ -177,10 +177,11 @@ export class Lectures extends React.Component<LectureProps> {
 				"Gradient Descent",
 				"",
 				"Notes",
-				"",
+				"Video",
 			],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/convex_optimization.pdf")],
+				["Notes", require("./lecture_notes/gradient.pdf")],
+				["Video", "https://youtu.be/Fnuz6nNu7hY"]
 			]),
 		},
 		{
