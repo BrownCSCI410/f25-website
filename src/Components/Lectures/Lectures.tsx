@@ -187,13 +187,13 @@ export class Lectures extends React.Component<LectureProps> {
 		{
 			cellNames: [
 				"10/6",
-				"Convex Optimization + More Linear Algebra",
+				"Convex Optimization",
 				"",
 				"Notes",
 				" ",
 			],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/convexity_linear_algebra.pdf")],
+				["Notes", require("./lecture_notes/mathematical_programming.pdf")],
 			]),
 		},
 		{
