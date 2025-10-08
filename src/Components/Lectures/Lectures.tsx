@@ -121,9 +121,10 @@ export class Lectures extends React.Component<LectureProps> {
 			]),
 		},
 		{
-			cellNames: ["9/19", "Boolean Satisfiability, CNFs, and Local Search", "7.6.2-7.6.3", "Notes", " "],
+			cellNames: ["9/19", "Boolean Satisfiability, CNFs, and Local Search", "7.6.2-7.6.3", "Notes", "Slides"],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/constraint_satisfaction.pdf")],
+				["Notes", require("./lecture_notes/satisfiability.pdf")],
+				["Slides", require("./slides/MAPF.pdf")],
 			]),
 		},
 		{
@@ -132,26 +133,25 @@ export class Lectures extends React.Component<LectureProps> {
 				"Knowledge Representation and Reasoning, First Order Logic",
 				"R&N 8",
 				"Notes",
-				"",
+				"slides",
 			],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/theorem_proving.pdf")],
+				["Notes", require("./lecture_notes/KRR_notes.pdf")],
+				["slides", require("./slides/KRR.pdf")],
 			]),
-			autoReleaseDate: "Sep 22, 2025 04:00:00 EDT",
 		},
 		{
-			cellNames: ["9/24", "Classical Planning: PDDL", "R&N 10", "Notes", " "],
+			cellNames: ["9/24", "Classical Planning: PDDL", "R&N 10", "Notes", "Code"],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/pddl.pdf")],
+				["Notes", require("./lecture_notes/pddl.pdf")],
+				["Code", "https://editor.planning.domains/#read_session=z2v5aMJ3mS"],
 			]),
-			autoReleaseDate: "Sep 24, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: ["9/26", "Representing Uncertainty: Bayesian Probability", "R&N 12", "Notes", ""],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/probability.pdf")],
+				["Notes", require("./lecture_notes/probability.pdf")],
 			]),
-			autoReleaseDate: "Sep 26, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
@@ -162,15 +162,14 @@ export class Lectures extends React.Component<LectureProps> {
 				" ",
 			],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/bayesian_networks.pdf")],
+				["Notes", require("./lecture_notes/bayesian_networks.pdf")],
 			]),
 		},
 		{
-			cellNames: ["10/1", "Linear Algebra for Continuous Optimization", "", "Notes", ""],
+			cellNames: ["10/1", "Linear Algebra and Continuous Optimization", "", "Notes", ""],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/linear_algebra.pdf")],
+				["Notes", require("./lecture_notes/continuous_optimization.pdf")],
 			]),
-			autoReleaseDate: "Oct 1, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
@@ -178,38 +177,36 @@ export class Lectures extends React.Component<LectureProps> {
 				"Gradient Descent",
 				"",
 				"Notes",
-				"",
+				"Video",
 			],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/convex_optimization.pdf")],
+				["Notes", require("./lecture_notes/gradient_descent.pdf")],
+				["Video", "https://youtu.be/Fnuz6nNu7hY"]
 			]),
-			autoReleaseDate: "Oct 3, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
 				"10/6",
-				"Convex Optimization + More Linear Algebra",
+				"Convex Optimization",
 				"",
 				"Notes",
 				" ",
 			],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/convexity_linear_algebra.pdf")],
+				["Notes", require("./lecture_notes/mathematical_programming.pdf")],
 			]),
-			autoReleaseDate: "Oct 6, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
 				"10/8",
 				"Modeling Mathematical Programs",
 				"",
-				"Notes",
+				"Notebook",
 				" ",
 			],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/constrained_optimization.pdf")],
+				["Notebook", "https://colab.research.google.com/drive/1hlWibOftBEO9DF76fs2maJcNpkilRHwA?usp=sharing"],
 			]),
-			autoReleaseDate: "Oct 8, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
@@ -222,7 +219,6 @@ export class Lectures extends React.Component<LectureProps> {
 			cellNametoLinks: new Map<string, string>([
 				// ["Notes", require("./lecture_notes/lagrangians.pdf")],
 			]),
-			autoReleaseDate: "Oct 10, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
@@ -233,7 +229,6 @@ export class Lectures extends React.Component<LectureProps> {
 				"",
 			],
 			cellNametoLinks: new Map<string, string>(),
-			autoReleaseDate: "Oct 13, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
