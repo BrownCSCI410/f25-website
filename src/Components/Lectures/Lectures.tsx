@@ -201,11 +201,11 @@ export class Lectures extends React.Component<LectureProps> {
 				"10/8",
 				"Modeling Mathematical Programs",
 				"",
-				"Notes",
+				"Notebook",
 				" ",
 			],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/constrained_optimization.pdf")],
+				["Notebook", "https://colab.research.google.com/drive/1hlWibOftBEO9DF76fs2maJcNpkilRHwA?usp=sharing"],
 			]),
 		},
 		{
