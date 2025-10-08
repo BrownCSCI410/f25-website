@@ -55,32 +55,28 @@ export class Assignments extends React.Component<AssignmentProps> {
 					"https://hackmd.io/@cs410/B1CIgVy5xe",
 				],
 			]),
-			autoReleaseDate: "Feb 05, 2025 02:00:00 EDT",
+			// autoReleaseDate: "Feb 05, 2025 02:00:00 EDT",
 		},
 		{
 			cellNames: ["Homework 4: SAT", "9/24", "9/30"],
 			cellNametoLinks: new Map<string, string>([
-				["Homework 3: SAT", ""],
+				["Homework 4: SAT", "https://hackmd.io/@cs410/BJtL8rJ5gg"],
 			]),
-			autoReleaseDate: "Feb 12, 2025 02:00:00 EDT",
+			// autoReleaseDate: "Sep 24, 2025 02:00:00 EDT",
 		},
 		{
 			cellNames: ["Homework 5: KRR", "10/1", "10/7"],
 			cellNametoLinks: new Map<string, string>([
-				["Homework 5: KRR", ""],
+				["Homework 5: KRR", "https://hackmd.io/@cs410/HyM6Nt5uel"],
 			]),
 			autoReleaseDate: "Feb 21, 2025 02:00:00 EDT",
 		},
 		{
-			cellNames: [
-				"Homework 6: Constrained Optimization",
-				"10/8",
-				"10/21",
-			],
+			cellNames: ["Homework 6: Constrained Optimization", "10/8", "10/21"],
 			cellNametoLinks: new Map<string, string>([
 				[
 					"Homework 6: Constrained Optimization",
-					"",
+					"https://hackmd.io/@cs410/r1HHRUk9ex",
 				],
 			]),
 			autoReleaseDate: "Feb 26, 2025 14:00:00 EDT",
