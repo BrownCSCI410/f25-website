@@ -214,10 +214,11 @@ export class Lectures extends React.Component<LectureProps> {
 				"Solving Mathematical Programs",
 				"",
 				"Notes",
-				"",
+				"Slides",
 			],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/lagrangians.pdf")],
+				["Notes", require("./lecture_notes/lagrangians.pdf")],
+				["Slides", require("./slides/mathematical_programming.pptx")],
 			]),
 		},
 		{
