@@ -240,9 +240,8 @@ export class Lectures extends React.Component<LectureProps> {
 				"",
 			],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/knn.pdf")],
+				["Notes", require("./lecture_notes/knn.pdf")],
 			]),
-			autoReleaseDate: "Oct 15, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
@@ -253,9 +252,8 @@ export class Lectures extends React.Component<LectureProps> {
 				"",
 			],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/linear_regression.pdf")],
+				["Notes", require("./lecture_notes/linear_regression.pdf")],
 			]),
-			autoReleaseDate: "Oct 17, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
