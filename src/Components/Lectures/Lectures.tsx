@@ -264,9 +264,8 @@ export class Lectures extends React.Component<LectureProps> {
 				"",
 			],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/bias_variance.pdf")],
+				["Notes", require("./lecture_notes/polynomial_regression.pdf")],
 			]),
-			autoReleaseDate: "Oct 20, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
