@@ -85,7 +85,7 @@ export class Assignments extends React.Component<AssignmentProps> {
 			cellNametoLinks: new Map<string, string>([
 				[
 					"Homework 7: Linear Regression and Bias-Variance Tradeoff",
-					"",
+					"https://hackmd.io/@cs410/HJl7evk9gg",
 				],
 			]),
 			autoReleaseDate: "Mar 05, 2025 14:00:00 EDT",
