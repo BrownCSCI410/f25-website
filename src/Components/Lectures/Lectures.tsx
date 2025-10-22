@@ -276,9 +276,8 @@ export class Lectures extends React.Component<LectureProps> {
 				"",
 			],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/logistic_regression.pdf")],
+				["Notes", require("./lecture_notes/logistic_regression.pdf")],
 			]),
-			autoReleaseDate: "Oct 22, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
@@ -291,7 +290,6 @@ export class Lectures extends React.Component<LectureProps> {
 			cellNametoLinks: new Map<string, string>([
 				// ["Notes", require("./lecture_notes/perceptrons.pdf")],
 			]),
-			autoReleaseDate: "Oct 24, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
@@ -304,7 +302,6 @@ export class Lectures extends React.Component<LectureProps> {
 			cellNametoLinks: new Map<string, string>([
 				// ["Notes", require("./lecture_notes/neural_nets.pdf")],
 			]),
-			autoReleaseDate: "Oct 27, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
@@ -317,7 +314,6 @@ export class Lectures extends React.Component<LectureProps> {
 			cellNametoLinks: new Map<string, string>([
 				// ["Notes", require("./lecture_notes/deep_learning.pdf")],
 			]),
-			autoReleaseDate: "Oct 29, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
@@ -330,7 +326,6 @@ export class Lectures extends React.Component<LectureProps> {
 			cellNametoLinks: new Map<string, string>([
 				// ["Notes", require("./lecture_notes/markov_reward_processes.pdf")],
 			]),
-			autoReleaseDate: "Oct 31, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
@@ -343,7 +338,6 @@ export class Lectures extends React.Component<LectureProps> {
 			cellNametoLinks: new Map<string, string>([
 				// ["Notes", require("./lecture_notes/mdp.pdf")],
 			]),
-			autoReleaseDate: "Nov 3, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
