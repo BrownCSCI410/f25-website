@@ -91,7 +91,7 @@ export class Assignments extends React.Component<AssignmentProps> {
 			autoReleaseDate: "Mar 05, 2025 14:00:00 EDT",
 		},
 		{
-			cellNames: ["Homework 8: Neural Networks", "10/28", "11/4"],
+			cellNames: ["Homework 8: Neural Networks", "10/29", "11/4"],
 			cellNametoLinks: new Map<string, string>([
 				["Homework 7: Neural Networks", ""],
 			]),
