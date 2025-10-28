@@ -288,7 +288,7 @@ export class Lectures extends React.Component<LectureProps> {
 				"",
 			],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/perceptrons.pdf")],
+				["Notes", require("./lecture_notes/perceptrons.pdf")],
 			]),
 		},
 		{
@@ -300,7 +300,7 @@ export class Lectures extends React.Component<LectureProps> {
 				"",
 			],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/neural_nets.pdf")],
+				["Notes", require("./lecture_notes/neural_networks.pdf")],
 			]),
 		},
 		{
