@@ -306,13 +306,13 @@ export class Lectures extends React.Component<LectureProps> {
 		{
 			cellNames: [
 				"10/29",
-				"Deep Learning and LLMs",
+				"Deep Learning",
 				"",
 				"Notes",
 				"",
 			],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/deep_learning.pdf")],
+				["Notes", require("./slides/DeepLearning.pdf")],
 			]),
 		},
 		{
