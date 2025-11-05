@@ -324,7 +324,7 @@ export class Lectures extends React.Component<LectureProps> {
 				"",
 			],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/markov_reward_processes.pdf")],
+				["Notes", require("./lecture_notes/markov_reward_processes.pdf")],
 			]),
 		},
 		{
@@ -348,7 +348,7 @@ export class Lectures extends React.Component<LectureProps> {
 				"",
 			],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/value_iteration.pdf")],
+				["Notes", require("./lecture_notes/rl.pdf")],
 			]),
 			autoReleaseDate: "Nov 5, 2025 04:00:00 EDT",
 		},
