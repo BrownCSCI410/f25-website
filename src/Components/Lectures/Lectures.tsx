@@ -368,13 +368,13 @@ export class Lectures extends React.Component<LectureProps> {
 		{
 			cellNames: [
 				"11/10",
-				"Generative Models",
+				"Policy Gradient Methods",
 				"",
-				"Notes",
+				"Slides",
 				"",
 			],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/naive_bayes.pdf")],
+				["Slides", require("./slides/policy_gradient.pdf")],
 			]),
 			autoReleaseDate: "Nov 10, 2025 04:00:00 EDT",
 		},
