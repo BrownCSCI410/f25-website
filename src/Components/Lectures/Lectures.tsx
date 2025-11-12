@@ -381,20 +381,21 @@ export class Lectures extends React.Component<LectureProps> {
 		{
 			cellNames: [
 				"11/12",
-				"Principal Component Analysis",
-				"",
+				"K-Means",
+				"visualization",
 				"Notes",
 				"",
 			],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./slides/PCA + K-means.pptx")],
+				["Notes", require("./slides/k_means.pdf")],
+				["visualization", "https://www.naftaliharris.com/blog/visualizing-k-means-clustering/"]
 			]),
 			autoReleaseDate: "Nov 12, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
 				"11/14",
-				"K-Means + Facility Location",
+				"Gaussian Mixture Models",
 				"",
 				"Notes",
 				"",
@@ -407,7 +408,7 @@ export class Lectures extends React.Component<LectureProps> {
 		{
 			cellNames: [
 				"11/17",
-				"Gaussian Mixture Models",
+				"Principal Component Analysis",
 				"",
 				"Notes",
 				"",
