@@ -397,11 +397,11 @@ export class Lectures extends React.Component<LectureProps> {
 				"11/14",
 				"Gaussian Mixture Models",
 				"",
-				"Notes",
+				"Slides",
 				"",
 			],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./slides/PCA + K-means.pptx")],
+				["Slides", require("./slides/gmms.pdf")],
 			]),
 			autoReleaseDate: "Nov 14, 2025 04:00:00 EDT",
 		},
