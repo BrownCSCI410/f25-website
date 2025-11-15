@@ -32,69 +32,59 @@ export class Labs extends React.Component<LabProps> {
     myRows: RowOptions[] = [
         { cellNames: ["1", "SRC", "AI Policy"], 
             cellNametoLinks: new Map<string,string>([
-                ["AI Policy", ""],
+                ["AI Policy", " https://docs.google.com/presentation/d/1JRHSWtVhLIo-6nHNqkmq1Z65rFAhDNWvVc3vyZ1KB9c/edit?usp=sharing"],
             ]),
             autoReleaseDate: "Mar 10, 2025 10:30:00 EDT",
         },
         { cellNames: ["2", "Conceptual", "HW 0 & 1"], 
             cellNametoLinks: new Map<string,string>([
-                ["HW 0 & 1", ""],
+                ["HW 1 & 2", ""],
             ]),
             autoReleaseDate: "Mar 10, 2025 10:30:00 EDT",
         },
-        { cellNames: ["3", "SRC", "AI Energy Consumption"], 
+        { cellNames: ["3", "SRC", "Data Collection"], 
             cellNametoLinks: new Map<string,string>([
-                ["AI Energy Consumption", ""],
+                ["Data Collection", "https://docs.google.com/presentation/d/1J33ZDuNl4Z4_-DYELSSp-QDYDE5PY5kqxeiK9Lz5txk/edit?usp=sharing"],
             ]),
-            autoReleaseDate: "Mar 10, 2025 10:30:00 EDT",
         },
         { cellNames: ["4", "Conceptual", "HW 2 & 3"], 
             cellNametoLinks: new Map<string,string>([
-                ["HW 2 & 3", ""],
+                ["HW 3 & 4", ""],
             ]),
-            autoReleaseDate: "Mar 10, 2025 10:30:00 EDT",
+
         },
-        { cellNames: ["5", "SRC", "Algorithmic & Data Bias"], 
+        { cellNames: ["5", "SRC", "Automated Decision Making"], 
             cellNametoLinks: new Map<string,string>([
-                ["Algorithmic & Data Bias", ""],
+                ["Automated Decision Making", "https://docs.google.com/presentation/d/1hJb9zPeemaeosQjinOCOEqIWKBa4oNep0iigfa-6Sz4/edit?usp=sharing"],
             ]),
-            autoReleaseDate: "Mar 10, 2025 10:30:00 EDT",
+        
         },
         { cellNames: ["6", "Conceptual", "HW 4 & 5"], 
             cellNametoLinks: new Map<string,string>([
-                ["HW 4 & 5", ""],
+                ["HW 5 & 6", ""],
             ]),
-            autoReleaseDate: "Mar 10, 2025 10:30:00 EDT",
+   
         },
-        { cellNames: ["7", "SRC", "Automation & Job Displacement"], 
+        { cellNames: ["7", "SRC", "AI Limitation & Detection"], 
             cellNametoLinks: new Map<string,string>([
-                ["Automation & Job Displacement", ""],
+                ["AI Limitation & Detection", "https://docs.google.com/presentation/d/192C44TIFaZmqf7MUGyUP08oAHR-k5cY0dT9dHZKCuJM/edit?usp=sharing"],
             ]),
-            autoReleaseDate: "Mar 10, 2025 10:30:00 EDT",
+
         },
         { cellNames: ["8", "Conceptual", "HW 6 & 7"], 
             cellNametoLinks: new Map<string,string>([
-                ["HW 6 & 7", ""],
+                ["HW 7 & 8", ""],
             ]),
-            autoReleaseDate: "April 4, 2025 16:00:00 EDT",
         },
-        { cellNames: ["9", "SRC", "Explainable AI & Imitation"], 
+        { cellNames: ["9", "SRC", "AI Innovation"], 
             cellNametoLinks: new Map<string,string>([
-                ["Explainable AI & Imitation", ""],
+                ["AI Innovation", "https://docs.google.com/presentation/d/1n0EZ56x_Hk_yg7ZnyF2g2YUsQHjGpbDCxuOPffmlC0g/edit?usp=sharing"],
             ]),
-            autoReleaseDate: "April 11, 2025 16:00:00 EDT",
         },
         { cellNames: ["10", "Conceptual", "HW 8 & 9"], 
             cellNametoLinks: new Map<string,string>([
-                ["HW 8 & 9", ""],
+                ["HW 9 & 10", ""],
             ]),
-            autoReleaseDate: "April 18, 2025 16:00:00 EDT",
-        },
-        { cellNames: ["11", "SRC", "AI Warfare"], 
-            cellNametoLinks: new Map<string,string>([
-                ["AI & Warfare", ""],
-            ]),
-            autoReleaseDate: "April 25, 2025 16:00:00 EDT",
         },
         
         
