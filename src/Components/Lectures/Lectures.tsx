@@ -400,9 +400,7 @@ export class Lectures extends React.Component<LectureProps> {
 				"Slides",
 				"",
 			],
-			cellNametoLinks: new Map<string, string>([
-				["Slides", require("./slides/gmms.pdf")],
-			]),
+
 			autoReleaseDate: "Nov 14, 2025 04:00:00 EDT",
 		},
 		{
