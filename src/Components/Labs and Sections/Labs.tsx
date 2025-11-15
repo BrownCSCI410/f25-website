@@ -32,7 +32,8 @@ export class Labs extends React.Component<LabProps> {
     myRows: RowOptions[] = [
         { cellNames: ["1", "SRC", "AI Policy"], 
             cellNametoLinks: new Map<string,string>([
-                ["AI Policy", ""],
+                ["AI Policy", "https://docs.google.com/presentation/d/1JRHSWtVhLIo-6nHNqkmq1Z65rFAhDNWvVc3vyZ1KB9c/edit?usp=sharing
+"],
             ]),
             autoReleaseDate: "Mar 10, 2025 10:30:00 EDT",
         },
