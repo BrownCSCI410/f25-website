@@ -410,10 +410,11 @@ export class Lectures extends React.Component<LectureProps> {
 				"Principal Component Analysis",
 				"",
 				"Notes",
-				"",
+				"Slides",
 			],
 			cellNametoLinks: new Map<string, string>([
-				["Notes", require("./notes/PCA.pdf")],
+				["Notes", require("./lecture_notes/PCA.pdf")],
+				["Slides", "https://docs.google.com/presentation/d/1FrslWqk2YVl9IlUcvu6fYy0Mcwnz_OIf-rfeLjjlwqA/edit?usp=sharing"]
 			]),
 		},
 		{
