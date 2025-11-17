@@ -401,9 +401,8 @@ export class Lectures extends React.Component<LectureProps> {
 				"",
 			],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./slides/")],
+				["Slides", require("./slides/GaussianMixtureModels.pptx")],
 			]),
-			autoReleaseDate: "Nov 14, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
@@ -414,9 +413,8 @@ export class Lectures extends React.Component<LectureProps> {
 				"",
 			],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./slides/GaussianMixtureModels.pptx")],
+				["Notes", require("./notes/PCA.pdf")],
 			]),
-			autoReleaseDate: "Nov 17, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
@@ -429,7 +427,6 @@ export class Lectures extends React.Component<LectureProps> {
 			cellNametoLinks: new Map<string, string>([
 				// ["Notes", require("./slides/MCTS.pdf")],
 			]),
-			autoReleaseDate: "Nov 19, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
@@ -442,7 +439,6 @@ export class Lectures extends React.Component<LectureProps> {
 			cellNametoLinks: new Map<string, string>([
 				// ["Notes", require("./slides/AlphaGo.pdf")],
 			]),
-			autoReleaseDate: "Nov 21, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
@@ -455,7 +451,6 @@ export class Lectures extends React.Component<LectureProps> {
 			cellNametoLinks: new Map<string, string>([
 				// ["Notes", require("./lecture_notes/iterative_deepening_review.pdf")],
 			]),
-			autoReleaseDate: "Nov 24, 2025 04:00:00 EDT",
 		},
 		{
 			cellNames: [
