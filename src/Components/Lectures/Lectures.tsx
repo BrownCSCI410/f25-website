@@ -422,11 +422,11 @@ export class Lectures extends React.Component<LectureProps> {
 				"11/19",
 				"Introduction to the Final Project (Go and MCTS)",
 				"",
-				"Notes",
+				"Slides",
 				"",
 			],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./slides/MCTS.pdf")],
+				["Slides", require("./slides/MCTS.pdf")],
 			]),
 		},
 		{
