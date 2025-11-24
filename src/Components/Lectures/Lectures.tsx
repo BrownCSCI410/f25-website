@@ -444,13 +444,13 @@ export class Lectures extends React.Component<LectureProps> {
 		{
 			cellNames: [
 				"11/24",
-				"Anytime Algorithms and Adversarial Search",
+				"Anytime Algorithms and Combining Learning and GOFAI",
 				"",
-				"Notes",
+				"Slides",
 				"",
 			],
 			cellNametoLinks: new Map<string, string>([
-				// ["Notes", require("./lecture_notes/iterative_deepening_review.pdf")],
+				["slides", require("./lecture_notes/tools.pdf")],
 			]),
 		},
 		{
