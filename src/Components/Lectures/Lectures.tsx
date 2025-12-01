@@ -456,7 +456,7 @@ export class Lectures extends React.Component<LectureProps> {
 		{
 			cellNames: [
 				"12/1",
-				"Guest Lecture",
+				"Guest Lecture: Rob Lewis",
 				"",
 				"Notes",
 				"",
@@ -469,7 +469,7 @@ export class Lectures extends React.Component<LectureProps> {
 		{
 			cellNames: [
 				"12/3",
-				"Guest Lecture",
+				"Robotics",
 				"",
 				"Notes",
 				"",
@@ -482,7 +482,7 @@ export class Lectures extends React.Component<LectureProps> {
 		{
 			cellNames: [
 				"12/5",
-				"Guest Lecture",
+				"The Future of AI Research",
 				"",
 				"Notes",
 				"",
