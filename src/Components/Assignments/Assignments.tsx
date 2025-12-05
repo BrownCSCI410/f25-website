@@ -139,7 +139,7 @@ export class Assignments extends React.Component<AssignmentProps> {
 		{
 			cellNames: ["Final Project Part 3", "12/5", "12/14"],
 			cellNametoLinks: new Map<string, string>([
-				// ["Final Project Part 3", require("./handouts/part3.pdf")],
+				["Final Project Part 3", require("./handouts/part3.pdf")],
 			]),
 		},
 	];
