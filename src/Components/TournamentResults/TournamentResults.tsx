@@ -24,6 +24,7 @@ interface Bot {
   name: string;
   wins: number;
   losses: number;
+  games: number;
   rating: number;
 }
 
@@ -99,6 +100,7 @@ export const TournamentResults: React.FC = () => {
         name: stats.name || mainData.agent_names[id as keyof typeof mainData.agent_names] || `Unknown Bot ${id}`,
         wins: stats.wins,
         losses: stats.losses,
+        games: stats.games,
         rating: Math.round(stats.rating)
       }));
 
