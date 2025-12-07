@@ -49,17 +49,12 @@ export const TournamentResults: React.FC = () => {
   const fetchDataForBoardSize = async (boardSize: string) => {
     try {
       setLoading(prev => ({ ...prev, [boardSize]: true }));
-      // Use relative paths that work in both development and deployment
       const basePath = process.env.PUBLIC_URL || '';
       
-      // Fetch data files for this board size with fallback handling
+      // Fetch data files for this board size
       const [mainResponse, matchesResponse] = await Promise.all([
-        fetch(`${basePath}/results_${boardSize}.json`).catch(() => 
-          fetch(`./results_${boardSize}.json`)
-        ),
-        fetch(`${basePath}/top32_matches_${boardSize}.csv`).catch(() =>
-          fetch(`./top32_matches_${boardSize}.csv`)
-        )
+        fetch(`${basePath}/results_${boardSize}.json`),
+        fetch(`${basePath}/top32_matches_${boardSize}.csv`)
       ]);
       
       if (!mainResponse.ok) {
