@@ -285,7 +285,7 @@ export const TournamentResults: React.FC = () => {
               <td>{index + 1}</td>
               <td>{bot.name}</td>
               <td>{bot.id}</td>
-              <td>{(bot.wins / (bot.wins + bot.losses)).toFixed(2)}</td>
+              <td>{bot.games > 0 ? (bot.wins / bot.games * 100).toFixed(1) + '%' : 'N/A'}</td>
               <td>{bot.rating}</td>
             </tr>
           ))}
