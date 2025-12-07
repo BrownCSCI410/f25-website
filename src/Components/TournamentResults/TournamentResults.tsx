@@ -275,9 +275,6 @@ export const TournamentResults: React.FC = () => {
             <th onClick={() => handleSort('wins')} className="sortable">
               Win Percentage {sortField === 'wins' && (sortDirection === 'asc' ? '↑' : '↓')}
             </th>
-            <th onClick={() => handleSort('rating')} className="sortable">
-              ELO Rating {sortField === 'rating' && (sortDirection === 'asc' ? '↑' : '↓')}
-            </th>
           </tr>
         </thead>
         <tbody>
@@ -287,7 +284,6 @@ export const TournamentResults: React.FC = () => {
               <td>{bot.name}</td>
               <td>{bot.id}</td>
               <td>{bot.games > 0 ? (bot.wins / bot.games * 100).toFixed(1) + '%' : 'N/A'}</td>
-              <td>{bot.rating}</td>
             </tr>
           ))}
         </tbody>
