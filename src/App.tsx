@@ -8,7 +8,7 @@ import { Labs } from './Components/Labs and Sections/Labs';
 import { Hours } from './Components/Hours/Hours';
 import { Resources } from './Components/Resources/Resources';
 import { Staff } from './Components/Staff/Staff';
-import { Glossary } from './Components/Glossary/glossary';
+import { TournamentResults } from './Components/TournamentResults/TournamentResults';
 import './App.scss'
 
 export default function App() {
@@ -24,7 +24,7 @@ export default function App() {
           <Route path="/resources" element={<Resources />} />
           <Route path="/hours" element={<Hours />} />
           <Route path="/staff" element={<Staff />} />
-          <Route path="/glossary" element={<Glossary />} />
+          <Route path="/tournament-results" element={<TournamentResults />} />
         </Routes>
       </main>
     </div>

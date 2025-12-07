@@ -37,44 +37,43 @@ interface MatchData {
 }
 
 export const TournamentResults: React.FC = () => {
-  const [bots, setBots] = useState<Bot[]>([]);
-  const [top32Bots, setTop32Bots] = useState<Bot[]>([]);
-  const [matchData, setMatchData] = useState<MatchData>({});
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const [activeTab, setActiveTab] = useState<string>('5x5');
+  const [bots, setBots] = useState<{[key: string]: Bot[]}>({ '5x5': [], '9x9': [] });
+  const [matchData, setMatchData] = useState<{[key: string]: MatchData}>({ '5x5': {}, '9x9': {} });
+  const [loading, setLoading] = useState<{[key: string]: boolean}>({ '5x5': true, '9x9': true });
+  const [error, setError] = useState<{[key: string]: string | null}>({ '5x5': null, '9x9': null });
   const [sortField, setSortField] = useState<SortField>('rating');
   const [sortDirection, setSortDirection] = useState<SortDirection>('desc');
-  const [top32SortField, setTop32SortField] = useState<SortField>('rating');
-  const [top32SortDirection, setTop32SortDirection] = useState<SortDirection>('desc');
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        setLoading(true);
-        const basePath = process.env.PUBLIC_URL || '';
-        
-        // Fetch all data files
-        const [mainResponse, top32Response, matchesResponse] = await Promise.all([
-          fetch(`${basePath}/results.json`),
-          fetch(`${basePath}/top32_results.json`),
-          fetch(`${basePath}/top32_matches.csv`)
-        ]);
-        
-        if (!mainResponse.ok || !top32Response.ok || !matchesResponse.ok) {
-          throw new Error('Failed to fetch tournament data');
-        }
-        
-        // Parse JSON files
-        const [mainData, top32Data]: [ResultsData, ResultsData] = await Promise.all([
-          mainResponse.json(),
-          top32Response.json()
-        ]);
+  const fetchDataForBoardSize = async (boardSize: string) => {
+    try {
+      setLoading(prev => ({ ...prev, [boardSize]: true }));
+      // Use the correct base path for the public directory
+      const basePath = process.env.PUBLIC_URL || '/f25-website';
+      
+      // Fetch data files for this board size
+      const [mainResponse, matchesResponse] = await Promise.all([
+        fetch(`${basePath}/results_${boardSize}.json`),
+        fetch(`${basePath}/top32_matches_${boardSize}.csv`)
+      ]);
+      
+      if (!mainResponse.ok) {
+        throw new Error(`Failed to fetch ${boardSize} main results`);
+      }
+      
+      // Parse JSON file
+      const mainData: ResultsData = await mainResponse.json();
+      let csvText = '';
+      
+      if (matchesResponse.ok) {
+        csvText = await matchesResponse.text();
+      }
 
-        // Parse CSV data
-        const csvText = await matchesResponse.text();
+      // Parse CSV data
+      const matchData: MatchData = {};
+      if (csvText) {
         const rows = csvText.split('\n').map(row => row.split(','));
         const headers = rows[0].slice(1); // Skip first empty cell
-        const matchData: MatchData = {};
         
         // Process match data
         for (let i = 1; i < rows.length; i++) {
@@ -92,57 +91,49 @@ export const TournamentResults: React.FC = () => {
             }
           }
         }
-        
-        // Process bot data
-        const processedBots: Bot[] = Object.entries(mainData.ratings).map(([id, stats]) => ({
-          id,
-          name: stats.name || mainData.agent_names[id as keyof typeof mainData.agent_names] || `Unknown Bot ${id}`,
-          wins: stats.wins,
-          losses: stats.losses,
-          rating: Math.round(stats.rating)
-        }));
-
-        const processedTop32Bots: Bot[] = Object.entries(top32Data.ratings).map(([id, stats]) => ({
-          id,
-          name: stats.name || top32Data.agent_names[id as keyof typeof top32Data.agent_names] || `Unknown Bot ${id}`,
-          wins: stats.wins,
-          losses: stats.losses,
-          rating: Math.round(stats.rating)
-        }));
-
-        setBots(processedBots);
-        setTop32Bots(processedTop32Bots);
-        setMatchData(matchData);
-        setLoading(false);
-      } catch (err) {
-        console.error('Error loading tournament data:', err);
-        setError(err instanceof Error ? err.message : 'Unknown error');
-        setLoading(false);
       }
-    };
-    
-    fetchData();
+        
+      // Process bot data
+      const processedBots: Bot[] = Object.entries(mainData.ratings).map(([id, stats]) => ({
+        id,
+        name: stats.name || mainData.agent_names[id as keyof typeof mainData.agent_names] || `Unknown Bot ${id}`,
+        wins: stats.wins,
+        losses: stats.losses,
+        rating: Math.round(stats.rating)
+      }));
+
+      setBots(prev => ({ ...prev, [boardSize]: processedBots }));
+      setMatchData(prev => ({ ...prev, [boardSize]: matchData }));
+      setLoading(prev => ({ ...prev, [boardSize]: false }));
+      setError(prev => ({ ...prev, [boardSize]: null }));
+    } catch (err) {
+      console.error(`Error loading ${boardSize} tournament data:`, err);
+      setError(prev => ({ ...prev, [boardSize]: err instanceof Error ? err.message : 'Unknown error' }));
+      setLoading(prev => ({ ...prev, [boardSize]: false }));
+    }
+  };
+  
+  useEffect(() => {
+    // Fetch data for both board sizes
+    fetchDataForBoardSize('5x5');
+    fetchDataForBoardSize('9x9');
   }, []);
 
-  const handleSort = (field: SortField, isTop32: boolean = false) => {
-    if (isTop32) {
-      if (field === top32SortField) {
-        setTop32SortDirection(top32SortDirection === 'asc' ? 'desc' : 'asc');
-      } else {
-        setTop32SortField(field);
-        setTop32SortDirection('desc');
-      }
+  const handleSort = (field: SortField) => {
+    if (field === sortField) {
+      setSortDirection(sortDirection === 'asc' ? 'desc' : 'asc');
     } else {
-      if (field === sortField) {
-        setSortDirection(sortDirection === 'asc' ? 'desc' : 'asc');
-      } else {
-        setSortField(field);
-        setSortDirection('desc');
-      }
+      setSortField(field);
+      setSortDirection('desc');
     }
   };
 
-  const sortedBots = [...bots].sort((a, b) => {
+  const currentBots = bots[activeTab] || [];
+  const currentMatchData = matchData[activeTab] || {};
+  const currentLoading = loading[activeTab] || false;
+  const currentError = error[activeTab] || null;
+
+  const sortedBots = [...currentBots].sort((a, b) => {
     const multiplier = sortDirection === 'asc' ? 1 : -1;
     if (sortField === 'name') {
       return multiplier * a.name.localeCompare(b.name);
@@ -150,17 +141,6 @@ export const TournamentResults: React.FC = () => {
       return multiplier * a.id.localeCompare(b.id);
     } else {
       return multiplier * (a[sortField] - b[sortField]);
-    }
-  });
-
-  const sortedTop32Bots = [...top32Bots].sort((a, b) => {
-    const multiplier = top32SortDirection === 'asc' ? 1 : -1;
-    if (top32SortField === 'name') {
-      return multiplier * a.name.localeCompare(b.name);
-    } else if (top32SortField === 'id') {
-      return multiplier * a.id.localeCompare(b.id);
-    } else {
-      return multiplier * (a[top32SortField] - b[top32SortField]);
     }
   });
 
@@ -181,10 +161,13 @@ export const TournamentResults: React.FC = () => {
   };
 
   const renderHeatmap = () => {
-    // Get top 32 bots by rating
-    const topBots = [...top32Bots]
-      .sort((a, b) => b.rating - a.rating)
-      .slice(0, 32);
+    // Use all available bots for the heatmap
+    const topBots = [...currentBots]
+      .sort((a, b) => b.rating - a.rating);
+
+    if (topBots.length === 0) {
+      return <div className="heatmap-container"><p>No match data available for heatmap.</p></div>;
+    }
 
     // Create a map of bot IDs to names for easy lookup
     const botNameMap = new Map(topBots.map(bot => [bot.id, bot.name]));
@@ -195,7 +178,7 @@ export const TournamentResults: React.FC = () => {
         bot.id,
         new Map<string, number | string | null>(
           topBots.map(opponent => {
-            const botMatches = matchData[bot.id];
+            const botMatches = currentMatchData[bot.id];
             if (!botMatches) return [opponent.id, null];
             
             const score = botMatches[opponent.id];
@@ -209,7 +192,7 @@ export const TournamentResults: React.FC = () => {
 
     return (
       <div className="heatmap-container">
-        <h3>Match Results Heatmap (Top 32 Agents, 10 games between each pair of agents)</h3>
+        <h3>Match Results Heatmap ({topBots.length} Agents, {activeTab} Board)</h3>
         <div className="heatmap">
           <table>
             <thead>
@@ -268,35 +251,31 @@ export const TournamentResults: React.FC = () => {
     );
   };
 
-  if (loading) {
-    return <div className="tournament-results">Loading tournament results...</div>;
+  if (currentLoading) {
+    return <div className="tournament-results">Loading {activeTab} tournament results...</div>;
   }
 
-  if (error) {
-    return <div className="tournament-results">Error: {error}</div>;
+  if (currentError) {
+    return <div className="tournament-results">Error loading {activeTab} results: {currentError}</div>;
   }
 
-  const renderTable = (bots: Bot[], isTop32: boolean = false) => {
-    const currentSortField = isTop32 ? top32SortField : sortField;
-    const currentSortDirection = isTop32 ? top32SortDirection : sortDirection;
-    const handleTableSort = (field: SortField) => handleSort(field, isTop32);
-
+  const renderTable = (bots: Bot[]) => {
     return (
       <table>
         <thead>
           <tr>
             <th className="rank-column">#</th>
-            <th onClick={() => handleTableSort('name')} className="sortable">
-              Agent Name {currentSortField === 'name' && (currentSortDirection === 'asc' ? '↑' : '↓')}
+            <th onClick={() => handleSort('name')} className="sortable">
+              Agent Name {sortField === 'name' && (sortDirection === 'asc' ? '↑' : '↓')}
             </th>
-            <th onClick={() => handleTableSort('id')} className="sortable">
-              ID {currentSortField === 'id' && (currentSortDirection === 'asc' ? '↑' : '↓')}
+            <th onClick={() => handleSort('id')} className="sortable">
+              ID {sortField === 'id' && (sortDirection === 'asc' ? '↑' : '↓')}
             </th>
-            <th onClick={() => handleTableSort('wins')} className="sortable">
-              Win Percentage {currentSortField === 'wins' && (currentSortDirection === 'asc' ? '↑' : '↓')}
+            <th onClick={() => handleSort('wins')} className="sortable">
+              Win Percentage {sortField === 'wins' && (sortDirection === 'asc' ? '↑' : '↓')}
             </th>
-            <th onClick={() => handleTableSort('rating')} className="sortable">
-              ELO Rating {currentSortField === 'rating' && (currentSortDirection === 'asc' ? '↑' : '↓')}
+            <th onClick={() => handleSort('rating')} className="sortable">
+              ELO Rating {sortField === 'rating' && (sortDirection === 'asc' ? '↑' : '↓')}
             </th>
           </tr>
         </thead>
@@ -317,24 +296,33 @@ export const TournamentResults: React.FC = () => {
 
   return (
     <div id="Final Project Results" className="tournament-results">
-      <h2 style={{ color: 'white', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}>Final Tournament Results!</h2>
+      <h2>Final Tournament Results!</h2>
+      
+      <div className="board-size-tabs">
+        <button 
+          className={`tab-button ${activeTab === '5x5' ? 'active' : ''}`} 
+          onClick={() => setActiveTab('5x5')}
+        >
+          5x5 Board
+        </button>
+        <button 
+          className={`tab-button ${activeTab === '9x9' ? 'active' : ''}`} 
+          onClick={() => setActiveTab('9x9')}
+        >
+          9x9 Board
+        </button>
+      </div>
+      
       <div className="tournament-section">
-        <h3>Full Tournament Results</h3>
-        {bots.length === 0 ? (
-          <p>No tournament results available.</p>
+        <h3>Tournament Results ({activeTab} Board)</h3>
+        {currentBots.length === 0 ? (
+          <p>No tournament results available for {activeTab}.</p>
         ) : (
           renderTable(sortedBots)
         )}
       </div>
-      <div className="tournament-section">
-        <h3>Top 32 Results (10 games between each pair of agents)</h3>
-        {top32Bots.length === 0 ? (
-          <p>No top 32 results available.</p>
-        ) : (
-          renderTable(sortedTop32Bots, true)
-        )}
-      </div>
-      {renderHeatmap()}
+      
+      {Object.keys(currentMatchData).length > 0 && renderHeatmap()}
     </div>
   );
 }

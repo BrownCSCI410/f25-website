@@ -1,0 +1,39 @@
+{
+  "ratings": {
+    "375941799": {
+      "rating": 1600,
+      "games": 2,
+      "wins": 0,
+      "losses": 2,
+      "name": "randy-bot"
+    },
+    "375981754": {
+      "rating": 1500,
+      "games": 2,
+      "wins": 1,
+      "losses": 1,
+      "name": "MCTS"
+    },
+    "376012859": {
+      "rating": 1400,
+      "games": 2,
+      "wins": 2,
+      "losses": 0,
+      "name": "GG + Simple Heuristic"
+    }
+  },
+  "metadata": {
+    "k_factor": 32,
+    "default_rating": 1500,
+    "num_games": 6,
+    "num_matches": 6,
+    "num_agents": 3,
+    "board_size": "5x5",
+    "timestamp": "2025-12-07T01:25:54.206360"
+  },
+  "agent_names": {
+    "375941799": "randy-bot",
+    "375981754": "MCTS",
+    "376012859": "GG + Simple Heuristic"
+  }
+}

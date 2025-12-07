@@ -42,7 +42,7 @@ export class Navbar extends React.Component<NavbarProps> {
                     <Link className="nav-link" to="/resources">Resources</Link>
                     <Link className="nav-link" to="/hours">Hours</Link>
                     <Link className="nav-link" to="/staff">Staff</Link>
-                    <Link className="nav-link" to="/glossary">Glossary</Link>
+                    <Link className="nav-link" to="/tournament-results">Tournament Results</Link>
                 </nav>
             </div>
         );
