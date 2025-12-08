@@ -1,31 +1,57 @@
 {
   "ratings": {
+    "376177506": {
+      "rating": 1418.2,
+      "games": 6,
+      "wins": 0,
+      "losses": 6,
+      "ties": 0,
+      "win_rate": 0.0,
+      "name": "NBK"
+    },
     "375952060": {
-      "rating": 1600,
-      "games": 4,
-      "wins": 4.0,
-      "losses": 0.0,
+      "rating": 1497.2,
+      "games": 8,
+      "wins": 4,
+      "losses": 4,
+      "ties": 0,
+      "win_rate": 0.5,
       "name": "MCTS"
     },
+    "376101180": {
+      "rating": 1502.7,
+      "games": 8,
+      "wins": 4,
+      "losses": 4,
+      "ties": 0,
+      "win_rate": 0.5,
+      "name": "HybridSearchAgent (safe fast rollouts, rollout_steps=3)"
+    },
     "375995723": {
-      "rating": 1400,
-      "games": 4,
-      "wins": 0.0,
-      "losses": 4.0,
+      "rating": 1582.0,
+      "games": 6,
+      "wins": 6,
+      "losses": 0,
+      "ties": 0,
+      "win_rate": 1.0,
       "name": "TGLove"
     }
   },
   "metadata": {
+    "rating_system": "True ELO",
     "k_factor": 32,
     "default_rating": 1500,
-    "num_games": 2,
-    "num_matches": 2,
-    "num_agents": 2,
+    "num_individual_games": 14,
+    "num_matches": 12,
+    "num_agents": 4,
     "board_size": "9x9",
-    "timestamp": "2025-12-07T02:14:45.964058"
+    "timestamp": "2025-12-08T01:39:22.179358",
+    "elo_description": "Ratings calculated using standard ELO system with K=32, updated after each individual game"
   },
   "agent_names": {
+    "376177506": "NBK",
     "375952060": "MCTS",
+    "376101180": "HybridSearchAgent (safe fast rollouts, rollout_steps=3)",
     "375995723": "TGLove"
   }
 }

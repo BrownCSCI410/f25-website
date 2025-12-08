@@ -1,39 +1,87 @@
 {
   "ratings": {
+    "375941799": {
+      "rating": 1397.3,
+      "games": 16,
+      "wins": 4,
+      "losses": 12,
+      "ties": 0,
+      "win_rate": 0.25,
+      "name": "depth-first-search"
+    },
+    "376114735": {
+      "rating": 1451.4,
+      "games": 16,
+      "wins": 6,
+      "losses": 10,
+      "ties": 0,
+      "win_rate": 0.375,
+      "name": "MCTS"
+    },
+    "376115055": {
+      "rating": 1490.2,
+      "games": 22,
+      "wins": 10,
+      "losses": 12,
+      "ties": 0,
+      "win_rate": 0.455,
+      "name": "MCTS"
+    },
     "376012859": {
-      "rating": 1600,
-      "games": 8,
-      "wins": 5.0,
-      "losses": 3.0,
+      "rating": 1511.4,
+      "games": 16,
+      "wins": 8,
+      "losses": 8,
+      "ties": 0,
+      "win_rate": 0.5,
       "name": "GG + Simple Heuristic"
     },
     "375981754": {
-      "rating": 1500,
-      "games": 8,
-      "wins": 5.0,
-      "losses": 3.0,
+      "rating": 1498.7,
+      "games": 16,
+      "wins": 8,
+      "losses": 8,
+      "ties": 0,
+      "win_rate": 0.5,
       "name": "MCTS"
     },
-    "375941799": {
-      "rating": 1400,
-      "games": 8,
-      "wins": 2.0,
-      "losses": 6.0,
-      "name": "randy-bot"
+    "376039969": {
+      "rating": 1529.4,
+      "games": 20,
+      "wins": 12,
+      "losses": 8,
+      "ties": 0,
+      "win_rate": 0.6,
+      "name": "MCTS"
+    },
+    "376168896": {
+      "rating": 1621.4,
+      "games": 14,
+      "wins": 12,
+      "losses": 2,
+      "ties": 0,
+      "win_rate": 0.857,
+      "name": "Agent 376168896"
     }
   },
   "metadata": {
+    "rating_system": "True ELO",
     "k_factor": 32,
     "default_rating": 1500,
-    "num_games": 6,
-    "num_matches": 6,
-    "num_agents": 3,
+    "num_individual_games": 60,
+    "num_matches": 42,
+    "num_agents": 7,
     "board_size": "5x5",
-    "timestamp": "2025-12-07T02:13:49.784928"
+    "timestamp": "2025-12-08T01:39:13.880658",
+    "elo_description": "Ratings calculated using standard ELO system with K=32, updated after each individual game"
   },
   "agent_names": {
+    "375941799": "depth-first-search",
+    "376114735": "MCTS",
+    "376115055": "MCTS",
     "376012859": "GG + Simple Heuristic",
     "375981754": "MCTS",
-    "375941799": "randy-bot"
+    "376039969": "MCTS",
+    "376168896": "Agent 376168896"
   }
 }

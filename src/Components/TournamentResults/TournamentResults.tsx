@@ -28,7 +28,7 @@ interface Bot {
   rating: number;
 }
 
-type SortField = 'name' | 'id' | 'wins' | 'losses' | 'rating';
+type SortField = 'name' | 'id' | 'wins' | 'losses' | 'rating' | 'winRate';
 type SortDirection = 'asc' | 'desc';
 
 interface MatchData {
@@ -140,24 +140,56 @@ export const TournamentResults: React.FC = () => {
       return multiplier * a.name.localeCompare(b.name);
     } else if (sortField === 'id') {
       return multiplier * a.id.localeCompare(b.id);
+    } else if (sortField === 'winRate') {
+      const aWinRate = a.games > 0 ? a.wins / a.games : 0;
+      const bWinRate = b.games > 0 ? b.wins / b.games : 0;
+      return multiplier * (aWinRate - bWinRate);
     } else {
       return multiplier * (a[sortField] - b[sortField]);
     }
   });
 
+  // Calculate max score dynamically from match data
+  const getMaxScore = () => {
+    let maxScore = 1;
+    Object.values(currentMatchData).forEach(botMatches => {
+      Object.values(botMatches).forEach(score => {
+        if (typeof score === 'number' && !isNaN(score)) {
+          maxScore = Math.max(maxScore, Math.abs(score));
+        }
+      });
+    });
+    console.log('Calculated maxScore:', maxScore, 'from data:', currentMatchData);
+    return maxScore;
+  };
+
   const getScoreColor = (score: number | null | string | undefined): string => {
     if (score === null || score === 'ERROR' || score === undefined) return '#666'; // Gray for no match/error
     if (score === 0) return '#808080'; // Darker gray for draws
-    const maxScore = 10; // Maximum score difference for color scaling
+    
+    let maxScore = getMaxScore(); // Dynamically detect maximum score
+    if (isNaN(maxScore) || maxScore <= 0) {
+      maxScore = 6; // Fallback based on your data showing max scores of 6
+    }
+    
     const normalizedScore = Math.max(-maxScore, Math.min(maxScore, score as number)) / maxScore;
+    
+    // Debug logging
+    if (Math.random() < 0.1) { // Log 10% of the time to avoid spam
+      console.log(`Score: ${score}, MaxScore: ${maxScore}, Normalized: ${normalizedScore}`);
+    }
+    
     if (normalizedScore > 0) {
-      // Green for wins, intensity based on score
+      // Red for wins: light red to dark red as score increases
       const intensity = Math.abs(normalizedScore);
-      return `rgba(76, ${Math.round(175 + (80 * (1 - intensity)))}, 80, ${0.5 + (0.5 * intensity)})`;
+      return `rgba(${Math.round(255 - 100 * intensity)}, 50, 50, ${0.3 + 0.5 * intensity})`;
+    } else if (normalizedScore < 0) {
+      // Green for losses: light green to dark green as loss severity increases  
+      const intensity = Math.abs(normalizedScore);
+      return `rgba(50, ${Math.round(255 - 100 * intensity)}, 50, ${0.3 + 0.5 * intensity})`;
     } else {
-      // Red for losses, intensity based on score
-      const intensity = Math.abs(normalizedScore);
-      return `rgba(244, ${Math.round(67 + (188 * (1 - intensity)))}, 54, ${0.5 + (0.5 * intensity)})`;
+      // Exactly 0 - should be gray
+      return '#808080';
     }
   };
 
@@ -185,7 +217,7 @@ export const TournamentResults: React.FC = () => {
             const score = botMatches[opponent.id];
             if (score === null) return [opponent.id, null];
             if (typeof score === 'string') return [opponent.id, 'ERROR'];
-            return [opponent.id, -score];
+            return [opponent.id, -score]; // Flip score to show from row player's perspective
           })
         )
       ])
@@ -194,6 +226,7 @@ export const TournamentResults: React.FC = () => {
     return (
       <div className="heatmap-container">
         <h3>Match Results Heatmap ({topBots.length} Agents, {activeTab} Board)</h3>
+        <p><strong>Note:</strong> Colors show results from the row player's perspective vs column player</p>
         <div className="heatmap">
           <table>
             <thead>
@@ -223,7 +256,7 @@ export const TournamentResults: React.FC = () => {
                           score === 'ERROR' ? 'Error' :
                           score === 0 ? 'Draw' :
                           typeof score === 'number' ? 
-                            `${score > 0 ? 'Win' : 'Loss'} by ${Math.abs(score)}` :
+                            `${bot?.name || 'Unknown'} ${score > 0 ? 'won' : 'lost'} by ${Math.abs(score)}` :
                           'Unknown'
                         }`}
                       />
@@ -272,8 +305,8 @@ export const TournamentResults: React.FC = () => {
             <th onClick={() => handleSort('id')} className="sortable">
               ID {sortField === 'id' && (sortDirection === 'asc' ? '↑' : '↓')}
             </th>
-            <th onClick={() => handleSort('wins')} className="sortable">
-              Win Percentage {sortField === 'wins' && (sortDirection === 'asc' ? '↑' : '↓')}
+            <th onClick={() => handleSort('winRate')} className="sortable">
+              Win Percentage {sortField === 'winRate' && (sortDirection === 'asc' ? '↑' : '↓')}
             </th>
           </tr>
         </thead>
