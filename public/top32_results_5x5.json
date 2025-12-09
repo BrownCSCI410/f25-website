@@ -1,7 +1,7 @@
 {
   "ratings": {
     "376498397": {
-      "rating": 1310.1,
+      "rating": 1319.5,
       "games": 36,
       "wins": 6,
       "losses": 28,
@@ -10,7 +10,7 @@
       "name": "007"
     },
     "375941799": {
-      "rating": 1404.9,
+      "rating": 1374.4,
       "games": 42,
       "wins": 12,
       "losses": 26,
@@ -19,7 +19,7 @@
       "name": "BetaGo"
     },
     "376257850": {
-      "rating": 1343.2,
+      "rating": 1348.4,
       "games": 44,
       "wins": 14,
       "losses": 28,
@@ -28,7 +28,7 @@
       "name": "mcts"
     },
     "376114735": {
-      "rating": 1424.2,
+      "rating": 1431.5,
       "games": 46,
       "wins": 18,
       "losses": 28,
@@ -37,7 +37,7 @@
       "name": "MCTS"
     },
     "376485863": {
-      "rating": 1375.7,
+      "rating": 1425.5,
       "games": 40,
       "wins": 14,
       "losses": 26,
@@ -46,7 +46,7 @@
       "name": "MCTS"
     },
     "376012859": {
-      "rating": 1499.8,
+      "rating": 1434.0,
       "games": 46,
       "wins": 18,
       "losses": 24,
@@ -55,7 +55,7 @@
       "name": "GG + Simple Heuristic"
     },
     "376439749": {
-      "rating": 1494.9,
+      "rating": 1489.7,
       "games": 42,
       "wins": 20,
       "losses": 22,
@@ -64,7 +64,7 @@
       "name": "Final Agent - MCTS w customizations"
     },
     "376556122": {
-      "rating": 1516.2,
+      "rating": 1467.0,
       "games": 40,
       "wins": 20,
       "losses": 20,
@@ -73,7 +73,7 @@
       "name": "MCTS"
     },
     "376247816": {
-      "rating": 1498.1,
+      "rating": 1520.6,
       "games": 38,
       "wins": 20,
       "losses": 18,
@@ -82,7 +82,7 @@
       "name": "GOGOGOGOIterativeDeepneing + Learned Heuristic"
     },
     "375981754": {
-      "rating": 1528.9,
+      "rating": 1523.6,
       "games": 50,
       "wins": 26,
       "losses": 24,
@@ -91,7 +91,7 @@
       "name": "MCTS"
     },
     "376294210": {
-      "rating": 1478.0,
+      "rating": 1519.8,
       "games": 50,
       "wins": 26,
       "losses": 24,
@@ -100,7 +100,7 @@
       "name": "MCTS"
     },
     "376499284": {
-      "rating": 1642.4,
+      "rating": 1673.0,
       "games": 34,
       "wins": 26,
       "losses": 8,
@@ -109,7 +109,7 @@
       "name": "MCTS_2"
     },
     "376168896": {
-      "rating": 1656.8,
+      "rating": 1603.8,
       "games": 36,
       "wins": 26,
       "losses": 10,
@@ -118,7 +118,7 @@
       "name": "IterativeDeepening + best heuristic ever"
     },
     "376039969": {
-      "rating": 1676.2,
+      "rating": 1695.1,
       "games": 32,
       "wins": 26,
       "losses": 6,
@@ -127,7 +127,7 @@
       "name": "MCTS"
     },
     "376553843": {
-      "rating": 1650.5,
+      "rating": 1673.9,
       "games": 36,
       "wins": 28,
       "losses": 8,
@@ -144,7 +144,7 @@
     "num_matches": 210,
     "num_agents": 15,
     "board_size": "5x5",
-    "timestamp": "2025-12-09T07:47:09.293039",
+    "timestamp": "2025-12-09T08:09:46.352810",
     "elo_description": "Ratings calculated using standard ELO system with K=32, updated after each individual game"
   },
   "agent_names": {
