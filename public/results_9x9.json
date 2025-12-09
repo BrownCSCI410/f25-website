@@ -1,16 +1,16 @@
 {
   "ratings": {
     "376177506": {
-      "rating": 1418.2,
+      "rating": 1418.1,
       "games": 6,
       "wins": 0,
       "losses": 6,
       "ties": 0,
       "win_rate": 0.0,
-      "name": "NBK"
+      "name": "Agent 376177506"
     },
     "375952060": {
-      "rating": 1497.2,
+      "rating": 1505.5,
       "games": 8,
       "wins": 4,
       "losses": 4,
@@ -19,16 +19,16 @@
       "name": "MCTS"
     },
     "376101180": {
-      "rating": 1502.7,
+      "rating": 1491.9,
       "games": 8,
       "wins": 4,
       "losses": 4,
       "ties": 0,
       "win_rate": 0.5,
-      "name": "HybridSearchAgent (safe fast rollouts, rollout_steps=3)"
+      "name": "HybridSearchAgent (MCTS + IDS Root Prior)"
     },
     "375995723": {
-      "rating": 1582.0,
+      "rating": 1584.5,
       "games": 6,
       "wins": 6,
       "losses": 0,
@@ -45,13 +45,13 @@
     "num_matches": 12,
     "num_agents": 4,
     "board_size": "9x9",
-    "timestamp": "2025-12-08T01:39:22.179358",
+    "timestamp": "2025-12-09T07:47:59.170958",
     "elo_description": "Ratings calculated using standard ELO system with K=32, updated after each individual game"
   },
   "agent_names": {
-    "376177506": "NBK",
+    "376177506": "Agent 376177506",
     "375952060": "MCTS",
-    "376101180": "HybridSearchAgent (safe fast rollouts, rollout_steps=3)",
+    "376101180": "HybridSearchAgent (MCTS + IDS Root Prior)",
     "375995723": "TGLove"
   }
 }
