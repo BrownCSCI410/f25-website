@@ -1,167 +1,247 @@
 {
   "ratings": {
+    "376892005": {
+      "rating": 1238.0,
+      "games": 44,
+      "wins": 0,
+      "losses": 34,
+      "ties": 10,
+      "win_rate": 0.114,
+      "name": "MCTS"
+    },
+    "376894155": {
+      "rating": 1279.1,
+      "games": 44,
+      "wins": 2,
+      "losses": 30,
+      "ties": 12,
+      "win_rate": 0.182,
+      "name": "MCTS"
+    },
     "376498397": {
-      "rating": 1339.7,
-      "games": 34,
-      "wins": 8,
+      "rating": 1309.1,
+      "games": 44,
+      "wins": 2,
       "losses": 26,
-      "ties": 0,
-      "win_rate": 0.235,
+      "ties": 16,
+      "win_rate": 0.227,
       "name": "Started From the Bottom"
     },
-    "375941799": {
-      "rating": 1604.0,
-      "games": 40,
-      "wins": 26,
-      "losses": 12,
-      "ties": 2,
-      "win_rate": 0.675,
-      "name": "BetaGo"
+    "376921411": {
+      "rating": 1298.2,
+      "games": 44,
+      "wins": 4,
+      "losses": 28,
+      "ties": 12,
+      "win_rate": 0.227,
+      "name": "MCTS_2.4"
     },
     "376257850": {
-      "rating": 1346.7,
-      "games": 34,
+      "rating": 1364.3,
+      "games": 44,
       "wins": 6,
-      "losses": 28,
-      "ties": 0,
-      "win_rate": 0.176,
+      "losses": 24,
+      "ties": 14,
+      "win_rate": 0.295,
       "name": "mcts"
     },
+    "376115055": {
+      "rating": 1403.6,
+      "games": 44,
+      "wins": 8,
+      "losses": 24,
+      "ties": 12,
+      "win_rate": 0.318,
+      "name": "MCTS"
+    },
+    "376920593": {
+      "rating": 1370.9,
+      "games": 44,
+      "wins": 6,
+      "losses": 22,
+      "ties": 16,
+      "win_rate": 0.318,
+      "name": "part3agent"
+    },
+    "376928024": {
+      "rating": 1386.8,
+      "games": 44,
+      "wins": 4,
+      "losses": 18,
+      "ties": 22,
+      "win_rate": 0.341,
+      "name": "MCTS Timed"
+    },
+    "376168896": {
+      "rating": 1377.9,
+      "games": 44,
+      "wins": 6,
+      "losses": 20,
+      "ties": 18,
+      "win_rate": 0.341,
+      "name": "IterativeDeepening + caching"
+    },
     "376114735": {
-      "rating": 1351.5,
-      "games": 38,
-      "wins": 10,
-      "losses": 28,
-      "ties": 0,
-      "win_rate": 0.263,
+      "rating": 1425.0,
+      "games": 44,
+      "wins": 8,
+      "losses": 18,
+      "ties": 18,
+      "win_rate": 0.386,
       "name": "MCTS"
     },
     "376485863": {
-      "rating": 1351.0,
-      "games": 42,
-      "wins": 14,
-      "losses": 28,
-      "ties": 0,
-      "win_rate": 0.333,
+      "rating": 1472.9,
+      "games": 44,
+      "wins": 12,
+      "losses": 18,
+      "ties": 14,
+      "win_rate": 0.432,
       "name": "IDS_MCTS"
     },
-    "376012859": {
-      "rating": 1480.4,
-      "games": 40,
-      "wins": 18,
-      "losses": 20,
-      "ties": 2,
-      "win_rate": 0.475,
-      "name": "GG + Simple Heuristic"
-    },
-    "376439749": {
-      "rating": 1435.9,
-      "games": 38,
-      "wins": 14,
-      "losses": 20,
-      "ties": 4,
-      "win_rate": 0.421,
-      "name": "Final Agent - MCTS w customizations"
-    },
-    "376556122": {
-      "rating": 1503.5,
-      "games": 38,
-      "wins": 20,
-      "losses": 18,
-      "ties": 0,
-      "win_rate": 0.526,
-      "name": "MCTS"
-    },
-    "376247816": {
-      "rating": 1533.7,
-      "games": 36,
-      "wins": 18,
-      "losses": 16,
-      "ties": 2,
-      "win_rate": 0.528,
-      "name": "GOGOGOGOIterativeDeepneing + Learned Heuristic"
-    },
     "375981754": {
-      "rating": 1494.3,
+      "rating": 1483.2,
       "games": 44,
-      "wins": 20,
-      "losses": 24,
-      "ties": 0,
+      "wins": 12,
+      "losses": 16,
+      "ties": 16,
       "win_rate": 0.455,
       "name": "MCTS"
     },
-    "376294210": {
-      "rating": 1628.2,
-      "games": 38,
-      "wins": 28,
-      "losses": 10,
-      "ties": 0,
-      "win_rate": 0.737,
-      "name": "big man"
+    "376916814": {
+      "rating": 1473.9,
+      "games": 44,
+      "wins": 12,
+      "losses": 12,
+      "ties": 20,
+      "win_rate": 0.5,
+      "name": "Final Agent"
     },
-    "376499284": {
-      "rating": 1567.6,
-      "games": 34,
+    "376249013": {
+      "rating": 1534.2,
+      "games": 44,
+      "wins": 16,
+      "losses": 12,
+      "ties": 16,
+      "win_rate": 0.545,
+      "name": "litty"
+    },
+    "376439749": {
+      "rating": 1563.3,
+      "games": 44,
+      "wins": 18,
+      "losses": 12,
+      "ties": 14,
+      "win_rate": 0.568,
+      "name": "Final Agent - MCTS w customizations"
+    },
+    "376247816": {
+      "rating": 1545.1,
+      "games": 44,
+      "wins": 20,
+      "losses": 12,
+      "ties": 12,
+      "win_rate": 0.591,
+      "name": "GOGOGOGOIterativeDeepneing + Learned Heuristic"
+    },
+    "376556122": {
+      "rating": 1570.2,
+      "games": 44,
       "wins": 22,
       "losses": 12,
-      "ties": 0,
-      "win_rate": 0.647,
-      "name": "MCTS_2"
-    },
-    "376168896": {
-      "rating": 1483.8,
-      "games": 52,
-      "wins": 24,
-      "losses": 26,
-      "ties": 2,
-      "win_rate": 0.481,
-      "name": "IterativeDeepening + caching"
-    },
-    "376039969": {
-      "rating": 1649.7,
-      "games": 34,
-      "wins": 26,
-      "losses": 8,
-      "ties": 0,
-      "win_rate": 0.765,
+      "ties": 10,
+      "win_rate": 0.614,
       "name": "MCTS"
     },
-    "376553843": {
-      "rating": 1730.0,
-      "games": 34,
-      "wins": 28,
+    "376012859": {
+      "rating": 1604.5,
+      "games": 44,
+      "wins": 24,
+      "losses": 12,
+      "ties": 8,
+      "win_rate": 0.636,
+      "name": "GG + Simple Heuristic"
+    },
+    "375941799": {
+      "rating": 1665.6,
+      "games": 44,
+      "wins": 30,
       "losses": 6,
-      "ties": 0,
-      "win_rate": 0.824,
+      "ties": 8,
+      "win_rate": 0.773,
+      "name": "BetaGo"
+    },
+    "376499284": {
+      "rating": 1751.3,
+      "games": 44,
+      "wins": 34,
+      "losses": 2,
+      "ties": 8,
+      "win_rate": 0.864,
+      "name": "MCTS_2"
+    },
+    "376553843": {
+      "rating": 1766.0,
+      "games": 44,
+      "wins": 38,
+      "losses": 4,
+      "ties": 2,
+      "win_rate": 0.886,
       "name": "MCTS + Learned Heuristic Rollout"
+    },
+    "376294210": {
+      "rating": 1802.8,
+      "games": 44,
+      "wins": 38,
+      "losses": 0,
+      "ties": 6,
+      "win_rate": 0.932,
+      "name": "big man"
+    },
+    "376039969": {
+      "rating": 1813.9,
+      "games": 44,
+      "wins": 40,
+      "losses": 0,
+      "ties": 4,
+      "win_rate": 0.955,
+      "name": "MCTS"
     }
   },
   "metadata": {
     "rating_system": "True ELO",
     "k_factor": 32,
     "default_rating": 1500,
-    "num_individual_games": 288,
-    "num_matches": 462,
-    "num_agents": 15,
+    "num_individual_games": 506,
+    "num_matches": 506,
+    "num_agents": 23,
     "board_size": "5x5",
-    "timestamp": "2025-12-10T08:39:12.084245",
+    "timestamp": "2025-12-11T08:07:17.664455",
     "elo_description": "Ratings calculated using standard ELO system with K=32, updated after each individual game"
   },
   "agent_names": {
+    "376892005": "MCTS",
+    "376894155": "MCTS",
     "376498397": "Started From the Bottom",
-    "375941799": "BetaGo",
+    "376921411": "MCTS_2.4",
     "376257850": "mcts",
+    "376115055": "MCTS",
+    "376920593": "part3agent",
+    "376928024": "MCTS Timed",
+    "376168896": "IterativeDeepening + caching",
     "376114735": "MCTS",
     "376485863": "IDS_MCTS",
-    "376012859": "GG + Simple Heuristic",
-    "376439749": "Final Agent - MCTS w customizations",
-    "376556122": "MCTS",
-    "376247816": "GOGOGOGOIterativeDeepneing + Learned Heuristic",
     "375981754": "MCTS",
-    "376294210": "big man",
+    "376916814": "Final Agent",
+    "376249013": "litty",
+    "376439749": "Final Agent - MCTS w customizations",
+    "376247816": "GOGOGOGOIterativeDeepneing + Learned Heuristic",
+    "376556122": "MCTS",
+    "376012859": "GG + Simple Heuristic",
+    "375941799": "BetaGo",
     "376499284": "MCTS_2",
-    "376168896": "IterativeDeepening + caching",
-    "376039969": "MCTS",
-    "376553843": "MCTS + Learned Heuristic Rollout"
+    "376553843": "MCTS + Learned Heuristic Rollout",
+    "376294210": "big man",
+    "376039969": "MCTS"
   }
 }

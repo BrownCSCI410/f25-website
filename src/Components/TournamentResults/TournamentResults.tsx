@@ -93,10 +93,17 @@ export const TournamentResults: React.FC = () => {
         }
       }
         
+      // Helper function to clean agent names
+      const cleanAgentName = (name: string): string => {
+        if (!name) return name;
+        // Remove carriage returns, line feeds, and other unwanted whitespace
+        return name.replace(/[\r\n\t]/g, ' ').replace(/\s+/g, ' ').trim();
+      };
+
       // Process bot data
       const processedBots: Bot[] = Object.entries(mainData.ratings).map(([id, stats]) => ({
         id,
-        name: stats.name || mainData.agent_names[id as keyof typeof mainData.agent_names] || `Unknown Bot ${id}`,
+        name: cleanAgentName(stats.name || mainData.agent_names[id as keyof typeof mainData.agent_names] || `Unknown Bot ${id}`),
         wins: stats.wins,
         losses: stats.losses,
         games: stats.games,
