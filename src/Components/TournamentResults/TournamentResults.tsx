@@ -258,14 +258,6 @@ export const TournamentResults: React.FC = () => {
                       <td
                         key={opponent.id}
                         style={{ backgroundColor: cellColor }}
-                        title={`${bot?.name || 'Unknown'} vs ${opponent?.name || 'Unknown'}: ${
-                          score === null ? 'No match' :
-                          score === 'ERROR' ? 'Error' :
-                          score === 0 ? 'Draw' :
-                          typeof score === 'number' ? 
-                            `${bot?.name || 'Unknown'} ${score > 0 ? 'won' : 'lost'} by ${Math.abs(score)}` :
-                          'Unknown'
-                        }`}
                       />
                     );
                   })}
