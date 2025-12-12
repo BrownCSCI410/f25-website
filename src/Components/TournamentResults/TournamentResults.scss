@@ -14,6 +14,36 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
   }
 
+  // Tournament notification banner
+  .tournament-notification {
+    background: linear-gradient(45deg, #ffa726, #ff7043);
+    border: 2px solid #ff8f00;
+    border-radius: 12px;
+    margin: 1rem 0 2rem 0;
+    padding: 0;
+    box-shadow: 0 4px 12px rgba(255, 165, 0, 0.3);
+    animation: pulse-glow 2s infinite;
+
+    .notification-content {
+      padding: 1rem 1.5rem;
+      text-align: center;
+      color: #1a1a1a;
+      font-size: 1.1rem;
+      font-weight: 500;
+      text-shadow: none;
+      
+      strong {
+        font-weight: 700;
+      }
+    }
+  }
+
+  @keyframes pulse-glow {
+    0% { box-shadow: 0 4px 12px rgba(255, 165, 0, 0.3); }
+    50% { box-shadow: 0 4px 20px rgba(255, 165, 0, 0.5); }
+    100% { box-shadow: 0 4px 12px rgba(255, 165, 0, 0.3); }
+  }
+
   h3 {
     font-family: 'Series Orbit', sans-serif;
     text-align: center;
