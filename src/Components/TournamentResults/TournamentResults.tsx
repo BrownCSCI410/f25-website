@@ -327,6 +327,13 @@ export const TournamentResults: React.FC = () => {
     <div id="Final Project Results" className="tournament-results">
       <h2>Final Tournament Results!</h2>
       
+      {/* Tournament Update Notification */}
+      <div className="tournament-notification">
+        <div className="notification-content">
+          <strong>Tournament In Progress!</strong> Daily results are being generated and are expected to be updated around <strong>12:00 PM</strong> today.
+        </div>
+      </div>
+      
       <div className="board-size-tabs">
         <button 
           className={`tab-button ${activeTab === '5x5' ? 'active' : ''}`} 
