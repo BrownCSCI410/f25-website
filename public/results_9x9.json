@@ -1,7 +1,7 @@
 {
   "ratings": {
     "376755474": {
-      "rating": 1233.3,
+      "rating": 1228.8,
       "games": 34,
       "wins": 0,
       "losses": 30,
@@ -10,7 +10,7 @@
       "name": "Silly_EnhancedIDS"
     },
     "376177506": {
-      "rating": 1241.1,
+      "rating": 1230.8,
       "games": 34,
       "wins": 0,
       "losses": 30,
@@ -19,7 +19,7 @@
       "name": "NBK"
     },
     "376940232": {
-      "rating": 1305.0,
+      "rating": 1320.3,
       "games": 34,
       "wins": 4,
       "losses": 26,
@@ -28,7 +28,7 @@
       "name": "My9x9Agent"
     },
     "376682991": {
-      "rating": 1351.8,
+      "rating": 1341.7,
       "games": 34,
       "wins": 4,
       "losses": 22,
@@ -37,7 +37,7 @@
       "name": "Agent 376682991"
     },
     "376995734": {
-      "rating": 1360.9,
+      "rating": 1375.8,
       "games": 34,
       "wins": 4,
       "losses": 20,
@@ -46,7 +46,7 @@
       "name": "HybridAgent9x9(MCTS-focused)"
     },
     "376852421": {
-      "rating": 1488.0,
+      "rating": 1501.7,
       "games": 34,
       "wins": 10,
       "losses": 12,
@@ -55,7 +55,7 @@
       "name": "hikaru_v2"
     },
     "376400339": {
-      "rating": 1510.5,
+      "rating": 1489.8,
       "games": 34,
       "wins": 8,
       "losses": 8,
@@ -64,7 +64,7 @@
       "name": "nickikiki"
     },
     "376811270": {
-      "rating": 1523.5,
+      "rating": 1518.2,
       "games": 34,
       "wins": 8,
       "losses": 6,
@@ -73,7 +73,7 @@
       "name": "VerFiveAgent"
     },
     "377059487": {
-      "rating": 1528.8,
+      "rating": 1534.2,
       "games": 34,
       "wins": 14,
       "losses": 10,
@@ -82,7 +82,7 @@
       "name": "AdvancedMCTS9x9"
     },
     "375952060": {
-      "rating": 1540.2,
+      "rating": 1562.2,
       "games": 34,
       "wins": 14,
       "losses": 8,
@@ -91,7 +91,7 @@
       "name": "MCTS"
     },
     "376927341": {
-      "rating": 1552.5,
+      "rating": 1558.0,
       "games": 34,
       "wins": 14,
       "losses": 8,
@@ -100,7 +100,7 @@
       "name": "KostasOptimalAgentv5"
     },
     "376887961": {
-      "rating": 1580.4,
+      "rating": 1568.1,
       "games": 34,
       "wins": 12,
       "losses": 2,
@@ -109,7 +109,7 @@
       "name": "arianagrandAI"
     },
     "375995723": {
-      "rating": 1594.5,
+      "rating": 1584.6,
       "games": 34,
       "wins": 18,
       "losses": 8,
@@ -118,7 +118,7 @@
       "name": "TGLove"
     },
     "376101180": {
-      "rating": 1606.6,
+      "rating": 1614.4,
       "games": 34,
       "wins": 18,
       "losses": 4,
@@ -127,7 +127,7 @@
       "name": "HybridSearchAgent (MCTS + IDS Root Prior)"
     },
     "376877166": {
-      "rating": 1623.4,
+      "rating": 1626.2,
       "games": 34,
       "wins": 18,
       "losses": 4,
@@ -136,7 +136,7 @@
       "name": "Goooooooo"
     },
     "376921043": {
-      "rating": 1655.8,
+      "rating": 1651.8,
       "games": 34,
       "wins": 20,
       "losses": 4,
@@ -145,7 +145,7 @@
       "name": "ThirtySeven"
     },
     "376444585": {
-      "rating": 1639.5,
+      "rating": 1631.2,
       "games": 34,
       "wins": 16,
       "losses": 0,
@@ -154,7 +154,7 @@
       "name": "FinalMCTSAgent9x9(HeavyPlayout)"
     },
     "375981754": {
-      "rating": 1664.2,
+      "rating": 1662.1,
       "games": 34,
       "wins": 22,
       "losses": 2,
@@ -171,7 +171,7 @@
     "num_matches": 306,
     "num_agents": 18,
     "board_size": "9x9",
-    "timestamp": "2025-12-12T08:48:57.505549",
+    "timestamp": "2025-12-12T13:36:48.373568",
     "elo_description": "Ratings calculated using standard ELO system with K=32, updated after each individual game"
   },
   "agent_names": {

@@ -305,7 +305,7 @@ export const TournamentResults: React.FC = () => {
               ID {sortField === 'id' && (sortDirection === 'asc' ? '↑' : '↓')}
             </th>
             <th onClick={() => handleSort('winRate')} className="sortable">
-              Win Percentage {sortField === 'winRate' && (sortDirection === 'asc' ? '↑' : '↓')}
+              Win Percentage* {sortField === 'winRate' && (sortDirection === 'asc' ? '↑' : '↓')}
             </th>
           </tr>
         </thead>
@@ -328,11 +328,13 @@ export const TournamentResults: React.FC = () => {
       <h2>Final Tournament Results!</h2>
       
       {/* Tournament Update Notification */}
+      {/*
       <div className="tournament-notification">
         <div className="notification-content">
           <strong>Tournament In Progress!</strong> Daily results are being generated and are expected to be updated around <strong>12:00 PM</strong> today.
         </div>
       </div>
+      */}
       
       <div className="board-size-tabs">
         <button 
@@ -354,7 +356,14 @@ export const TournamentResults: React.FC = () => {
         {currentBots.length === 0 ? (
           <p>No tournament results available for {activeTab}.</p>
         ) : (
-          renderTable(sortedBots)
+          <>
+            {renderTable(sortedBots)}
+            <div style={{ backgroundColor: '#f0f8ff', border: '1px solid #ccc', padding: '10px', borderRadius: '5px', marginTop: '15px' }}>
+              <p style={{ fontSize: '0.9em', color: '#333', margin: 0 }}>
+                <strong>Note:</strong> Win percentage calculated as wins / total games. Games ending in timeouts, exceptions, or crashes count as losses for both players, but will be updated tomorrow to only penalize the bot that causes the crash.
+              </p>
+            </div>
+          </>
         )}
       </div>
       
