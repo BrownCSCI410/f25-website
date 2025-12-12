@@ -187,13 +187,13 @@ export const TournamentResults: React.FC = () => {
     }
     
     if (normalizedScore > 0) {
-      // Red for wins: light red to dark red as score increases
-      const intensity = Math.abs(normalizedScore);
-      return `rgba(${Math.round(255 - 100 * intensity)}, 50, 50, ${0.3 + 0.5 * intensity})`;
-    } else if (normalizedScore < 0) {
-      // Green for losses: light green to dark green as loss severity increases  
+      // Green for wins: light green to dark green as score increases
       const intensity = Math.abs(normalizedScore);
       return `rgba(50, ${Math.round(255 - 100 * intensity)}, 50, ${0.3 + 0.5 * intensity})`;
+    } else if (normalizedScore < 0) {
+      // Red for losses: light red to dark red as loss severity increases  
+      const intensity = Math.abs(normalizedScore);
+      return `rgba(${Math.round(255 - 100 * intensity)}, 50, 50, ${0.3 + 0.5 * intensity})`;
     } else {
       // Exactly 0 - should be gray
       return '#808080';
@@ -224,7 +224,7 @@ export const TournamentResults: React.FC = () => {
             const score = botMatches[opponent.id];
             if (score === null) return [opponent.id, null];
             if (typeof score === 'string') return [opponent.id, 'ERROR'];
-            return [opponent.id, -score]; // Flip score to show from row player's perspective
+            return [opponent.id, score]; // Score is already from row player's perspective
           })
         )
       ])
@@ -268,11 +268,11 @@ export const TournamentResults: React.FC = () => {
         </div>
         <div className="heatmap-legend">
           <div className="legend-item">
-            <div className="legend-color" style={{ backgroundColor: 'rgba(76, 175, 80, 1)' }}></div>
+            <div className="legend-color" style={{ backgroundColor: 'rgba(50, 155, 50, 0.8)' }}></div>
             <span>Strong Win</span>
           </div>
           <div className="legend-item">
-            <div className="legend-color" style={{ backgroundColor: 'rgba(244, 67, 54, 1)' }}></div>
+            <div className="legend-color" style={{ backgroundColor: 'rgba(155, 50, 50, 0.8)' }}></div>
             <span>Strong Loss</span>
           </div>
           <div className="legend-item">
