@@ -360,7 +360,7 @@ export const TournamentResults: React.FC = () => {
             {renderTable(sortedBots)}
             <div style={{ backgroundColor: '#f0f8ff', border: '1px solid #ccc', padding: '10px', borderRadius: '5px', marginTop: '15px' }}>
               <p style={{ fontSize: '0.9em', color: '#333', margin: 0 }}>
-                <strong>Note:</strong> Win percentage calculated as wins / total games. Games ending in timeouts, exceptions, or crashes count as losses for the agent that caused the error (when identifiable).
+                <strong>Note:</strong> Win percentage calculated as wins / total individual games. Each match consists of 2 games (one as black, one as white). Games ending in timeouts, exceptions, or crashes count as losses for the agent that caused the error (when identifiable).
               </p>
             </div>
           </>
