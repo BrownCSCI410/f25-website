@@ -1,197 +1,447 @@
 {
   "ratings": {
-    "376755474": {
-      "rating": 1228.8,
-      "games": 34,
-      "wins": 0,
-      "losses": 30,
-      "ties": 4,
-      "win_rate": 0.059,
-      "name": "Silly_EnhancedIDS"
-    },
-    "376177506": {
-      "rating": 1230.8,
-      "games": 34,
-      "wins": 0,
-      "losses": 30,
-      "ties": 4,
-      "win_rate": 0.059,
-      "name": "NBK"
+    "376444585": {
+      "rating": 1454.2,
+      "games": 176,
+      "wins": 68,
+      "losses": 108,
+      "ties": 0,
+      "win_rate": 0.386,
+      "name": "FinalMCTSAgent9x9"
     },
     "376940232": {
-      "rating": 1320.3,
-      "games": 34,
-      "wins": 4,
-      "losses": 26,
-      "ties": 4,
-      "win_rate": 0.176,
-      "name": "My9x9Agent"
+      "rating": 1440.1,
+      "games": 176,
+      "wins": 70,
+      "losses": 106,
+      "ties": 0,
+      "win_rate": 0.398,
+      "name": "My9x9UpdatedAgent"
     },
-    "376682991": {
-      "rating": 1341.7,
-      "games": 34,
-      "wins": 4,
-      "losses": 22,
-      "ties": 8,
-      "win_rate": 0.235,
-      "name": "Agent 376682991"
+    "377423159": {
+      "rating": 1440.8,
+      "games": 176,
+      "wins": 70,
+      "losses": 106,
+      "ties": 0,
+      "win_rate": 0.398,
+      "name": "Hybrid(IDS+AB depth=4, threshold=25)"
     },
-    "376995734": {
-      "rating": 1375.8,
-      "games": 34,
-      "wins": 4,
-      "losses": 20,
-      "ties": 10,
-      "win_rate": 0.265,
-      "name": "HybridAgent9x9(MCTS-focused)"
+    "377281146": {
+      "rating": 1461.2,
+      "games": 176,
+      "wins": 74,
+      "losses": 102,
+      "ties": 0,
+      "win_rate": 0.42,
+      "name": "UltimateMCTSAgent"
     },
-    "376852421": {
-      "rating": 1501.7,
-      "games": 34,
-      "wins": 10,
-      "losses": 12,
-      "ties": 12,
-      "win_rate": 0.471,
-      "name": "hikaru_v2"
+    "376177506": {
+      "rating": 1452.4,
+      "games": 176,
+      "wins": 74,
+      "losses": 102,
+      "ties": 0,
+      "win_rate": 0.42,
+      "name": "NBK"
     },
-    "376400339": {
-      "rating": 1489.8,
-      "games": 34,
-      "wins": 8,
-      "losses": 8,
-      "ties": 18,
-      "win_rate": 0.5,
-      "name": "nickikiki"
+    "377999354": {
+      "rating": 1463.1,
+      "games": 176,
+      "wins": 76,
+      "losses": 100,
+      "ties": 0,
+      "win_rate": 0.432,
+      "name": "Q_MCTS"
     },
-    "376811270": {
-      "rating": 1518.2,
-      "games": 34,
-      "wins": 8,
-      "losses": 6,
-      "ties": 20,
-      "win_rate": 0.529,
-      "name": "VerFiveAgent"
+    "376892005": {
+      "rating": 1454.0,
+      "games": 176,
+      "wins": 80,
+      "losses": 96,
+      "ties": 0,
+      "win_rate": 0.455,
+      "name": "IterativeDeepneing + Simple Heuristic"
+    },
+    "376755474": {
+      "rating": 1453.4,
+      "games": 176,
+      "wins": 80,
+      "losses": 96,
+      "ties": 0,
+      "win_rate": 0.455,
+      "name": "Silly_EnhancedIDS"
     },
     "377059487": {
-      "rating": 1534.2,
-      "games": 34,
-      "wins": 14,
-      "losses": 10,
-      "ties": 10,
-      "win_rate": 0.559,
-      "name": "AdvancedMCTS9x9"
+      "rating": 1477.5,
+      "games": 176,
+      "wins": 80,
+      "losses": 96,
+      "ties": 0,
+      "win_rate": 0.455,
+      "name": "Tekashi6ix7even"
     },
-    "375952060": {
-      "rating": 1562.2,
-      "games": 34,
-      "wins": 14,
-      "losses": 8,
-      "ties": 12,
-      "win_rate": 0.588,
-      "name": "MCTS"
+    "376682991": {
+      "rating": 1486.4,
+      "games": 176,
+      "wins": 82,
+      "losses": 94,
+      "ties": 0,
+      "win_rate": 0.466,
+      "name": "TournamentAgentV10_PriorMCTS"
     },
-    "376927341": {
-      "rating": 1558.0,
-      "games": 34,
-      "wins": 14,
-      "losses": 8,
-      "ties": 12,
-      "win_rate": 0.588,
-      "name": "KostasOptimalAgentv5"
-    },
-    "376887961": {
-      "rating": 1568.1,
-      "games": 34,
-      "wins": 12,
-      "losses": 2,
-      "ties": 20,
-      "win_rate": 0.647,
-      "name": "arianagrandAI"
-    },
-    "375995723": {
-      "rating": 1584.6,
-      "games": 34,
-      "wins": 18,
-      "losses": 8,
-      "ties": 8,
-      "win_rate": 0.647,
-      "name": "TGLove"
-    },
-    "376101180": {
-      "rating": 1614.4,
-      "games": 34,
-      "wins": 18,
-      "losses": 4,
-      "ties": 12,
-      "win_rate": 0.706,
-      "name": "HybridSearchAgent (MCTS + IDS Root Prior)"
-    },
-    "376877166": {
-      "rating": 1626.2,
-      "games": 34,
-      "wins": 18,
-      "losses": 4,
-      "ties": 12,
-      "win_rate": 0.706,
-      "name": "Goooooooo"
-    },
-    "376921043": {
-      "rating": 1651.8,
-      "games": 34,
-      "wins": 20,
-      "losses": 4,
-      "ties": 10,
-      "win_rate": 0.735,
-      "name": "ThirtySeven"
-    },
-    "376444585": {
-      "rating": 1631.2,
-      "games": 34,
-      "wins": 16,
-      "losses": 0,
-      "ties": 18,
-      "win_rate": 0.735,
-      "name": "FinalMCTSAgent9x9(HeavyPlayout)"
+    "376114735": {
+      "rating": 1468.6,
+      "games": 176,
+      "wins": 82,
+      "losses": 94,
+      "ties": 0,
+      "win_rate": 0.466,
+      "name": "final"
     },
     "375981754": {
-      "rating": 1662.1,
-      "games": 34,
-      "wins": 22,
-      "losses": 2,
-      "ties": 10,
-      "win_rate": 0.794,
+      "rating": 1467.8,
+      "games": 176,
+      "wins": 82,
+      "losses": 94,
+      "ties": 0,
+      "win_rate": 0.466,
       "name": "MCTS-Kirkified"
+    },
+    "377160074": {
+      "rating": 1456.7,
+      "games": 176,
+      "wins": 82,
+      "losses": 94,
+      "ties": 0,
+      "win_rate": 0.466,
+      "name": "IterativeDeepening + better heuristic"
+    },
+    "376995734": {
+      "rating": 1473.8,
+      "games": 176,
+      "wins": 84,
+      "losses": 92,
+      "ties": 0,
+      "win_rate": 0.477,
+      "name": "HybridAgent9x9(MCTS-focused)"
+    },
+    "376887961": {
+      "rating": 1480.9,
+      "games": 176,
+      "wins": 84,
+      "losses": 92,
+      "ties": 0,
+      "win_rate": 0.477,
+      "name": "arianagrandAI"
+    },
+    "376921043": {
+      "rating": 1473.2,
+      "games": 176,
+      "wins": 84,
+      "losses": 92,
+      "ties": 0,
+      "win_rate": 0.477,
+      "name": "ThirtySeven..."
+    },
+    "377513525": {
+      "rating": 1492.8,
+      "games": 176,
+      "wins": 86,
+      "losses": 90,
+      "ties": 0,
+      "win_rate": 0.489,
+      "name": "Final9x9Agent"
+    },
+    "376852421": {
+      "rating": 1467.1,
+      "games": 176,
+      "wins": 86,
+      "losses": 90,
+      "ties": 0,
+      "win_rate": 0.489,
+      "name": "hikaru_v2"
+    },
+    "377888466": {
+      "rating": 1503.2,
+      "games": 176,
+      "wins": 86,
+      "losses": 90,
+      "ties": 0,
+      "win_rate": 0.489,
+      "name": "FinalTournamentAgent-9x9"
+    },
+    "377979434": {
+      "rating": 1471.3,
+      "games": 176,
+      "wins": 86,
+      "losses": 90,
+      "ties": 0,
+      "win_rate": 0.489,
+      "name": "Mike"
+    },
+    "375952060": {
+      "rating": 1512.8,
+      "games": 176,
+      "wins": 88,
+      "losses": 88,
+      "ties": 0,
+      "win_rate": 0.5,
+      "name": "MCTS"
+    },
+    "377636046": {
+      "rating": 1504.8,
+      "games": 176,
+      "wins": 88,
+      "losses": 88,
+      "ties": 0,
+      "win_rate": 0.5,
+      "name": "JD Bot"
+    },
+    "377981858": {
+      "rating": 1502.8,
+      "games": 176,
+      "wins": 88,
+      "losses": 88,
+      "ties": 0,
+      "win_rate": 0.5,
+      "name": "EnhancedMCTS"
+    },
+    "376811270": {
+      "rating": 1504.4,
+      "games": 176,
+      "wins": 90,
+      "losses": 86,
+      "ties": 0,
+      "win_rate": 0.511,
+      "name": "IterativeDeepeningTerritoryAgent (cutoff=1)"
+    },
+    "376877166": {
+      "rating": 1522.9,
+      "games": 176,
+      "wins": 90,
+      "losses": 86,
+      "ties": 0,
+      "win_rate": 0.511,
+      "name": "Goooooooo"
+    },
+    "377269059": {
+      "rating": 1515.6,
+      "games": 176,
+      "wins": 90,
+      "losses": 86,
+      "ties": 0,
+      "win_rate": 0.511,
+      "name": "UltimateMCTSAgent(RAVE+OpeningBook+SmartPlayouts)"
+    },
+    "376578923": {
+      "rating": 1499.0,
+      "games": 176,
+      "wins": 90,
+      "losses": 86,
+      "ties": 0,
+      "win_rate": 0.511,
+      "name": "FinalAgent(Enhanced)"
+    },
+    "377633913": {
+      "rating": 1540.7,
+      "games": 176,
+      "wins": 92,
+      "losses": 84,
+      "ties": 0,
+      "win_rate": 0.523,
+      "name": "EnhancedMCTS_9x9"
+    },
+    "377187744": {
+      "rating": 1515.6,
+      "games": 176,
+      "wins": 92,
+      "losses": 84,
+      "ties": 0,
+      "win_rate": 0.523,
+      "name": "StrongMCTSAgent(9x9-final-optimized)"
+    },
+    "377605697": {
+      "rating": 1477.8,
+      "games": 176,
+      "wins": 92,
+      "losses": 84,
+      "ties": 0,
+      "win_rate": 0.523,
+      "name": "PUCTAgent(heuristic-value)"
+    },
+    "376400339": {
+      "rating": 1529.4,
+      "games": 176,
+      "wins": 92,
+      "losses": 84,
+      "ties": 0,
+      "win_rate": 0.523,
+      "name": "nickikiki"
+    },
+    "377994358": {
+      "rating": 1566.1,
+      "games": 176,
+      "wins": 94,
+      "losses": 82,
+      "ties": 0,
+      "win_rate": 0.534,
+      "name": "EnhancedMCTSAgent(c=1.41)"
+    },
+    "377879158": {
+      "rating": 1514.3,
+      "games": 176,
+      "wins": 94,
+      "losses": 82,
+      "ties": 0,
+      "win_rate": 0.534,
+      "name": "FinalMCTSAgent"
+    },
+    "377999069": {
+      "rating": 1518.4,
+      "games": 176,
+      "wins": 96,
+      "losses": 80,
+      "ties": 0,
+      "win_rate": 0.545,
+      "name": "Final_boss"
+    },
+    "375995723": {
+      "rating": 1521.0,
+      "games": 176,
+      "wins": 96,
+      "losses": 80,
+      "ties": 0,
+      "win_rate": 0.545,
+      "name": "TGLove"
+    },
+    "377550952": {
+      "rating": 1520.4,
+      "games": 176,
+      "wins": 96,
+      "losses": 80,
+      "ties": 0,
+      "win_rate": 0.545,
+      "name": "MCTS"
+    },
+    "377581206": {
+      "rating": 1553.8,
+      "games": 176,
+      "wins": 98,
+      "losses": 78,
+      "ties": 0,
+      "win_rate": 0.557,
+      "name": "<agents.AIEnhancedMCTSAgent9x9 object at 0x102cfc130>"
+    },
+    "377299723": {
+      "rating": 1570.7,
+      "games": 176,
+      "wins": 100,
+      "losses": 76,
+      "ties": 0,
+      "win_rate": 0.568,
+      "name": "nice"
+    },
+    "377443444": {
+      "rating": 1533.9,
+      "games": 176,
+      "wins": 100,
+      "losses": 76,
+      "ties": 0,
+      "win_rate": 0.568,
+      "name": "spiderman"
+    },
+    "377314916": {
+      "rating": 1544.8,
+      "games": 176,
+      "wins": 104,
+      "losses": 72,
+      "ties": 0,
+      "win_rate": 0.591,
+      "name": "Avada Kedavra"
+    },
+    "3255723": {
+      "rating": 1556.9,
+      "games": 176,
+      "wins": 104,
+      "losses": 72,
+      "ties": 0,
+      "win_rate": 0.591,
+      "name": "FinalMCTSAgent"
+    },
+    "376927341": {
+      "rating": 1554.9,
+      "games": 176,
+      "wins": 106,
+      "losses": 70,
+      "ties": 0,
+      "win_rate": 0.602,
+      "name": "KostasOptimalAgentv6"
+    },
+    "376101180": {
+      "rating": 1580.4,
+      "games": 176,
+      "wins": 108,
+      "losses": 68,
+      "ties": 0,
+      "win_rate": 0.614,
+      "name": "HybridSearchAgent (MCTS + IDS Root Prior)"
     }
   },
   "metadata": {
     "rating_system": "True ELO",
     "k_factor": 32,
     "default_rating": 1500,
-    "num_individual_games": 306,
-    "num_matches": 306,
-    "num_agents": 18,
+    "num_individual_games": 3784,
+    "num_matches": 1849,
+    "num_agents": 43,
     "board_size": "9x9",
-    "timestamp": "2025-12-12T13:36:48.373568",
+    "timestamp": "2025-12-13T12:38:25.234253",
     "elo_description": "Ratings calculated using standard ELO system with K=32, updated after each individual game"
   },
   "agent_names": {
-    "376755474": "Silly_EnhancedIDS",
+    "376444585": "FinalMCTSAgent9x9",
+    "376940232": "My9x9UpdatedAgent",
+    "377423159": "Hybrid(IDS+AB depth=4, threshold=25)",
+    "377281146": "UltimateMCTSAgent",
     "376177506": "NBK",
-    "376940232": "My9x9Agent",
-    "376682991": "Agent 376682991",
+    "377999354": "Q_MCTS",
+    "376892005": "IterativeDeepneing + Simple Heuristic",
+    "376755474": "Silly_EnhancedIDS",
+    "377059487": "Tekashi6ix7even",
+    "376682991": "TournamentAgentV10_PriorMCTS",
+    "376114735": "final",
+    "375981754": "MCTS-Kirkified",
+    "377160074": "IterativeDeepening + better heuristic",
     "376995734": "HybridAgent9x9(MCTS-focused)",
-    "376852421": "hikaru_v2",
-    "376400339": "nickikiki",
-    "376811270": "VerFiveAgent",
-    "377059487": "AdvancedMCTS9x9",
-    "375952060": "MCTS",
-    "376927341": "KostasOptimalAgentv5",
     "376887961": "arianagrandAI",
-    "375995723": "TGLove",
-    "376101180": "HybridSearchAgent (MCTS + IDS Root Prior)",
+    "376921043": "ThirtySeven...",
+    "377513525": "Final9x9Agent",
+    "376852421": "hikaru_v2",
+    "377888466": "FinalTournamentAgent-9x9",
+    "377979434": "Mike",
+    "375952060": "MCTS",
+    "377636046": "JD Bot",
+    "377981858": "EnhancedMCTS",
+    "376811270": "IterativeDeepeningTerritoryAgent (cutoff=1)",
     "376877166": "Goooooooo",
-    "376921043": "ThirtySeven",
-    "376444585": "FinalMCTSAgent9x9(HeavyPlayout)",
-    "375981754": "MCTS-Kirkified"
+    "377269059": "UltimateMCTSAgent(RAVE+OpeningBook+SmartPlayouts)",
+    "376578923": "FinalAgent(Enhanced)",
+    "377633913": "EnhancedMCTS_9x9",
+    "377187744": "StrongMCTSAgent(9x9-final-optimized)",
+    "377605697": "PUCTAgent(heuristic-value)",
+    "376400339": "nickikiki",
+    "377994358": "EnhancedMCTSAgent(c=1.41)",
+    "377879158": "FinalMCTSAgent",
+    "377999069": "Final_boss",
+    "375995723": "TGLove",
+    "377550952": "MCTS",
+    "377581206": "<agents.AIEnhancedMCTSAgent9x9 object at 0x102cfc130>",
+    "377299723": "nice",
+    "377443444": "spiderman",
+    "377314916": "Avada Kedavra",
+    "3255723": "FinalMCTSAgent",
+    "376927341": "KostasOptimalAgentv6",
+    "376101180": "HybridSearchAgent (MCTS + IDS Root Prior)"
   }
 }

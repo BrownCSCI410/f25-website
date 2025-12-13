@@ -1,79 +1,43 @@
 {
   "ratings": {
-    "377150206": {
-      "rating": 1259.0,
-      "games": 62,
-      "wins": 4,
-      "losses": 42,
-      "ties": 16,
-      "win_rate": 0.194,
-      "name": "BestAgent"
-    },
-    "376921411": {
-      "rating": 1291.9,
-      "games": 62,
-      "wins": 4,
-      "losses": 40,
-      "ties": 18,
-      "win_rate": 0.21,
-      "name": "MCTS_2.4"
-    },
-    "376114735": {
-      "rating": 1305.6,
-      "games": 62,
-      "wins": 4,
-      "losses": 36,
-      "ties": 22,
-      "win_rate": 0.242,
-      "name": "MCTS"
-    },
     "376257850": {
-      "rating": 1294.8,
-      "games": 62,
-      "wins": 0,
-      "losses": 32,
-      "ties": 30,
-      "win_rate": 0.242,
-      "name": "noobmaster mcts"
-    },
-    "376682991": {
-      "rating": 1293.7,
-      "games": 62,
-      "wins": 4,
-      "losses": 36,
-      "ties": 22,
-      "win_rate": 0.242,
-      "name": "Agent67"
-    },
-    "376498397": {
-      "rating": 1313.9,
-      "games": 62,
-      "wins": 6,
-      "losses": 38,
-      "ties": 18,
-      "win_rate": 0.242,
-      "name": "Started From the Bottom"
-    },
-    "376920593": {
-      "rating": 1323.2,
-      "games": 62,
-      "wins": 4,
-      "losses": 34,
-      "ties": 24,
-      "win_rate": 0.258,
-      "name": "part3agent"
-    },
-    "377639294": {
-      "rating": 1284.5,
+      "rating": 1263.6,
       "games": 62,
       "wins": 2,
-      "losses": 30,
-      "ties": 30,
-      "win_rate": 0.274,
+      "losses": 42,
+      "ties": 18,
+      "win_rate": 0.177,
+      "name": "noobmaster mcts"
+    },
+    "377639294": {
+      "rating": 1244.2,
+      "games": 62,
+      "wins": 6,
+      "losses": 44,
+      "ties": 12,
+      "win_rate": 0.194,
       "name": "had-to-submit-something"
     },
+    "376894155": {
+      "rating": 1258.1,
+      "games": 62,
+      "wins": 2,
+      "losses": 40,
+      "ties": 20,
+      "win_rate": 0.194,
+      "name": "MCTS"
+    },
+    "376012859": {
+      "rating": 1321.0,
+      "games": 62,
+      "wins": 2,
+      "losses": 32,
+      "ties": 28,
+      "win_rate": 0.258,
+      "name": "GG + GammaGo Heuristic"
+    },
     "376039969": {
-      "rating": 1347.6,
+      "rating": 1337.1,
       "games": 62,
       "wins": 2,
       "losses": 30,
@@ -81,107 +45,143 @@
       "win_rate": 0.274,
       "name": "PokemonGo"
     },
-    "377499375": {
-      "rating": 1332.2,
+    "377150206": {
+      "rating": 1323.8,
       "games": 62,
-      "wins": 4,
-      "losses": 30,
-      "ties": 28,
-      "win_rate": 0.29,
-      "name": "<agents.distribution_ids_mcts_agent object at 0x104604340>"
+      "wins": 8,
+      "losses": 36,
+      "ties": 18,
+      "win_rate": 0.274,
+      "name": "buddy"
     },
-    "376894155": {
-      "rating": 1346.0,
+    "376920593": {
+      "rating": 1313.4,
+      "games": 62,
+      "wins": 8,
+      "losses": 34,
+      "ties": 20,
+      "win_rate": 0.29,
+      "name": "part3agent"
+    },
+    "376115055": {
+      "rating": 1335.7,
+      "games": 62,
+      "wins": 8,
+      "losses": 34,
+      "ties": 20,
+      "win_rate": 0.29,
+      "name": "HybridMCTS"
+    },
+    "377584302": {
+      "rating": 1394.6,
+      "games": 62,
+      "wins": 12,
+      "losses": 34,
+      "ties": 16,
+      "win_rate": 0.323,
+      "name": "MCTS with RAVE and AMAF"
+    },
+    "376168896": {
+      "rating": 1337.9,
       "games": 62,
       "wins": 6,
       "losses": 30,
       "ties": 26,
       "win_rate": 0.306,
+      "name": "Opening + MCTS + IDS Power Ranger Agent"
+    },
+    "377934782": {
+      "rating": 1345.0,
+      "games": 62,
+      "wins": 10,
+      "losses": 32,
+      "ties": 20,
+      "win_rate": 0.323,
       "name": "MCTS"
     },
-    "376928024": {
-      "rating": 1360.4,
+    "376498397": {
+      "rating": 1380.0,
       "games": 62,
       "wins": 8,
-      "losses": 28,
-      "ties": 26,
+      "losses": 30,
+      "ties": 24,
+      "win_rate": 0.323,
+      "name": "Started From the Bottom"
+    },
+    "377953972": {
+      "rating": 1378.3,
+      "games": 62,
+      "wins": 10,
+      "losses": 30,
+      "ties": 22,
       "win_rate": 0.339,
+      "name": "MCTS/IDS Hybrid Agent (transition at set amount of empty spaces)"
+    },
+    "376928024": {
+      "rating": 1453.4,
+      "games": 62,
+      "wins": 10,
+      "losses": 26,
+      "ties": 26,
+      "win_rate": 0.371,
       "name": "MCTS Timed"
     },
-    "376439749": {
-      "rating": 1361.3,
-      "games": 62,
-      "wins": 16,
-      "losses": 32,
-      "ties": 14,
-      "win_rate": 0.371,
-      "name": "Final Agent - MCTS w different customizations"
-    },
     "376485863": {
-      "rating": 1430.0,
+      "rating": 1440.8,
       "games": 62,
-      "wins": 14,
-      "losses": 24,
-      "ties": 24,
+      "wins": 10,
+      "losses": 20,
+      "ties": 32,
       "win_rate": 0.419,
       "name": "IDS_MCTS"
     },
-    "376115055": {
-      "rating": 1477.9,
+    "376439749": {
+      "rating": 1444.8,
       "games": 62,
-      "wins": 14,
-      "losses": 20,
-      "ties": 28,
+      "wins": 16,
+      "losses": 22,
+      "ties": 24,
       "win_rate": 0.452,
-      "name": "MCTS V4"
-    },
-    "376168896": {
-      "rating": 1424.7,
-      "games": 62,
-      "wins": 12,
-      "losses": 18,
-      "ties": 32,
-      "win_rate": 0.452,
-      "name": "IterativeDeepening + caching"
+      "name": "Final Agent - MCTS w different customizations"
     },
     "377141112": {
-      "rating": 1513.2,
+      "rating": 1441.0,
       "games": 62,
-      "wins": 12,
+      "wins": 14,
       "losses": 16,
-      "ties": 34,
-      "win_rate": 0.468,
+      "ties": 32,
+      "win_rate": 0.484,
       "name": "Triple Threat"
     },
-    "376012859": {
-      "rating": 1472.2,
+    "377998724": {
+      "rating": 1470.0,
       "games": 62,
-      "wins": 22,
-      "losses": 24,
-      "ties": 16,
+      "wins": 20,
+      "losses": 22,
+      "ties": 20,
       "win_rate": 0.484,
-      "name": "GG + Simple Heuristic"
+      "name": "Reginald"
     },
-    "376249013": {
-      "rating": 1494.4,
+    "377281538": {
+      "rating": 1470.2,
       "games": 62,
       "wins": 20,
       "losses": 18,
       "ties": 24,
       "win_rate": 0.516,
-      "name": "litty"
+      "name": "Final"
     },
-    "376556122": {
-      "rating": 1552.7,
+    "376247816": {
+      "rating": 1523.4,
       "games": 62,
-      "wins": 26,
-      "losses": 20,
-      "ties": 16,
+      "wins": 22,
+      "losses": 16,
+      "ties": 24,
       "win_rate": 0.548,
-      "name": "MCTS"
+      "name": "GOGOGOGOIterativeDeepneing + Learned Heuristic"
     },
     "377327392": {
-      "rating": 1546.8,
+      "rating": 1535.2,
       "games": 62,
       "wins": 30,
       "losses": 22,
@@ -190,103 +190,103 @@
       "name": "qwer IDS_agent"
     },
     "376916814": {
-      "rating": 1573.4,
+      "rating": 1550.3,
       "games": 62,
-      "wins": 30,
-      "losses": 18,
-      "ties": 14,
-      "win_rate": 0.597,
+      "wins": 24,
+      "losses": 16,
+      "ties": 22,
+      "win_rate": 0.565,
       "name": "Final Agent"
     },
-    "377310231": {
-      "rating": 1620.5,
+    "376249013": {
+      "rating": 1612.8,
       "games": 62,
-      "wins": 34,
+      "wins": 32,
       "losses": 16,
-      "ties": 12,
-      "win_rate": 0.645,
-      "name": "MCTS"
-    },
-    "376247816": {
-      "rating": 1612.5,
-      "games": 62,
-      "wins": 36,
-      "losses": 16,
-      "ties": 10,
-      "win_rate": 0.661,
-      "name": "GOGOGOGOIterativeDeepneing + Learned Heuristic"
+      "ties": 14,
+      "win_rate": 0.629,
+      "name": "litty"
     },
     "375941799": {
-      "rating": 1659.3,
+      "rating": 1684.6,
       "games": 62,
-      "wins": 36,
-      "losses": 10,
-      "ties": 16,
-      "win_rate": 0.71,
+      "wins": 40,
+      "losses": 12,
+      "ties": 10,
+      "win_rate": 0.726,
       "name": "BetaGo"
     },
-    "377281538": {
-      "rating": 1717.9,
+    "376921411": {
+      "rating": 1694.4,
       "games": 62,
-      "wins": 42,
+      "wins": 38,
       "losses": 6,
-      "ties": 14,
-      "win_rate": 0.79,
-      "name": "Final"
+      "ties": 18,
+      "win_rate": 0.758,
+      "name": "eugene"
     },
     "377613876": {
-      "rating": 1689.9,
+      "rating": 1728.4,
       "games": 62,
-      "wins": 46,
-      "losses": 10,
-      "ties": 6,
+      "wins": 44,
+      "losses": 8,
+      "ties": 10,
       "win_rate": 0.79,
-      "name": "Rohan_Agent(Hybrid: MCTS midgame, IDS endgame, endgame_action_threshold=8)"
+      "name": "Omega_Agent"
+    },
+    "377792691": {
+      "rating": 1752.0,
+      "games": 62,
+      "wins": 44,
+      "losses": 6,
+      "ties": 12,
+      "win_rate": 0.806,
+      "name": "FinalAgent"
+    },
+    "377664762": {
+      "rating": 1733.3,
+      "games": 62,
+      "wins": 40,
+      "losses": 2,
+      "ties": 20,
+      "win_rate": 0.806,
+      "name": "<agents.extended_agent object at 0x100c78130>"
     },
     "376499284": {
-      "rating": 1765.0,
+      "rating": 1770.5,
       "games": 62,
-      "wins": 46,
-      "losses": 8,
-      "ties": 8,
-      "win_rate": 0.806,
+      "wins": 44,
+      "losses": 4,
+      "ties": 14,
+      "win_rate": 0.823,
       "name": "MCTS_2"
     },
     "376294210": {
-      "rating": 1749.9,
+      "rating": 1810.4,
       "games": 62,
-      "wins": 46,
-      "losses": 6,
-      "ties": 10,
-      "win_rate": 0.823,
+      "wins": 48,
+      "losses": 0,
+      "ties": 14,
+      "win_rate": 0.887,
       "name": "big man"
     },
-    "376553843": {
-      "rating": 1809.3,
+    "377310231": {
+      "rating": 1820.7,
       "games": 62,
       "wins": 50,
-      "losses": 2,
-      "ties": 10,
-      "win_rate": 0.887,
-      "name": "final mcts agent"
+      "losses": 0,
+      "ties": 12,
+      "win_rate": 0.903,
+      "name": "Skiblet"
     },
     "377521405": {
-      "rating": 1849.8,
+      "rating": 1831.3,
       "games": 62,
       "wins": 54,
       "losses": 4,
       "ties": 4,
       "win_rate": 0.903,
       "name": "HybridAgent (Opening Book + MCTS + IDS)"
-    },
-    "377157237": {
-      "rating": 1926.3,
-      "games": 62,
-      "wins": 62,
-      "losses": 0,
-      "ties": 0,
-      "win_rate": 1.0,
-      "name": "multiprocessor"
     }
   },
   "metadata": {
@@ -297,41 +297,41 @@
     "num_matches": 992,
     "num_agents": 32,
     "board_size": "5x5",
-    "timestamp": "2025-12-12T11:22:58.819876",
+    "timestamp": "2025-12-13T12:19:05.319349",
     "elo_description": "Ratings calculated using standard ELO system with K=32, updated after each individual game"
   },
   "agent_names": {
-    "377150206": "BestAgent",
-    "376921411": "MCTS_2.4",
-    "376114735": "MCTS",
     "376257850": "noobmaster mcts",
-    "376682991": "Agent67",
-    "376498397": "Started From the Bottom",
-    "376920593": "part3agent",
     "377639294": "had-to-submit-something",
-    "376039969": "PokemonGo",
-    "377499375": "<agents.distribution_ids_mcts_agent object at 0x104604340>",
     "376894155": "MCTS",
+    "376012859": "GG + GammaGo Heuristic",
+    "376039969": "PokemonGo",
+    "377150206": "buddy",
+    "376920593": "part3agent",
+    "376115055": "HybridMCTS",
+    "377584302": "MCTS with RAVE and AMAF",
+    "376168896": "Opening + MCTS + IDS Power Ranger Agent",
+    "377934782": "MCTS",
+    "376498397": "Started From the Bottom",
+    "377953972": "MCTS/IDS Hybrid Agent (transition at set amount of empty spaces)",
     "376928024": "MCTS Timed",
-    "376439749": "Final Agent - MCTS w different customizations",
     "376485863": "IDS_MCTS",
-    "376115055": "MCTS V4",
-    "376168896": "IterativeDeepening + caching",
+    "376439749": "Final Agent - MCTS w different customizations",
     "377141112": "Triple Threat",
-    "376012859": "GG + Simple Heuristic",
-    "376249013": "litty",
-    "376556122": "MCTS",
+    "377998724": "Reginald",
+    "377281538": "Final",
+    "376247816": "GOGOGOGOIterativeDeepneing + Learned Heuristic",
     "377327392": "qwer IDS_agent",
     "376916814": "Final Agent",
-    "377310231": "MCTS",
-    "376247816": "GOGOGOGOIterativeDeepneing + Learned Heuristic",
+    "376249013": "litty",
     "375941799": "BetaGo",
-    "377281538": "Final",
-    "377613876": "Rohan_Agent(Hybrid: MCTS midgame, IDS endgame, endgame_action_threshold=8)",
+    "376921411": "eugene",
+    "377613876": "Omega_Agent",
+    "377792691": "FinalAgent",
+    "377664762": "<agents.extended_agent object at 0x100c78130>",
     "376499284": "MCTS_2",
     "376294210": "big man",
-    "376553843": "final mcts agent",
-    "377521405": "HybridAgent (Opening Book + MCTS + IDS)",
-    "377157237": "multiprocessor"
+    "377310231": "Skiblet",
+    "377521405": "HybridAgent (Opening Book + MCTS + IDS)"
   }
 }

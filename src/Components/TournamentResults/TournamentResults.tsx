@@ -360,14 +360,27 @@ export const TournamentResults: React.FC = () => {
             {renderTable(sortedBots)}
             <div style={{ backgroundColor: '#f0f8ff', border: '1px solid #ccc', padding: '10px', borderRadius: '5px', marginTop: '15px' }}>
               <p style={{ fontSize: '0.9em', color: '#333', margin: 0 }}>
-                <strong>Note:</strong> Win percentage calculated as wins / total games. Games ending in timeouts, exceptions, or crashes count as losses for both players, but will be updated tomorrow to only penalize the bot that causes the crash.
+                <strong>Note:</strong> Win percentage calculated as wins / total games. Games ending in timeouts, exceptions, or crashes count as losses for the agent that caused the error (when identifiable).
               </p>
             </div>
           </>
         )}
       </div>
       
-      {Object.keys(currentMatchData).length > 0 && renderHeatmap()}
+      {activeTab === '9x9' ? (
+        <div style={{ backgroundColor: '#fff3cd', border: '1px solid #ffeaa7', padding: '15px', borderRadius: '8px', marginTop: '20px' }}>
+          <h4 style={{ color: '#856404', marginTop: 0 }}>🚧 Partial Results Notice</h4>
+          <p style={{ color: '#856404', margin: '8px 0' }}>
+            <strong>The 9x9 tournament is currently running.</strong> These results represent partial tournament standings 
+            and will be updated periodically as more matches complete.
+          </p>
+          <p style={{ color: '#856404', margin: '8px 0 0 0', fontSize: '0.9em' }}>
+            The match results heatmap will be available once the tournament is complete.
+          </p>
+        </div>
+      ) : (
+        Object.keys(currentMatchData).length > 0 && renderHeatmap()
+      )}
     </div>
   );
 }
